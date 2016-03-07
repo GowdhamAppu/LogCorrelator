@@ -36,9 +36,9 @@ class DBCode:
                         return None
             
     def insertValuesIntoCoreDetailsTable(self,values):
-                        SqlInsertQuery = "insert into CoreCircuitDetails (PatternTag,CircuitID,OrderID,POP,CircuitAEnd,CircuitAEndIntf,CircuitZEnd,CircuitZEndIntf,CircuitProvider,InternalCircuitID,ipaddress1,ipaddress2) " \
-                                      "values (\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\") "\
-                                     %(values[0],values[1],values[2],values[3],values[4],values[5],values[6],values[7],values[8],values[9],values[10],values[11])
+                        SqlInsertQuery = "insert into CoreCircuitDetails (PatternTag,CircuitID,OrderID,POP,CircuitAEnd,CircuitAEndIntf,CircuitZEnd,CircuitZEndIntf,CircuitProvider,InternalCircuitID,ipaddress1,ipaddress2,LatencyValue) " \
+                                      "values (\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\") "\
+                                     %(values[0],values[1],values[2],values[3],values[4],values[5],values[6],values[7],values[8],values[9],values[10],values[11],values[12])
                         lockQuery = " LOCK TABLES CoreCircuitDetails WRITE"
                         releaseLocks = " UNLOCK TABLES"
                         connecTion = self.getConnection()
@@ -126,7 +126,7 @@ class DBCode:
             else:
                 print("300000: Error while connecting to MySql")
                 
-    def selectRecord(self,value,supress = 0):
+    def selectRecord(self,value):
         SqlSelectQuery = "select * from CoreCircuitDetails where PatternTag = \'%s\'" %(value)
         connecTion = self.getConnection()
         lockQuery = " LOCK TABLES CoreCircuitDetails READ"
@@ -142,8 +142,8 @@ class DBCode:
                 cursor.execute(releaseLocks)
                 connecTion.commit()
                 cursor.close()
-                if supress == 0:
-                    print("Successfully fetched record ")
+               # if supress == 0:
+               # print("Successfully fetched record ")
                 return returnVal
             except Exception as err:
                 cursor.execute(releaseLocks)
@@ -176,7 +176,32 @@ class DBCode:
                 raise Exception(err)
         else:
             print("300000: Error while connecting to MySql")
-            
+           
+    def checkInTable(self,value):
+        SqlSelectQuery = "select count(*) from CoreCircuitStates where InternalCircuitID = \'%s\'" %(value)
+        connecTion = self.getConnection()
+        lockQuery = " LOCK TABLES  CoreCircuitStates READ"
+        releaseLocks = " UNLOCK TABLES"
+        returnVal = 0
+        if connecTion:
+            try:
+                cursor = connecTion.cursor()
+                cursor.execute(lockQuery)
+                cursor.execute(SqlSelectQuery)
+                for (val) in cursor:
+                    retValue = val
+                cursor.execute(releaseLocks)
+                connecTion.commit()
+                cursor.close()
+                returnVal = retValue[0]   
+                return returnVal
+            except Exception as err:
+                cursor.execute(releaseLocks)
+                cursor.close()
+                raise Exception(err)
+        else:
+            print("300000: Error while connecting to MySql")
+
     def selectTable(self,tableName,supress = 0):
         SqlSelectQuery = "select * from %s" %(tableName)
         connecTion = self.getConnection()
@@ -243,6 +268,27 @@ class DBCode:
                 cursor.close()
                 print "Error occured during updation",str(e)
                 
+    def deleteRowCCD(self,value):
+            SqlDeleteQuery = " delete from CoreCircuitDetails where InternalCircuitID = \'%s\'" \
+                             %(value)
+            lockQuery = " LOCK TABLES CoreCircuitDetails WRITE"
+            releaseLocks = " UNLOCK TABLES"
+            connecTion = self.getConnection()
+            if connecTion:
+                try:
+                    cursor = connecTion.cursor()
+                    cursor.execute(lockQuery)
+                    cursor.execute(SqlDeleteQuery)
+                    cursor.execute(releaseLocks)
+                    connecTion.commit()
+                    #connecTion.commit()
+                    cursor.close()
+                except Exception as e:
+                    cursor.execute(releaseLocks)
+                    connecTion.commit()
+                    cursor.close()
+                    print "Error occured during updation",str(e)   
+                                
     def updateSLAState(self,values):
             SqlUpdateQuery = " update CoreCircuitStates " \
                              " set SLAState = \'%s\' , Time = \'%s\' where InternalCircuitID = \'%s\'" \
@@ -264,6 +310,27 @@ class DBCode:
                     connecTion.commit()
                     cursor.close()
                     print "Error occured during updation",str(e)
+    
+    def updateCCD(self,SqlUpdateQuery):
+            #SqlUpdateQuery = " update CoreCircuitDetail " \
+                           #  " set Time = \'%s\' where InternalCircuitID = \'%s\'" %(values[1],values[0])
+            lockQuery = " LOCK TABLES CoreCircuitDetails WRITE"
+            releaseLocks = " UNLOCK TABLES"
+            connecTion = self.getConnection()
+            if connecTion:
+                try:
+                    cursor = connecTion.cursor()
+                    cursor.execute(lockQuery)
+                    cursor.execute(SqlUpdateQuery)
+                    cursor.execute(releaseLocks)
+                    connecTion.commit()
+                    #connecTion.commit()
+                    cursor.close()
+                except Exception as e:
+                    cursor.execute(releaseLocks)
+                    connecTion.commit()
+                    cursor.close()
+                    print "Error occured during updation",str(e)                        
                     
     def updateTime(self,values):
             SqlUpdateQuery = " update CoreCircuitStates " \
