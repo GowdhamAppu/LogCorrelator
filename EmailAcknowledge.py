@@ -75,3 +75,4 @@ if __name__ == "__main__":
                                 initialize('EmailAcknowledge_logger.log','Email') 
                                 db= createDBObject()
                                 read('Gowdhaman.Mohan@emcconnected.com','**',db)
+

@@ -236,8 +236,9 @@ def selectRecord(value,db,msg,lossPercentage):
                                                                                                                                                                 value.append('NO')
                                                                                                                                 value.append('0')
                                                                                                                                 try:
-                                                                                                                                                                log.info("Record(%s) inserted into CoreCircuitStates table ",str(value))
+                                                                                                                                                                
                                                                                                                                                                 db.insertValuesIntoCoreRouterStateTable(value)
+                                                                                                                                                                log.info("Record(%s) inserted into CoreCircuitStates table ",str(value))
                                                                                                                                 except Exception as e:
                                                                                                                                                                 pass
                                                                                                                                 seconds=getDateTime()
@@ -300,7 +301,7 @@ def pingTest(device1,device2,aIntf,bIntf,latency,latencyValue):
                                                                                                         AminValue=match1.group(1)
                                                                                                         AavgValue=match1.group(2)
                                                                                                         AmaxValue=match1.group(3)
-                                                                                                        if lValue[0] >= str(AminValue) and lValue[1] >= str(AavgValue) and lValue[2] >= str(AmaxValue):
+                                                                                                        if int(lValue[0]) > int(AavgValue) or int(lValue[2]) < int(AavgValue):
                                                                                                                 Alatency=0
                                                                                                 except Exception as e:
                                                                                                          pass         
@@ -333,7 +334,7 @@ def pingTest(device1,device2,aIntf,bIntf,latency,latencyValue):
                                                                                                         BminValue=match1.group(1)
                                                                                                         BavgValue=match1.group(2)
                                                                                                         BmaxValue=match1.group(3)
-                                                                                                        if lValue[0] >= str(BminValue) and lValue[1] >= str(BavgValue) and lValue[2] >= str(BmaxValue):
+                                                                                                        if int(lValue[0]) > int(BavgValue) or int(lValue[2]) < int(BavgValue):
                                                                                                                     Blatency=0
                                                                                                 except Exception as e:
                                                                                                          pass
@@ -655,5 +656,7 @@ if __name__ == '__main__':
 
                                                                                                                             
                                                                                                     
+
+
 
 

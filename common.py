@@ -19,19 +19,28 @@ class common:
         @staticmethod
         def getEmailList(severity):
             if severity.strip() == "sev1":
-                emailList = ["pvijay@emc-corp.net","Gowdhaman.Mohan@emcconnected.com"]
+                emailList = ["pvijay@emc-corp.net","Gowdhaman.Mohan@emcconnected.com","important-core-notifications@mtnsat.pagerduty.com"]
+            elif severity.strip() == "sev2":
+                emailList = ["critical-core-notifications@mtnsat.pagerduty.com","Gowdhaman.Mohan@emcconnected.com","pvijay@emc-corp.net"]  
             else:
-                emailList = ["Gowdhaman.Mohan@emcconnected.com","gowdham@timebender.in"]  
+                emailList = ["pvijay@emc-corp.net","Gowdhaman.Mohan@emcconnected.com"] 
             return emailList
    
         @staticmethod
         def getScanInterval():
                 scanInterval = 1  
                 return scanInterval
-     
+        
+        @staticmethod
+        def getSendCommandDelayFactor():
+            delayFactor = 1
+            loop = 40
+            return delayFactor,loop
+   
         @staticmethod
         def getRouterCredentials():
             username = "pavijay"
             password = "WAnoharan!123"
             return username,password
+
 

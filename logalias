@@ -9,3 +9,4 @@ echo "alias emailAck=' _(){ a="\$\(python \/opt\/CoreMonitoringApp\/EmailCheck.p
 
 
 
+
