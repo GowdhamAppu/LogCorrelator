@@ -37,7 +37,7 @@ class DBCode:
             
     def insertValuesIntoCoreDetailsTable(self,values):
                         SqlInsertQuery = "insert into CoreCircuitDetails (PatternTag,CircuitID,OrderID,POP,CircuitAEnd,CircuitAEndIntf,CircuitZEnd,CircuitZEndIntf,CircuitProvider,InternalCircuitID,ipaddress1,ipaddress2,LatencyValue) " \
-                                      "values (\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\") "\
+                                      "values (LTRIM(\"%s\"),LTRIM(\"%s\"),LTRIM(\"%s\"),LTRIM(\"%s\"),LTRIM(\"%s\"),LTRIM(\"%s\"),LTRIM(\"%s\"),LTRIM(\"%s\"),LTRIM(\"%s\"),LTRIM(\"%s\"),LTRIM(\"%s\"),LTRIM(\"%s\"),LTRIM(\"%s\")) "\
                                      %(values[0],values[1],values[2],values[3],values[4],values[5],values[6],values[7],values[8],values[9],values[10],values[11],values[12])
                         lockQuery = " LOCK TABLES CoreCircuitDetails WRITE"
                         releaseLocks = " UNLOCK TABLES"
@@ -60,7 +60,7 @@ class DBCode:
                                                 
     def insertValuesIntoCoreRouterStateTable(self,values):
                 SqlInsertQuery = "insert into CoreCircuitStates (InternalCircuitID,IssueType,SLAState,GOCFlag) " \
-                              "values (\"%s\",\"%s\",\"%s\",\"%s\") "\
+                              "values (LTRIM(\"%s\"),LTRIM(\"%s\"),LTRIM(\"%s\"),LTRIM(\"%s\")) "\
                              %(values[0],values[1],values[2],values[3])
                 lockQuery = " LOCK TABLES CoreCircuitStates WRITE"
                 releaseLocks = " UNLOCK TABLES"
@@ -83,13 +83,13 @@ class DBCode:
                     print("Error while connecting to MySql")
                     
     def getInternalCircuitCountMatch(self,value):
-            SqlSelectQuery = "select count(InternalCircuitID) from CoreCircuitDetails where POP=(select POP from CoreCircuitDetails where InternalCircuitID=\'%s\')" %(value)
+            SqlSelectQuery = "select count(InternalCircuitID) from CoreCircuitDetails where POP=(select POP from CoreCircuitDetails where InternalCircuitID=LTRIM(\'%s\'))" %(value)
             
-            SqlSelectQuery1= "select count(InternalCircuitID) from CoreCircuitStates where InternalCircuitID in (select InternalCircuitID from CoreCircuitDetails where POP=(select POP from CoreCircuitDetails where InternalCircuitID=\'%s\'))" %(value)
+            SqlSelectQuery1= "select count(InternalCircuitID) from CoreCircuitStates where InternalCircuitID in (select InternalCircuitID from CoreCircuitDetails where POP=(select POP from CoreCircuitDetails where InternalCircuitID=LTRIM(\'%s\')))" %(value)
             
-            SqlSelectQuery2 = "select * from CoreCircuitDetails where POP=(select POP from CoreCircuitDetails where InternalCircuitID=\'%s\')" %(value)
+            SqlSelectQuery2 = "select * from CoreCircuitDetails where POP=(select POP from CoreCircuitDetails where InternalCircuitID=LTRIM(\'%s\'))" %(value)
             
-            SqlSelectQuery3= "select * from CoreCircuitStates where InternalCircuitID in (select InternalCircuitID from CoreCircuitDetails where POP=(select POP from CoreCircuitDetails where InternalCircuitID=\'%s\'))" %(value)
+            SqlSelectQuery3= "select * from CoreCircuitStates where InternalCircuitID in (select InternalCircuitID from CoreCircuitDetails where POP=(select POP from CoreCircuitDetails where InternalCircuitID=LTRIM(\'%s\')))" %(value)
             
             connecTion = self.getConnection()
             lockQuery = " LOCK TABLES CoreCircuitDetails READ"
@@ -127,7 +127,7 @@ class DBCode:
                 print("300000: Error while connecting to MySql")
                 
     def selectRecord(self,value):
-        SqlSelectQuery = "select * from CoreCircuitDetails where PatternTag = \'%s\'" %(value)
+        SqlSelectQuery = "select * from CoreCircuitDetails where PatternTag = LTRIM(\'%s\')" %(value)
         connecTion = self.getConnection()
         lockQuery = " LOCK TABLES CoreCircuitDetails READ"
         releaseLocks = " UNLOCK TABLES"
@@ -153,7 +153,7 @@ class DBCode:
             print("300000: Error while connecting to MySql")
             
     def selectCoreRouterDetails(self,value,supress = 0):
-        SqlSelectQuery = "select * from CoreCircuitDetails where InternalCircuitID = \'%s\'" %(value)
+        SqlSelectQuery = "select * from CoreCircuitDetails where InternalCircuitID = LTRIM(\'%s\')" %(value)
         connecTion = self.getConnection()
         lockQuery = " LOCK TABLES CoreCircuitDetails READ"
         releaseLocks = " UNLOCK TABLES"
@@ -178,7 +178,7 @@ class DBCode:
             print("300000: Error while connecting to MySql")
            
     def checkInTable(self,value):
-        SqlSelectQuery = "select count(*) from CoreCircuitStates where InternalCircuitID = \'%s\'" %(value)
+        SqlSelectQuery = "select count(*) from CoreCircuitStates where InternalCircuitID = LTRIM(\'%s\')" %(value)
         connecTion = self.getConnection()
         lockQuery = " LOCK TABLES  CoreCircuitStates READ"
         releaseLocks = " UNLOCK TABLES"
@@ -228,7 +228,7 @@ class DBCode:
             
     def updateTable(self,values):
         SqlUpdateQuery = " update CoreCircuitStates " \
-                         " set GOCFlag = \'%s\' , Time = \'%s\'  where InternalCircuitID = \'%s\'" \
+                         " set GOCFlag = LTRIM(\'%s\') , Time = LTRIM(\'%s\')  where InternalCircuitID = LTRIM(\'%s\')" \
                          %(values[1],values[2],values[0])
         lockQuery = " LOCK TABLES CoreCircuitStates WRITE"
         releaseLocks = " UNLOCK TABLES"
@@ -248,7 +248,7 @@ class DBCode:
                 print "Error occured during updation",str(e)
                                                                                 
     def deleteRow(self,value):
-        SqlDeleteQuery = " delete from CoreCircuitStates where InternalCircuitID = \'%s\'" \
+        SqlDeleteQuery = " delete from CoreCircuitStates where InternalCircuitID = LTRIM(\'%s\')" \
                          %(value)
         lockQuery = " LOCK TABLES CoreCircuitStates WRITE"
         releaseLocks = " UNLOCK TABLES"
@@ -269,7 +269,7 @@ class DBCode:
                 print "Error occured during updation",str(e)
                 
     def deleteRowCCD(self,value):
-            SqlDeleteQuery = " delete from CoreCircuitDetails where InternalCircuitID = \'%s\'" \
+            SqlDeleteQuery = " delete from CoreCircuitDetails where InternalCircuitID = LTRIM(\'%s\')" \
                              %(value)
             lockQuery = " LOCK TABLES CoreCircuitDetails WRITE"
             releaseLocks = " UNLOCK TABLES"
@@ -291,7 +291,7 @@ class DBCode:
                                 
     def updateSLAState(self,values):
             SqlUpdateQuery = " update CoreCircuitStates " \
-                             " set SLAState = \'%s\' , Time = \'%s\' where InternalCircuitID = \'%s\'" \
+                             " set SLAState = LTRIM(\'%s\') , Time = LTRIM(\'%s\') where InternalCircuitID = LTRIM(\'%s\')" \
                              %(values[2],values[1],values[0])
             lockQuery = " LOCK TABLES CoreCircuitStates WRITE"
             releaseLocks = " UNLOCK TABLES"
@@ -334,7 +334,7 @@ class DBCode:
                     
     def updateTime(self,values):
             SqlUpdateQuery = " update CoreCircuitStates " \
-                             " set Time = \'%s\' where InternalCircuitID = \'%s\'" %(values[1],values[0])
+                             " set Time = LTRIM(\'%s\') where InternalCircuitID = LTRIM(\'%s\')" %(values[1],values[0])
             lockQuery = " LOCK TABLES CoreCircuitStates WRITE"
             releaseLocks = " UNLOCK TABLES"
             connecTion = self.getConnection()

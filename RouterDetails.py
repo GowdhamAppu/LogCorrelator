@@ -55,6 +55,7 @@ class RouterDetails:
             icidIndex=raw_input('Select the Internal Circuit ID :')
             value=icid[int(icidIndex)]
             self.db.deleteRowCCD(value)
+            print "Deleted Successfully"
         except Exception as e:
             print "Error Occured while updating State Table",str(e)     
             

@@ -378,7 +378,7 @@ def pingTest(device1,device2,aIntf,bIntf,latency,latencyValue):
                                                             sendAuthFailMail(device1,device2)
                                                     elif "timed-out" in str(e):
                                                             log.info("Conection timed out error %s",str(e))
-                                                            return 0,Alatency,Blatency  
+                                                            return 0,0,0  
                                                     else:
                                                             log.warning("Error occured while doing pingtest on devices %s",str(e))
                                                             
