@@ -30,8 +30,7 @@ from log import log
  This method used to send mail to given mailID with proper info.
 """
 def sendMail(subject,message,sev):
-                #subject  = sev+" Circuit ID :"+circuitProvider
-                #message = "Team" + "\n" + "\n" + "Please find  details about the devices\n\n" +msg
+            try:
                 smtpserver= "relay.emc-corp.net:25"
                 to_addr_list = common.getEmailList(sev.lower())
                 from_addr_list = "Network-engineering"
@@ -40,11 +39,13 @@ def sendMail(subject,message,sev):
                 msg['Subject'] = subject
                 msg['From'] = from_addr_list
                 msg['To'] = ",".join(to_addr_list)
-
                 server = smtplib.SMTP(smtpserver)
                 server.ehlo()
                 send = server.sendmail(from_addr_list, to_addr_list, msg.as_string())
                 server.quit()
+            except Exception as e:
+                log.warning("Send mail got error %s",str(e))
+                
 """
 This method used to create references to the DBCode class.
 """
@@ -100,10 +101,12 @@ def checkAfterTimeout(db):
                                                                                                                 
                                                                                                                 setGOCFlag(db,setFlag,str(rec[4]),str(rec[5]),str(rec[6]),str(rec[7]),str(rec[8]),str(rec1[2]),str(rec1[0]),AEndIntf,BEndIntf,pingA,pingB,str(rec[1]),str(rec[2]),slaState)
                                                                                                 else:
-                                                                                                                db.deleteRow(str(rec1[0]))      
-                                                                                                                #setFlag.append(rec1[0])
+                                                                                                                log.info("Ping Result got passed.so going to delete InternalCircuitID state details from CoreCircuitState table")
+                                                                                                                try:
+                                                                                                                    db.deleteRow(str(rec1[0]).strip())
+                                                                                                                except Exception as e:
+                                                                                                                    log.warning("Error occured while deleting record in CoreCircuitStates table.Error info : %s",str(e))
                                                                                                                 
-                                                                                                                #setFlag.append("0")
                                                                                                                 
                                                                                                 if "down" in rec1[2]:
                                                                                                 
@@ -117,6 +120,7 @@ def checkAfterTimeout(db):
                                                                                                 
                 
                                 except Exception as e:
+                                                    #log.warning("Error Occured") 
                                                     pass 
                                                 #print "Exception occured ",str(e)
                 
@@ -169,7 +173,7 @@ def setGOCFlag(db,values,val1,val2,val3,val4,val5,val6,val7,AEndIntf,BEndIntf,pi
                 msg="Team" + "\n"+"\n"+ "Please find the details about the devices\n\n"+message   
                 sendMail(subject,msg,sev)
             except  Exception as e:
-                log.warning("Exception message : %s",str(e))
+                log.warning("Exception(SETGocFLag Module) message : %s",str(e))
                 
 def pingTest(device1,device2,aIntf,bIntf,latencyValue,latency):
                                 try:
@@ -288,9 +292,10 @@ def pingTest(device1,device2,aIntf,bIntf,latencyValue,latency):
                                                     sendMail(subject,message,'exception')       
                                                     return 0,0,0,"Fail",0                        
                                                 elif "timed-out" in str(e):
-                                                    log.warning("Error %s",str(e))
+                                                    log.warning("Device timed out error %s",str(e))
                                                     return 0,0,0,0,0,""
-                                                    #pass                        
+                                                else:
+                                                    log.warning("Error occured while doing pingtest %s",str(e))
                                                     
                                                 
                                                                                                 

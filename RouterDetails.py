@@ -67,81 +67,82 @@ class RouterDetails:
             while 1:
                 pTag=raw_input('Enter The Pattern Tag :')
                 if pTag:
-                    circuitDetails.append(str(pTag.strip()))
+                    circuitDetails.append(str(pTag).strip())
                     break
            
             while 1:     
                 cid=raw_input('Enter The CirCuit ID :') 
                 if cid:
-                    circuitDetails.append(str(cid.strip()))
+                    circuitDetails.append(str(cid).strip())
                     break
                          
             while 1:   
                 oid=raw_input('Enter The Order ID :') 
                 if oid:
-                    circuitDetails.append(str(oid.strip()))
+                    circuitDetails.append(str(oid).strip())
                     break
             while 1:      
                 POP=raw_input('Enter The POP :') 
                 if POP:
-                    circuitDetails.append(str(POP.strip()))  
+                    circuitDetails.append(str(POP).strip())  
                     break
                 
             while 1:     
                 caend=raw_input('Enter The CirCuit A END :') 
                 if caend:
-                    circuitDetails.append(str(caend.strip()))
+                    circuitDetails.append(str(caend).strip())
                     break
                 
             while 1:     
                 caendint=raw_input('Enter The CirCuit A End Interface  :') 
                 if caendint:
-                    circuitDetails.append(str(caendint.strip()))
+                    circuitDetails.append(str(caendint).strip())
                     break
                 
             while 1:     
                 czend=raw_input('Enter The CirCuit Z End  :') 
                 if czend:
-                    circuitDetails.append(str(czend.strip()))
+                    circuitDetails.append(str(czend).strip())
                     break
                 
             while 1:    
                 czendint=raw_input('Enter The CirCuit Z End Interface  :') 
                 if czendint:
-                    circuitDetails.append(str(czendint.strip()))
+                    circuitDetails.append(str(czendint).strip())
                     break
                 
             while 1:   
                 cp=raw_input('Enter The CirCuit Provider :') 
                 if cp:
-                    circuitDetails.append(str(cp.strip()))
+                    circuitDetails.append(str(cp).strip())
                     break
                 
             while 1:   
                 icid=raw_input('Enter The Internal Circuit ID :') 
                 if icid:
-                    circuitDetails.append(str(icid.strip()))
+                    circuitDetails.append(str(icid).strip())
                     break
                 
             while 1:   
                 ipaddress1=raw_input('Enter The CirCuit A End Device Ipaddress :') 
                 if ipaddress1:
-                    circuitDetails.append(str(ipaddress1.strip()))
+                    circuitDetails.append(str(ipaddress1).strip())
                     break
               
             while 1:        
                 ipadd2=raw_input('Enter The CirCuit Z End Device Ipaddress :') 
                 if ipadd2:
-                    circuitDetails.append(str(ipadd2.strip()))
+                    circuitDetails.append(str(ipadd2).strip())
                     break
                 
             while 1:     
                 lv=raw_input('Enter The Latency Value(Min,Avg,Max) :') 
                 if lv:
-                    circuitDetails.append(str(lv.strip()))
+                    circuitDetails.append(str(lv).strip())
                     break  
            
             self.db.insertValuesIntoCoreDetailsTable(circuitDetails)
+            print "Record got Inserted in CoreCircuitDetails Table"
         except Exception as e:
             print "Error Occured while updating State Table",str(e)        
         
@@ -163,60 +164,61 @@ class RouterDetails:
             updateValues=[]
             pTag=raw_input('Enter The Pattern Tag :')
             if pTag:
-                updateValues.append('PatternTag =\''+str(pTag.strip())+'\'')
+                updateValues.append('PatternTag =\''+str(pTag).strip()+'\'')
                 
             cid=raw_input('Enter The CirCuit ID :') 
             if cid:
-                updateValues.append(' CircuitID =\''+str(cid.strip())+'\'')  
+                updateValues.append(' CircuitID =\''+str(cid).strip()+'\'')  
                 
             oid=raw_input('Enter The Order ID :') 
             if oid:
-                updateValues.append(' OrderID =\''+str(oid.strip())+'\'')
+                updateValues.append(' OrderID =\''+str(oid).strip()+'\'')
                 
             POP=raw_input('Enter The POP :') 
             if POP:
-                updateValues.append(' POP =\''+str(POP.strip())+'\'')  
+                updateValues.append(' POP =\''+str(POP).strip()+'\'')  
                 
             caend=raw_input('Enter The CirCuit A END :') 
             if caend:
-                updateValues.append(' CircuitAEnd =\''+str(caend.strip())+'\'')
+                updateValues.append(' CircuitAEnd =\''+str(caend).strip()+'\'')
             
             caendint=raw_input('Enter The CirCuit A End Interface  :') 
             if caendint:
-                updateValues.append(' CircuitAEndIntf =\''+str(caendint.strip())+'\'')
+                updateValues.append(' CircuitAEndIntf =\''+str(caendint).strip()+'\'')
                 
             czend=raw_input('Enter The CirCuit Z End  :') 
             if czend:
-                updateValues.append(' CircuitZEnd =\''+str(czend.strip())+'\'')
+                updateValues.append(' CircuitZEnd =\''+str(czend).strip()+'\'')
                 
             czendint=raw_input('Enter The CirCuit Z End Interface  :') 
             if czendint:
-                updateValues.append(' CircuitZEndIntf =\''+str(czendint.strip())+'\'')
+                updateValues.append(' CircuitZEndIntf =\''+str(czendint).strip()+'\'')
                 
             cp=raw_input('Enter The CirCuit Provider :') 
             if cp:
-                updateValues.append(' CircuitProvider =\''+str(cp.strip())+'\'')
+                updateValues.append(' CircuitProvider =\''+str(cp).strip()+'\'')
                 
             icid=raw_input('Enter The Internal Circuit ID :') 
             if icid:
-                updateValues.append(' InternalCircuitID =\''+str(icid.strip())+'\'')
+                updateValues.append(' InternalCircuitID =\''+str(icid).strip()+'\'')
              
             ipaddress1=raw_input('Enter The CirCuit A End Device Ipaddress :') 
             if ipaddress1:
-                updateValues.append(' ipaddress1 =\''+str(ipaddress1.strip())+'\'')
+                updateValues.append(' ipaddress1 =\''+str(ipaddress1).strip()+'\'')
                 
             ipadd2=raw_input('Enter The CirCuit Z End Device Ipaddress :') 
             if ipadd2:
-                updateValues.append(' ipaddress2 =\''+str(ipadd2.strip())+'\'')
+                updateValues.append(' ipaddress2 =\''+str(ipadd2).strip()+'\'')
                 
             lv=raw_input('Enter The Latency Value(Min,Avg,Max) :') 
             if lv:
-                updateValues.append(' LatencyValue =\''+str(lv.strip())+'\'')
+                updateValues.append(' LatencyValue =\''+str(lv).strip()+'\'')
                 
             update=",".join(updateValues)  
             SqlUpdateQuery="update CoreCircuitDetails set %s where InternalCircuitID = \'%s\'" %(update,value)
-            print SqlUpdateQuery    
+            #print SqlUpdateQuery    
             self.db.updateCCD(SqlUpdateQuery)
+            print "Record got updated in CoreCircuitDetails Table"
         except Exception as e:
             print "Error Occured while updating State Table",str(e)        
             

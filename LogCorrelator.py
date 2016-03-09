@@ -28,11 +28,11 @@ from log import log
 
 
 def sendAuthFailMail(device1,device2):
+            try:
                 subject = "Authentication  failed on routers "+device1+","+device2
                 log.warning("Access to router got Failed so sent mail to given mail List that Authentication failed on routers %s , %s ",str(device1),str(device2))
                 smtpserver="relay.emc-corp.net:25"
                 to_addr_list = common.getEmailList('exception')
-                #to_addr_list = ["Gowdhaman.Mohan@emcconnected.com","pvijay@emc-corp.net"]
                 from_addr_list = "Network-engineering"
                 messages="Error Occured During Router Login.Authentication Failed."
                 msg = MIMEText(messages)
@@ -43,28 +43,29 @@ def sendAuthFailMail(device1,device2):
                 server.ehlo()
                 send = server.sendmail(from_addr_list,to_addr_list,msg.as_string())
                 server.quit()
-
+            except Exception as e:
+                log.warning("Send Authentication mail got error %s",str(e))
 """
  To sendmail if any error in Orion Machine
 """
 def sendMail(messagelog):
+            try:
                 subject  = "Syslog correlator Exception!!"
                 message = "Team" + "\n" + "\n" + "Please investigate this Exception\n\n" + "\n" + messagelog
                 log.info("Syslog correlator Exception %s",str(messagelog))
                 smtpserver= "relay.emc-corp.net:25"
                 to_addr_list = common.getEmailList('exception')
-                #to_addr_list = ["Gowdhaman.Mohan@emcconnected.com","pvijay@emc-corp.net"]
                 from_addr_list = "Network-engineering"
-
                 msg = MIMEText(message)
                 msg['Subject'] = subject
                 msg['From'] = from_addr_list
                 msg['To'] = to_addr_list
-
                 server = smtplib.SMTP(smtpserver)
                 server.ehlo()
                 send = server.sendmail(from_addr_list, to_addr_list, msg.as_string())
                 server.quit()
+            except Exception as e:
+                log.warning("Send LogCorrelator script error %s",str(e))
 
 """
   To fetch data from table and check the message which has orion alert in it.If so then check message has down or packet loss string.
@@ -162,6 +163,7 @@ def callDBtoUpdateTime(values,db):
                                 try:
                                                                 
                                                                 db.updateTime(values)
+                                                                log.info("Update Timer value in CoreCircuitStates table for particular InternalCircuitID %s",str(values))
                                                                 
                                 except Exception as e:
                                                                 log.warning("Exception occured while updating values in CoreCircuitStates Database table %s",str(e))   
@@ -203,8 +205,11 @@ def selectRecord(value,db,msg,lossPercentage):
                                 try:
                                                                 #print value
                                                                 log.info("Parsed pattern Tag %s",str(value))
-                                                                record=db.selectRecord(value)
-                                                                log.info("Fecthed records %s",str(record))
+                                                                record=db.selectRecord(value.strip())
+                                                                if str(record):
+                                                                    log.info("Fetched record %s",str(record))
+                                                                else:
+                                                                    log.info("There is no record found in CoreCircuitDetails table for patternTag %s",str(value))
                                                                 result = -1
                                                                 for rec in record:
                                                                                                 log.info("Check InternalCircuitID (%s) is present in CoreCircuitStates table or not.",str(rec[9]))
@@ -215,9 +220,11 @@ def selectRecord(value,db,msg,lossPercentage):
                                                                                                 log.info('InternalCircuitID is not present in the CoreCircuitStates table.so going to perform pingtest on both end of the devices.')    
                                                                                                 result,devicelatency,deviceSecLatency=pingTest(str(rec[10]),str(rec[11]),str(rec[5]),str(rec[7]),msg,str(rec[12]))
                                                                                                 
-                                                                                                if result == 0:
+                                                                                                if result == 1:
+                                                                                                    log.info("The devices are pingable from bothends.so skipping send mail operation")
+                                                                                                elif result == 0:
                                                                                                                                 value=[]
-                                                                                                                                value.append(rec[9])
+                                                                                                                                value.append(str(rec[9]).strip())
                                                                                                                                 if "down" in msg:
                                                                                                                                                                 value.append('LINK')
                                                                                                                                                                 value.append('DOWN')
@@ -240,6 +247,7 @@ def selectRecord(value,db,msg,lossPercentage):
                                                                                                                                                                 db.insertValuesIntoCoreRouterStateTable(value)
                                                                                                                                                                 log.info("Record(%s) inserted into CoreCircuitStates table ",str(value))
                                                                                                                                 except Exception as e:
+                                                                                                                                                                log.info("Inserting record got failed %s .Error info : %s",str(value),str(e)) 
                                                                                                                                                                 pass
                                                                                                                                 seconds=getDateTime()
                                                                                                                                 temp = []
@@ -255,7 +263,6 @@ def selectRecord(value,db,msg,lossPercentage):
 def pingTest(device1,device2,aIntf,bIntf,latency,latencyValue):
                                 try:
                                                                 username,password=common.getRouterCredentials()
-                                                                #password='WAnoharan!123'
                                                                 delayFactor,loop = common.getSendCommandDelayFactor()
                                                                 timeout=getTimeout()
                                                                 AEnddevice = ConnectHandler(device_type="cisco_ios", ip=device1, username=username, password=password)
@@ -361,9 +368,11 @@ def pingTest(device1,device2,aIntf,bIntf,latency,latencyValue):
                                                     if "Authentication" in str(e):
                                                             sendAuthFailMail(device1,device2)
                                                     elif "timed-out" in str(e):
-                                                            log.info("Error occured while executing commands on Routers %s",str(e))
-                                                            return 0,Alatency,Blatency
-                                                            #pass   
+                                                            log.info("Conection timed out error %s",str(e))
+                                                            return 0,Alatency,Blatency  
+                                                    else:
+                                                            log.warning("Error occured while doing pingtest on devices %s",str(e))
+                                                            
                                                             
 
 
@@ -407,7 +416,11 @@ def fetchRecord(dbs):
                                                 sqlSelect="SELECT * FROM "+table+" where (date between \'"+last_status_date+"\' AND \'"+current_date+"\') AND (time between \'"+last_status_time+"\' AND \'"+current_time+"\')";
                                                 print sqlSelect
                                                 log.info("Sql Statement for to fetch records between times and date %s",str(sqlSelect))
-                                                cur.execute(sqlSelect)
+                                                try:
+                                                    cur.execute(sqlSelect)
+                                                    log.info("Records fetched successfully") 
+                                                except Exception as e:
+                                                    log.warning("Exception occured while fetching records %s",str(e))
                                                 
                                                 patternTagProcessed=[]
                                                 for row in cur.fetchall() :
@@ -426,9 +439,9 @@ def fetchRecord(dbs):
                                                                                                             if patTag.strip() in patternTagProcessed:
                                                                                                                     log.info("Pattern tag %s is already processed then move to next record",str(patTag))
                                                                                                                     continue 
-                                                                                                            else:
-                                                                                                                patternTagProcessed.append(patTag)          
+                                                                                                            else:          
                                                                                                                 parseMessage(message,dbs)
+                                                                                                                patternTagProcessed.append(patTag)
                                                                 
 def getDateandTime():
                                                 import datetime
