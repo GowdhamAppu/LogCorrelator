@@ -230,7 +230,8 @@ def pingTest(device1,device2,aIntf,bIntf,latencyValue,latency):
                                                                                                                     slaState="Latency-Above threshold"
                                                                                                                 Alatency=0   
                                                                                 except Exception as e:
-                                                                                         pass                                                                                
+                                                                                            log.warning("parsing Latency Message got failed.Error info : %s",str(e))
+                                                                                                                                                                         
                                                                 else:
                                                                                 if "Invalid" in output1:
                                                                                         pingResultA="0" 
@@ -268,7 +269,8 @@ def pingTest(device1,device2,aIntf,bIntf,latencyValue,latency):
                                                                                                                     slaState="Latency-Above threshold"
                                                                                                                     Blatency=0    
                                                                                 except Exception as e:
-                                                                                         pass                                                                            
+                                                                                            log.warning("parsing Latency Message got failed.Error info : %s",str(e))
+                                                                                                                                                                     
                                                                 else:
                                                                                 if "Invalid" in output1:
                                                                                         pingResultB="0" 

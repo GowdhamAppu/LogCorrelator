@@ -193,9 +193,16 @@ def parseMessage(message,db):
                                                                                                 patternTag=match.group(1)
                                                                                                 latencyValue=match.group(2)
                                                                                                 msg="latency"                                                                   
-                                try:     
-                                    selectRecord(patternTag.strip(),db,msg,lossPercentage)
+                                try:   
+                                    try:
+                                        if patternTag:
+                                            pass
+                                    except Exception as e:
+                                            log.info("Unable to parse the Message : %s .Reason could be message string doesnt match with regular experssion pattern. Error message : %s",str(message),str(e))
+                                            return
+                                    selectRecord(patternTag.strip(),db,msg,lossPercentage)    
                                 except Exception as e:
+                                    log.warning("Exception occured : %s",str(e))
                                     return                   
                                 
 """
@@ -206,7 +213,7 @@ def selectRecord(value,db,msg,lossPercentage):
                                                                 #print value
                                                                 log.info("Parsed pattern Tag %s",str(value))
                                                                 record=db.selectRecord(value.strip())
-                                                                if str(record):
+                                                                if record:
                                                                     log.info("Fetched record %s",str(record))
                                                                 else:
                                                                     log.info("There is no record found in CoreCircuitDetails table for patternTag %s",str(value))
@@ -311,7 +318,8 @@ def pingTest(device1,device2,aIntf,bIntf,latency,latencyValue):
                                                                                                         if int(lValue[0]) > int(AavgValue) or int(lValue[2]) < int(AavgValue):
                                                                                                                 Alatency=0
                                                                                                 except Exception as e:
-                                                                                                         pass         
+                                                                                                            log.warning("parsing Latency Message got failed.Error info : %s",str(e))
+                                                                                                                 
                                                                                                     
                                                                 else:
                                                                             if "Invalid" in output1:
@@ -344,7 +352,8 @@ def pingTest(device1,device2,aIntf,bIntf,latency,latencyValue):
                                                                                                         if int(lValue[0]) > int(BavgValue) or int(lValue[2]) < int(BavgValue):
                                                                                                                     Blatency=0
                                                                                                 except Exception as e:
-                                                                                                         pass
+                                                                                                            log.warning("parsing Latency Message got failed.Error info : %s",str(e))
+                                                                                                         
                                                                                                 
                                                                 else:
                                                                             if "Invalid" in output1:
