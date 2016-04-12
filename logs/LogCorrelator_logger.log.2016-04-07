@@ -1,0 +1,250 @@
+2016-04-07 19:59:39,460 INFO Got Alert from OrionServer 4/7/2016 7:59 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 11.9440002441406.
+2016-04-07 19:59:39,463 INFO Check CallGOCStatus is enabled or not.
+2016-04-07 19:59:39,463 INFO CallGOCStatus got enabled.
+2016-04-07 19:59:39,464 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-07' AND '2016-04-07') AND (time between '13:00:56' AND '19:59:39')
+2016-04-07 19:59:39,465 INFO Records fetched successfully
+2016-04-07 19:59:39,466 INFO Record: (2357L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 46856), 'rai-orionnpm-01', '%OrionAlertEngine', None, '4/7/2016 1:00 PM: Core-KPI-Alert - EMC-CORE-NAI-LND-WIOCC-DS3-LINK1-45Mbps is down.')
+2016-04-07 19:59:39,466 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/7/2016 1:00 PM: Core-KPI-Alert - EMC-CORE-NAI-LND-WIOCC-DS3-LINK1-45Mbps is down.
+2016-04-07 19:59:39,466 INFO Parsed pattern Tag EMC-CORE-NAI-LND-WIOCC-DS3-LINK1-45Mbps
+2016-04-07 19:59:39,469 INFO Fetched record [(u'EMC-CORE-NAI-LND-WIOCC-DS3-LINK1-45Mbps', u'CA-MU-C031-0007', u'CA-MU-C031-0007', u'LND-NAI', u'EMC_CORE_NAI_ASR1K1', u'Serial0/1/1', u'EMC_LND_7206_2', u'Serial2/0', u'WIOCC', u'999-LON-NAI-101-STM(DS3)-WIOCC-(CID:CA-MU-C031-0007)', u'10.10.10.230', u'10.10.10.206', u'162,167,172', u'+254721790006,+254727322735')]
+2016-04-07 19:59:39,469 INFO Check InternalCircuitID (999-LON-NAI-101-STM(DS3)-WIOCC-(CID:CA-MU-C031-0007)) is present in CoreCircuitStates table or not.
+2016-04-07 19:59:39,470 INFO Present in CoreCircuitStates table.so move to next record
+2016-04-07 19:59:39,471 INFO Record: (2378L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 71979), 'ORION', '%OrionAlertEngine', None, '4/7/2016 7:59 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 11.9440002441406.')
+2016-04-07 19:59:39,471 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/7/2016 7:59 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 11.9440002441406.
+2016-04-07 19:59:39,471 INFO Parsed pattern Tag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-07 19:59:39,472 INFO There is no record found in CoreCircuitDetails table for patternTag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-07 20:04:42,055 INFO Got Alert from OrionServer 4/7/2016 8:04 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is .
+2016-04-07 20:04:42,057 INFO Check CallGOCStatus is enabled or not.
+2016-04-07 20:04:42,058 INFO CallGOCStatus got enabled.
+2016-04-07 20:04:42,059 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-07' AND '2016-04-07') AND (time between '19:59:39' AND '20:04:42')
+2016-04-07 20:04:42,060 INFO Records fetched successfully
+2016-04-07 20:04:42,060 INFO Record: (2378L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 71979), 'ORION', '%OrionAlertEngine', None, '4/7/2016 7:59 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 11.9440002441406.')
+2016-04-07 20:04:42,060 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/7/2016 7:59 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 11.9440002441406.
+2016-04-07 20:04:42,060 INFO Parsed pattern Tag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-07 20:04:42,064 INFO There is no record found in CoreCircuitDetails table for patternTag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-07 20:04:42,064 INFO Record: (2379L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 72281), 'rai-orionnpm-01', '%OrionAlertEngine', None, '4/7/2016 8:04 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is .')
+2016-04-07 20:04:42,064 INFO Pattern tag Latency is already processed then move to next record
+2016-04-07 20:09:45,015 INFO Got Alert from OrionServer 4/7/2016 8:09 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is .
+2016-04-07 20:09:45,018 INFO Check CallGOCStatus is enabled or not.
+2016-04-07 20:09:45,018 INFO CallGOCStatus got enabled.
+2016-04-07 20:09:45,019 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-07' AND '2016-04-07') AND (time between '20:04:42' AND '20:09:45')
+2016-04-07 20:09:45,020 INFO Records fetched successfully
+2016-04-07 20:09:45,020 INFO Record: (2380L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 72584), 'rai-orionnpm-01', '%OrionAlertEngine', None, '4/7/2016 8:09 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is .')
+2016-04-07 20:09:45,020 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/7/2016 8:09 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is .
+2016-04-07 20:09:45,020 INFO Unable to parse the Message : 4/7/2016 8:09 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is . .Reason could be message string doesnt match with regular experssion pattern.
+2016-04-07 22:07:54,145 INFO Got Alert from OrionServer 4/7/2016 10:07 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2 � TO_EMC_RAI_3750X_2_SERV_GI1/1/1 - Received Percent Utilization is 89, Transmit Percent Utilization is 88.
+2016-04-07 22:07:54,147 INFO Check CallGOCStatus is enabled or not.
+2016-04-07 22:07:54,147 INFO CallGOCStatus got enabled.
+2016-04-07 22:07:54,149 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-07' AND '2016-04-07') AND (time between '20:09:45' AND '22:07:54')
+2016-04-07 22:07:54,150 INFO Records fetched successfully
+2016-04-07 22:07:54,150 INFO Record: (2390L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 79674), 'ORION', '%OrionAlertEngine', None, '4/7/2016 10:07 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2 \xb7 TO_EMC_RAI_3750X_2_SERV_GI1/1/1 - Received Percent Utilization is 89, Transmit Percent Utilization is 88.')
+2016-04-07 22:07:54,150 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/7/2016 10:07 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2 � TO_EMC_RAI_3750X_2_SERV_GI1/1/1 - Received Percent Utilization is 89, Transmit Percent Utilization is 88.
+2016-04-07 22:07:54,150 INFO Unable to parse the Message : 4/7/2016 10:07 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2 � TO_EMC_RAI_3750X_2_SERV_GI1/1/1 - Received Percent Utilization is 89, Transmit Percent Utilization is 88. .Reason could be message string doesnt match with regular experssion pattern.
+2016-04-07 22:10:57,040 INFO Got Alert from OrionServer 4/7/2016 10:10 PM: Core-KPI-Alert - EMC_RAI_3750X_1_SERV - Interface GigabitEthernet1/0/19 � To_EMC_RAI_3750X_2_SERV_Gi0/19 - Received Percent Utilization is 5, Transmit Percent Utilization is 87.
+2016-04-07 22:10:57,042 INFO Check CallGOCStatus is enabled or not.
+2016-04-07 22:10:57,043 INFO CallGOCStatus got enabled.
+2016-04-07 22:10:57,044 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-07' AND '2016-04-07') AND (time between '22:07:54' AND '22:10:57')
+2016-04-07 22:10:57,044 INFO Records fetched successfully
+2016-04-07 22:10:57,044 INFO Record: (2390L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 79674), 'ORION', '%OrionAlertEngine', None, '4/7/2016 10:07 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2 \xb7 TO_EMC_RAI_3750X_2_SERV_GI1/1/1 - Received Percent Utilization is 89, Transmit Percent Utilization is 88.')
+2016-04-07 22:10:57,045 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/7/2016 10:07 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2 � TO_EMC_RAI_3750X_2_SERV_GI1/1/1 - Received Percent Utilization is 89, Transmit Percent Utilization is 88.
+2016-04-07 22:10:57,045 INFO Unable to parse the Message : 4/7/2016 10:07 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2 � TO_EMC_RAI_3750X_2_SERV_GI1/1/1 - Received Percent Utilization is 89, Transmit Percent Utilization is 88. .Reason could be message string doesnt match with regular experssion pattern.
+2016-04-07 22:10:57,045 INFO Record: (2391L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 79856), 'rai-orionnpm-01', '%OrionAlertEngine', None, '4/7/2016 10:10 PM: Core-KPI-Alert - EMC_RAI_3750X_1_SERV - Interface GigabitEthernet1/0/19 \xb7 To_EMC_RAI_3750X_2_SERV_Gi0/19 - Received Percent Utilization is 5, Transmit Percent Utilization is 87.')
+2016-04-07 22:10:57,045 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/7/2016 10:10 PM: Core-KPI-Alert - EMC_RAI_3750X_1_SERV - Interface GigabitEthernet1/0/19 � To_EMC_RAI_3750X_2_SERV_Gi0/19 - Received Percent Utilization is 5, Transmit Percent Utilization is 87.
+2016-04-07 22:10:57,045 INFO Unable to parse the Message : 4/7/2016 10:10 PM: Core-KPI-Alert - EMC_RAI_3750X_1_SERV - Interface GigabitEthernet1/0/19 � To_EMC_RAI_3750X_2_SERV_Gi0/19 - Received Percent Utilization is 5, Transmit Percent Utilization is 87. .Reason could be message string doesnt match with regular experssion pattern.
+2016-04-07 22:11:56,982 INFO Got Alert from OrionServer 4/7/2016 10:11 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2.501 � IT Services Network - Received Percent Utilization is 0, Transmit Percent Utilization is 85.
+2016-04-07 22:11:57,035 INFO Got Alert from OrionServer 4/7/2016 10:11 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2.503 � Core Public Services Network - Received Percent Utilization is 86, Transmit Percent Utilization is 0.
+2016-04-07 22:11:57,048 INFO Check CallGOCStatus is enabled or not.
+2016-04-07 22:11:57,048 INFO CallGOCStatus got enabled.
+2016-04-07 22:11:57,049 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-07' AND '2016-04-07') AND (time between '22:10:57' AND '22:11:57')
+2016-04-07 22:11:57,050 INFO Records fetched successfully
+2016-04-07 22:11:57,050 INFO Record: (2392L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 79917), 'ORION', '%OrionAlertEngine', None, '4/7/2016 10:11 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2.501 \xb7 IT Services Network - Received Percent Utilization is 0, Transmit Percent Utilization is 85.')
+2016-04-07 22:11:57,050 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/7/2016 10:11 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2.501 � IT Services Network - Received Percent Utilization is 0, Transmit Percent Utilization is 85.
+2016-04-07 22:11:57,050 INFO Unable to parse the Message : 4/7/2016 10:11 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2.501 � IT Services Network - Received Percent Utilization is 0, Transmit Percent Utilization is 85. .Reason could be message string doesnt match with regular experssion pattern.
+2016-04-07 22:11:57,050 INFO Record: (2393L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 79917), 'ORION', '%OrionAlertEngine', None, '4/7/2016 10:11 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2.503 \xb7 Core Public Services Network - Received Percent Utilization is 86, Transmit Percent Utilization is 0.')
+2016-04-07 22:11:57,050 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/7/2016 10:11 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2.503 � Core Public Services Network - Received Percent Utilization is 86, Transmit Percent Utilization is 0.
+2016-04-07 22:11:57,050 INFO Unable to parse the Message : 4/7/2016 10:11 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2.503 � Core Public Services Network - Received Percent Utilization is 86, Transmit Percent Utilization is 0. .Reason could be message string doesnt match with regular experssion pattern.
+2016-04-07 22:27:09,013 INFO Got Alert from OrionServer 4/7/2016 10:27 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 11.2659997940063.
+2016-04-07 22:27:09,015 INFO Check CallGOCStatus is enabled or not.
+2016-04-07 22:27:09,015 INFO CallGOCStatus got enabled.
+2016-04-07 22:27:09,017 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-07' AND '2016-04-07') AND (time between '22:11:57' AND '22:27:09')
+2016-04-07 22:27:09,017 INFO Records fetched successfully
+2016-04-07 22:27:09,017 INFO Record: (2392L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 79917), 'ORION', '%OrionAlertEngine', None, '4/7/2016 10:11 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2.501 \xb7 IT Services Network - Received Percent Utilization is 0, Transmit Percent Utilization is 85.')
+2016-04-07 22:27:09,018 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/7/2016 10:11 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2.501 � IT Services Network - Received Percent Utilization is 0, Transmit Percent Utilization is 85.
+2016-04-07 22:27:09,018 INFO Unable to parse the Message : 4/7/2016 10:11 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2.501 � IT Services Network - Received Percent Utilization is 0, Transmit Percent Utilization is 85. .Reason could be message string doesnt match with regular experssion pattern.
+2016-04-07 22:27:09,018 INFO Record: (2393L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 79917), 'ORION', '%OrionAlertEngine', None, '4/7/2016 10:11 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2.503 \xb7 Core Public Services Network - Received Percent Utilization is 86, Transmit Percent Utilization is 0.')
+2016-04-07 22:27:09,018 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/7/2016 10:11 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2.503 � Core Public Services Network - Received Percent Utilization is 86, Transmit Percent Utilization is 0.
+2016-04-07 22:27:09,018 INFO Unable to parse the Message : 4/7/2016 10:11 PM: Core-KPI-Alert - EMC_RAI_ASR1K1_4 - Interface GigabitEthernet0/0/2.503 � Core Public Services Network - Received Percent Utilization is 86, Transmit Percent Utilization is 0. .Reason could be message string doesnt match with regular experssion pattern.
+2016-04-07 22:27:09,018 INFO Record: (2395L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 80829), 'ORION', '%OrionAlertEngine', None, '4/7/2016 10:27 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 11.2659997940063.')
+2016-04-07 22:27:09,018 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/7/2016 10:27 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 11.2659997940063.
+2016-04-07 22:27:09,018 INFO Parsed pattern Tag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-07 22:27:09,021 INFO There is no record found in CoreCircuitDetails table for patternTag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-07 22:32:09,701 INFO Got Alert from OrionServer 4/7/2016 10:32 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is .
+2016-04-07 22:32:09,704 INFO Check CallGOCStatus is enabled or not.
+2016-04-07 22:32:09,704 INFO CallGOCStatus got enabled.
+2016-04-07 22:32:09,705 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-07' AND '2016-04-07') AND (time between '22:27:09' AND '22:32:09')
+2016-04-07 22:32:09,706 INFO Records fetched successfully
+2016-04-07 22:32:09,706 INFO Record: (2395L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 80829), 'ORION', '%OrionAlertEngine', None, '4/7/2016 10:27 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 11.2659997940063.')
+2016-04-07 22:32:09,706 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/7/2016 10:27 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 11.2659997940063.
+2016-04-07 22:32:09,706 INFO Parsed pattern Tag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-07 22:32:09,709 INFO There is no record found in CoreCircuitDetails table for patternTag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-07 22:32:09,709 INFO Record: (2396L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 81129), 'ORION', '%OrionAlertEngine', None, '4/7/2016 10:32 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is .')
+2016-04-07 22:32:09,709 INFO Pattern tag Latency is already processed then move to next record
+2016-04-07 23:08:32,139 INFO Got Alert from OrionServer 4/7/2016 11:08 PM: Core-KPI-Alert - EMC_LND_ASR1K1_1 - The neighbor 195.66.224.213 on Node EMC_LND_ASR1K1_1 went down.
+2016-04-07 23:08:32,142 INFO Check CallGOCStatus is enabled or not.
+2016-04-07 23:08:32,142 INFO CallGOCStatus got enabled.
+2016-04-07 23:08:32,143 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-07' AND '2016-04-07') AND (time between '22:32:09' AND '23:08:32')
+2016-04-07 23:08:32,144 INFO Records fetched successfully
+2016-04-07 23:08:32,144 INFO Record: (2396L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 81129), 'ORION', '%OrionAlertEngine', None, '4/7/2016 10:32 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is .')
+2016-04-07 23:08:32,145 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/7/2016 10:32 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is .
+2016-04-07 23:08:32,145 INFO Unable to parse the Message : 4/7/2016 10:32 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is . .Reason could be message string doesnt match with regular experssion pattern.
+2016-04-07 23:08:32,145 INFO Record: (2397L, '1', datetime.date(2016, 4, 7), datetime.timedelta(0, 83312), 'rai-orionnpm-01', '%OrionAlertEngine', None, '4/7/2016 11:08 PM: Core-KPI-Alert - EMC_LND_ASR1K1_1 - The neighbor 195.66.224.213 on Node EMC_LND_ASR1K1_1 went down.')
+2016-04-08 02:10:45,893 INFO Got Alert from OrionServer 4/8/2016 2:10 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 91.0019989013672.
+2016-04-08 02:10:45,896 INFO Check CallGOCStatus is enabled or not.
+2016-04-08 02:10:45,896 INFO CallGOCStatus got enabled.
+2016-04-08 02:10:45,897 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-07' AND '2016-04-08') AND (time between '23:08:32' AND '02:10:45')
+2016-04-08 02:10:45,897 INFO Records fetched successfully
+2016-04-08 02:15:48,834 INFO Got Alert from OrionServer 4/8/2016 2:15 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 93.7399978637695.
+2016-04-08 02:15:48,836 INFO Check CallGOCStatus is enabled or not.
+2016-04-08 02:15:48,836 INFO CallGOCStatus got enabled.
+2016-04-08 02:15:48,838 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-08' AND '2016-04-08') AND (time between '02:10:45' AND '02:15:48')
+2016-04-08 02:15:48,838 INFO Records fetched successfully
+2016-04-08 02:15:48,838 INFO Record: (2402L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 7845), 'ORION', '%OrionAlertEngine', None, '4/8/2016 2:10 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 91.0019989013672.')
+2016-04-08 02:15:48,838 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/8/2016 2:10 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 91.0019989013672.
+2016-04-08 02:15:48,838 INFO Parsed pattern Tag LA-MIA-200Mbps_COGENT CID:1-102792365
+2016-04-08 02:15:48,842 INFO Fetched record [(u'LA-MIA-200Mbps_COGENT CID:1-102792365', u'102776930', u'1-102792314', u'LA-MIA', u'EMC_CORE_LA_7206_1', u'GigabitEthernet0/3.100', u'EMC_CORE_MIAMI_ASR_2', u'GigabitEthernet0/0/0', u'COGENT', u'999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)', u'10.10.10.150', u'10.10.10.226', u'58,63,70', u'+1-877-726-4368')]
+2016-04-08 02:15:48,842 INFO Check InternalCircuitID (999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)) is present in CoreCircuitStates table or not.
+2016-04-08 02:15:48,843 INFO Present in CoreCircuitStates table.so move to next record
+2016-04-08 02:15:48,844 INFO Record: (2403L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 8148), 'ORION', '%OrionAlertEngine', None, '4/8/2016 2:15 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 93.7399978637695.')
+2016-04-08 02:15:48,844 INFO Pattern tag Latency is already processed then move to next record
+2016-04-08 02:20:51,918 INFO Got Alert from OrionServer 4/8/2016 2:20 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 93.8160018920898.
+2016-04-08 02:20:51,920 INFO Check CallGOCStatus is enabled or not.
+2016-04-08 02:20:51,920 INFO CallGOCStatus got enabled.
+2016-04-08 02:20:51,922 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-08' AND '2016-04-08') AND (time between '02:15:48' AND '02:20:51')
+2016-04-08 02:20:51,922 INFO Records fetched successfully
+2016-04-08 02:20:51,922 INFO Record: (2403L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 8148), 'ORION', '%OrionAlertEngine', None, '4/8/2016 2:15 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 93.7399978637695.')
+2016-04-08 02:20:51,922 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/8/2016 2:15 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 93.7399978637695.
+2016-04-08 02:20:51,922 INFO Parsed pattern Tag LA-MIA-200Mbps_COGENT CID:1-102792365
+2016-04-08 02:20:51,925 INFO Fetched record [(u'LA-MIA-200Mbps_COGENT CID:1-102792365', u'102776930', u'1-102792314', u'LA-MIA', u'EMC_CORE_LA_7206_1', u'GigabitEthernet0/3.100', u'EMC_CORE_MIAMI_ASR_2', u'GigabitEthernet0/0/0', u'COGENT', u'999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)', u'10.10.10.150', u'10.10.10.226', u'58,63,70', u'+1-877-726-4368')]
+2016-04-08 02:20:51,926 INFO Check InternalCircuitID (999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)) is present in CoreCircuitStates table or not.
+2016-04-08 02:20:51,927 INFO Present in CoreCircuitStates table.so move to next record
+2016-04-08 02:25:55,230 INFO Got Alert from OrionServer 4/8/2016 2:25 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 94.0940017700195.
+2016-04-08 02:25:55,232 INFO Check CallGOCStatus is enabled or not.
+2016-04-08 02:25:55,232 INFO CallGOCStatus got enabled.
+2016-04-08 02:25:55,233 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-08' AND '2016-04-08') AND (time between '02:20:51' AND '02:25:55')
+2016-04-08 02:25:55,234 INFO Records fetched successfully
+2016-04-08 02:25:55,234 INFO Record: (2405L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 8452), 'ORION', '%OrionAlertEngine', None, '4/8/2016 2:20 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 93.8160018920898.')
+2016-04-08 02:25:55,234 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/8/2016 2:20 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 93.8160018920898.
+2016-04-08 02:25:55,234 INFO Parsed pattern Tag LA-MIA-200Mbps_COGENT CID:1-102792365
+2016-04-08 02:25:55,237 INFO Fetched record [(u'LA-MIA-200Mbps_COGENT CID:1-102792365', u'102776930', u'1-102792314', u'LA-MIA', u'EMC_CORE_LA_7206_1', u'GigabitEthernet0/3.100', u'EMC_CORE_MIAMI_ASR_2', u'GigabitEthernet0/0/0', u'COGENT', u'999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)', u'10.10.10.150', u'10.10.10.226', u'58,63,70', u'+1-877-726-4368')]
+2016-04-08 02:25:55,237 INFO Check InternalCircuitID (999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)) is present in CoreCircuitStates table or not.
+2016-04-08 02:25:55,238 INFO Present in CoreCircuitStates table.so move to next record
+2016-04-08 02:25:55,238 INFO Record: (2410L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 8755), 'ORION', '%OrionAlertEngine', None, '4/8/2016 2:25 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 94.0940017700195.')
+2016-04-08 02:25:55,239 INFO Pattern tag Latency is already processed then move to next record
+2016-04-08 02:30:58,023 INFO Got Alert from OrionServer 4/8/2016 2:30 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 94.0220031738281.
+2016-04-08 02:30:58,025 INFO Check CallGOCStatus is enabled or not.
+2016-04-08 02:30:58,025 INFO CallGOCStatus got enabled.
+2016-04-08 02:30:58,026 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-08' AND '2016-04-08') AND (time between '02:25:55' AND '02:30:58')
+2016-04-08 02:30:58,027 INFO Records fetched successfully
+2016-04-08 02:30:58,027 INFO Record: (2410L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 8755), 'ORION', '%OrionAlertEngine', None, '4/8/2016 2:25 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 94.0940017700195.')
+2016-04-08 02:30:58,027 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/8/2016 2:25 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 94.0940017700195.
+2016-04-08 02:30:58,027 INFO Parsed pattern Tag LA-MIA-200Mbps_COGENT CID:1-102792365
+2016-04-08 02:30:58,030 INFO Fetched record [(u'LA-MIA-200Mbps_COGENT CID:1-102792365', u'102776930', u'1-102792314', u'LA-MIA', u'EMC_CORE_LA_7206_1', u'GigabitEthernet0/3.100', u'EMC_CORE_MIAMI_ASR_2', u'GigabitEthernet0/0/0', u'COGENT', u'999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)', u'10.10.10.150', u'10.10.10.226', u'58,63,70', u'+1-877-726-4368')]
+2016-04-08 02:30:58,030 INFO Check InternalCircuitID (999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)) is present in CoreCircuitStates table or not.
+2016-04-08 02:30:58,032 INFO Present in CoreCircuitStates table.so move to next record
+2016-04-08 02:30:58,032 INFO Record: (2411L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 9058), 'rai-orionnpm-01', '%OrionAlertEngine', None, '4/8/2016 2:30 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 94.0220031738281.')
+2016-04-08 02:30:58,032 INFO Pattern tag Latency is already processed then move to next record
+2016-04-08 02:36:01,245 INFO Got Alert from OrionServer 4/8/2016 2:36 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 90.8860015869141.
+2016-04-08 02:36:01,247 INFO Check CallGOCStatus is enabled or not.
+2016-04-08 02:36:01,247 INFO CallGOCStatus got enabled.
+2016-04-08 02:36:01,248 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-08' AND '2016-04-08') AND (time between '02:30:58' AND '02:36:01')
+2016-04-08 02:36:01,249 INFO Records fetched successfully
+2016-04-08 02:36:01,249 INFO Record: (2411L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 9058), 'rai-orionnpm-01', '%OrionAlertEngine', None, '4/8/2016 2:30 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 94.0220031738281.')
+2016-04-08 02:36:01,249 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/8/2016 2:30 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 94.0220031738281.
+2016-04-08 02:36:01,249 INFO Parsed pattern Tag LA-MIA-200Mbps_COGENT CID:1-102792365
+2016-04-08 02:36:01,252 INFO Fetched record [(u'LA-MIA-200Mbps_COGENT CID:1-102792365', u'102776930', u'1-102792314', u'LA-MIA', u'EMC_CORE_LA_7206_1', u'GigabitEthernet0/3.100', u'EMC_CORE_MIAMI_ASR_2', u'GigabitEthernet0/0/0', u'COGENT', u'999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)', u'10.10.10.150', u'10.10.10.226', u'58,63,70', u'+1-877-726-4368')]
+2016-04-08 02:36:01,252 INFO Check InternalCircuitID (999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)) is present in CoreCircuitStates table or not.
+2016-04-08 02:36:01,253 INFO Present in CoreCircuitStates table.so move to next record
+2016-04-08 02:36:01,253 INFO Record: (2412L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 9361), 'rai-orionnpm-01', '%OrionAlertEngine', None, '4/8/2016 2:36 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 90.8860015869141.')
+2016-04-08 02:36:01,253 INFO Pattern tag Latency is already processed then move to next record
+2016-04-08 02:41:04,059 INFO Got Alert from OrionServer 4/8/2016 2:41 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 94.1080017089844.
+2016-04-08 02:41:04,061 INFO Check CallGOCStatus is enabled or not.
+2016-04-08 02:41:04,061 INFO CallGOCStatus got enabled.
+2016-04-08 02:41:04,062 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-08' AND '2016-04-08') AND (time between '02:36:01' AND '02:41:04')
+2016-04-08 02:41:04,063 INFO Records fetched successfully
+2016-04-08 02:41:04,063 INFO Record: (2412L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 9361), 'rai-orionnpm-01', '%OrionAlertEngine', None, '4/8/2016 2:36 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 90.8860015869141.')
+2016-04-08 02:41:04,063 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/8/2016 2:36 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 90.8860015869141.
+2016-04-08 02:41:04,063 INFO Parsed pattern Tag LA-MIA-200Mbps_COGENT CID:1-102792365
+2016-04-08 02:41:04,066 INFO Fetched record [(u'LA-MIA-200Mbps_COGENT CID:1-102792365', u'102776930', u'1-102792314', u'LA-MIA', u'EMC_CORE_LA_7206_1', u'GigabitEthernet0/3.100', u'EMC_CORE_MIAMI_ASR_2', u'GigabitEthernet0/0/0', u'COGENT', u'999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)', u'10.10.10.150', u'10.10.10.226', u'58,63,70', u'+1-877-726-4368')]
+2016-04-08 02:41:04,066 INFO Check InternalCircuitID (999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)) is present in CoreCircuitStates table or not.
+2016-04-08 02:41:04,068 INFO Present in CoreCircuitStates table.so move to next record
+2016-04-08 02:41:04,068 INFO Record: (2413L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 9664), 'rai-orionnpm-01', '%OrionAlertEngine', None, '4/8/2016 2:41 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 94.1080017089844.')
+2016-04-08 02:41:04,068 INFO Pattern tag Latency is already processed then move to next record
+2016-04-08 02:46:07,063 INFO Got Alert from OrionServer 4/8/2016 2:46 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 90.8519973754883.
+2016-04-08 02:46:07,065 INFO Check CallGOCStatus is enabled or not.
+2016-04-08 02:46:07,065 INFO CallGOCStatus got enabled.
+2016-04-08 02:46:07,067 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-08' AND '2016-04-08') AND (time between '02:41:04' AND '02:46:07')
+2016-04-08 02:46:07,067 INFO Records fetched successfully
+2016-04-08 02:46:07,068 INFO Record: (2413L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 9664), 'rai-orionnpm-01', '%OrionAlertEngine', None, '4/8/2016 2:41 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 94.1080017089844.')
+2016-04-08 02:46:07,068 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/8/2016 2:41 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 94.1080017089844.
+2016-04-08 02:46:07,068 INFO Parsed pattern Tag LA-MIA-200Mbps_COGENT CID:1-102792365
+2016-04-08 02:46:07,071 INFO Fetched record [(u'LA-MIA-200Mbps_COGENT CID:1-102792365', u'102776930', u'1-102792314', u'LA-MIA', u'EMC_CORE_LA_7206_1', u'GigabitEthernet0/3.100', u'EMC_CORE_MIAMI_ASR_2', u'GigabitEthernet0/0/0', u'COGENT', u'999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)', u'10.10.10.150', u'10.10.10.226', u'58,63,70', u'+1-877-726-4368')]
+2016-04-08 02:46:07,071 INFO Check InternalCircuitID (999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)) is present in CoreCircuitStates table or not.
+2016-04-08 02:46:07,072 INFO Present in CoreCircuitStates table.so move to next record
+2016-04-08 02:46:07,072 INFO Record: (2414L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 9967), 'ORION', '%OrionAlertEngine', None, '4/8/2016 2:46 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 90.8519973754883.')
+2016-04-08 02:46:07,072 INFO Pattern tag Latency is already processed then move to next record
+2016-04-08 08:07:18,094 INFO Got Alert from OrionServer 4/8/2016 8:07 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 10.7399997711182.
+2016-04-08 08:07:18,096 INFO Check CallGOCStatus is enabled or not.
+2016-04-08 08:07:18,096 INFO CallGOCStatus got enabled.
+2016-04-08 08:07:18,097 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-08' AND '2016-04-08') AND (time between '02:46:07' AND '08:07:18')
+2016-04-08 08:07:18,098 INFO Records fetched successfully
+2016-04-08 08:07:18,099 INFO Record: (2414L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 9967), 'ORION', '%OrionAlertEngine', None, '4/8/2016 2:46 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 90.8519973754883.')
+2016-04-08 08:07:18,099 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/8/2016 2:46 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 90.8519973754883.
+2016-04-08 08:07:18,099 INFO Parsed pattern Tag LA-MIA-200Mbps_COGENT CID:1-102792365
+2016-04-08 08:07:18,102 INFO Fetched record [(u'LA-MIA-200Mbps_COGENT CID:1-102792365', u'102776930', u'1-102792314', u'LA-MIA', u'EMC_CORE_LA_7206_1', u'GigabitEthernet0/3.100', u'EMC_CORE_MIAMI_ASR_2', u'GigabitEthernet0/0/0', u'COGENT', u'999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)', u'10.10.10.150', u'10.10.10.226', u'58,63,70', u'+1-877-726-4368')]
+2016-04-08 08:07:18,102 INFO Check InternalCircuitID (999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930)) is present in CoreCircuitStates table or not.
+2016-04-08 08:07:18,103 INFO Present in CoreCircuitStates table.so move to next record
+2016-04-08 08:07:18,103 INFO Record: (2430L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 29238), 'ORION', '%OrionAlertEngine', None, '4/8/2016 8:07 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 10.7399997711182.')
+2016-04-08 08:07:18,103 INFO Pattern tag Latency is already processed then move to next record
+2016-04-08 10:34:43,620 INFO Got Alert from OrionServer 4/8/2016 10:34 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 10.6780004501343.
+2016-04-08 10:34:43,622 INFO Check CallGOCStatus is enabled or not.
+2016-04-08 10:34:43,622 INFO CallGOCStatus got enabled.
+2016-04-08 10:34:43,623 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-08' AND '2016-04-08') AND (time between '08:07:18' AND '10:34:43')
+2016-04-08 10:34:43,624 INFO Records fetched successfully
+2016-04-08 10:34:43,624 INFO Record: (2430L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 29238), 'ORION', '%OrionAlertEngine', None, '4/8/2016 8:07 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 10.7399997711182.')
+2016-04-08 10:34:43,624 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/8/2016 8:07 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 10.7399997711182.
+2016-04-08 10:34:43,625 INFO Parsed pattern Tag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-08 10:34:43,627 INFO There is no record found in CoreCircuitDetails table for patternTag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-08 10:34:43,627 INFO Record: (2436L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 38083), 'ORION', '%OrionAlertEngine', None, '4/8/2016 10:34 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 10.6780004501343.')
+2016-04-08 10:34:43,627 INFO Pattern tag Latency is already processed then move to next record
+2016-04-08 10:39:46,848 INFO Got Alert from OrionServer 4/8/2016 10:39 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 7.87799978256226.
+2016-04-08 10:39:46,850 INFO Check CallGOCStatus is enabled or not.
+2016-04-08 10:39:46,851 INFO CallGOCStatus got enabled.
+2016-04-08 10:39:46,852 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-08' AND '2016-04-08') AND (time between '10:34:43' AND '10:39:46')
+2016-04-08 10:39:46,853 INFO Records fetched successfully
+2016-04-08 10:39:46,853 INFO Record: (2436L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 38083), 'ORION', '%OrionAlertEngine', None, '4/8/2016 10:34 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 10.6780004501343.')
+2016-04-08 10:39:46,853 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/8/2016 10:34 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 10.6780004501343.
+2016-04-08 10:39:46,853 INFO Parsed pattern Tag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-08 10:39:46,858 INFO There is no record found in CoreCircuitDetails table for patternTag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-08 10:39:46,858 INFO Record: (2437L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 38386), 'ORION', '%OrionAlertEngine', None, '4/8/2016 10:39 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 7.87799978256226.')
+2016-04-08 10:39:46,858 INFO Pattern tag Latency is already processed then move to next record
+2016-04-08 10:44:49,759 INFO Got Alert from OrionServer 4/8/2016 10:44 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is .
+2016-04-08 10:44:49,761 INFO Check CallGOCStatus is enabled or not.
+2016-04-08 10:44:49,761 INFO CallGOCStatus got enabled.
+2016-04-08 10:44:49,762 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-08' AND '2016-04-08') AND (time between '10:39:46' AND '10:44:49')
+2016-04-08 10:44:49,763 INFO Records fetched successfully
+2016-04-08 10:44:49,763 INFO Record: (2437L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 38386), 'ORION', '%OrionAlertEngine', None, '4/8/2016 10:39 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 7.87799978256226.')
+2016-04-08 10:44:49,763 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/8/2016 10:39 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 7.87799978256226.
+2016-04-08 10:44:49,763 INFO Parsed pattern Tag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-08 10:44:49,766 INFO There is no record found in CoreCircuitDetails table for patternTag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-08 10:44:49,766 INFO Record: (2438L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 38689), 'ORION', '%OrionAlertEngine', None, '4/8/2016 10:44 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is .')
+2016-04-08 10:44:49,767 INFO Pattern tag Latency is already processed then move to next record
+2016-04-08 12:01:33,424 INFO Got Alert from OrionServer 4/8/2016 12:01 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 10.0200004577637.
+2016-04-08 12:01:33,426 INFO Check CallGOCStatus is enabled or not.
+2016-04-08 12:01:33,426 INFO CallGOCStatus got enabled.
+2016-04-08 12:01:33,428 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-08' AND '2016-04-08') AND (time between '10:44:49' AND '12:01:33')
+2016-04-08 12:01:33,428 INFO Records fetched successfully
+2016-04-08 12:01:33,428 INFO Record: (2438L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 38689), 'ORION', '%OrionAlertEngine', None, '4/8/2016 10:44 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is .')
+2016-04-08 12:01:33,429 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/8/2016 10:44 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is .
+2016-04-08 12:01:33,429 INFO Unable to parse the Message : 4/8/2016 10:44 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is . .Reason could be message string doesnt match with regular experssion pattern.
+2016-04-08 12:01:33,429 INFO Record: (2440L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 43293), 'ORION', '%OrionAlertEngine', None, '4/8/2016 12:01 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 10.0200004577637.')
+2016-04-08 12:01:33,429 INFO Pattern tag Latency is already processed then move to next record

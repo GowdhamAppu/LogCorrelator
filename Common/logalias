@@ -1,0 +1,14 @@
+echo "alias logcorrelator=' _(){ a="\$\(python \/opt\/CoreMonitoringApp\/Common\/LogCorrlatorCheck.py check\)"; if [ "\$a" == \"1\" ]; then if [ "\$1" == \"kill\" ]; then python /opt/CoreMonitoringApp/Common/LogCorrlatorCheck.py kill; else   echo \"LogCorrelator Process Already Started\"; fi; elif [ "\$a" == \"0\" ]; then if [ "\$1" == \"kill\" ]; then echo \"LogCorrelator Process Not Yet Started\"; else   nohup python -W ignore /opt/CoreMonitoringApp/LogCorrelator.py > /opt/CoreMonitoringApp/logs/logcorrelator.log 2>&1 & ,; fi; fi; }; _'" >> ~/.bashrc
+
+echo "alias sendmail=' _(){ a="\$\(python \/opt\/CoreMonitoringApp\/Common\/sendMailCheck.py check\)"; if [ "\$a" == \"1\" ]; then if [ "\$1" == \"kill\" ]; then python /opt/CoreMonitoringApp/Common/sendMailCheck.py kill; else   echo \"Send Mail Process Already Started\"; fi; elif [ "\$a" == \"0\" ]; then if [ "\$1" == \"kill\" ]; then echo \"Send Mail Process Not Yet Started\"; else   nohup python -W ignore /opt/CoreMonitoringApp/sendMail.py > /opt/CoreMonitoringApp/logs/sendMail.log 2>&1 & ,; nohup python -W ignore /opt/CoreMonitoringApp/sendMail_NodeDown.py > /opt/CoreMonitoringApp/logs/nodedown.log 2>&1 & ,; fi; fi; }; _'" >> ~/.bashrc
+
+echo "alias show=' _(){ if [ "\$1" == \"circuit\" ]; then if [ "\$2" == \"details\" ]; then read -p \"Operation (add or show or delete or update): \" options; if [ "\$options" == \"add\" ]; then python /opt/CoreMonitoringApp/Common/RouterDetails.py "add"; elif [ "\$options" == \"show\" ]; then python /opt/CoreMonitoringApp/Common/RouterDetails.py "show"; elif [ "\$options" == \"delete\" ]; then python /opt/CoreMonitoringApp/Common/RouterDetails.py "delete";  elif [ "\$options" == \"update\" ]; then python /opt/CoreMonitoringApp/Common/RouterDetails.py "update";  fi; elif [ "\$2" == \"state\" ]; then read -p \"Operation (show or delete) :\" options; if [ "\$options" == \"show\" ]; then python /opt/CoreMonitoringApp/Common/RouterStateDetails.py show; elif [ "\$options" == \"delete\" ]; then python /opt/CoreMonitoringApp/Common/RouterStateDetails.py; fi; fi; fi; }; _'" >>  ~/.bashrc
+
+
+echo "alias emailAck=' _(){ a="\$\(python \/opt\/CoreMonitoringApp\/Common\/EmailCheck.py check\)"; if [ "\$a" == \"1\" ]; then if [ "\$1" == \"kill\" ]; then python /opt/CoreMonitoringApp/Common/EmailCheck.py kill; else   echo \"Email Process Already Started\"; fi; elif [ "\$a" == \"0\" ]; then if [ "\$1" == \"kill\" ]; then echo \"Email Process Not Yet Started\"; else   nohup python -W ignore /opt/CoreMonitoringApp/EmailAcknowledge.py > /opt/CoreMonitoringApp/logs/emailAck.log 2>&1 & ,; fi; fi; }; _'" >> ~/.bashrc
+
+
+
+
+
+

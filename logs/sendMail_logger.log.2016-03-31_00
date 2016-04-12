@@ -1,0 +1,71 @@
+2016-03-31 00:18:23,002 INFO Going to perform ping from both ends
+2016-03-31 00:18:36,993 INFO Device 10.10.10.224. Command sh run interface GigabitEthernet0/0/0.173. Output Building configuration...
+
+Current configuration : 179 bytes
+!
+interface GigabitEthernet0/0/0.173
+ description FLAG_Link_to_UK
+ encapsulation dot1Q 173
+ ip address 212.21.43.42 255.255.255.254
+ service-policy output GI0/0/0.173-EGRESS
+end
+
+2016-03-31 00:18:44,865 INFO Device 10.10.10.202. Command sh run interface GigabitEthernet0/0/3.173. Output Building configuration...
+
+Current configuration : 198 bytes
+!
+interface GigabitEthernet0/0/3.173
+ description EMC_CORE_EGY_1941_GI0/0.801 10.10.10.224 Circuit_Id: NOOR Link2
+ encapsulation dot1Q 173
+ ip address 212.21.43.43 255.255.255.254
+ ip mtu 2000
+end
+
+2016-03-31 00:18:55,875 INFO Device 10.10.10.224.Ping  Command ping 212.21.43.43 source 212.21.43.42 repeat 30 timeout 1. Output Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.43.43, timeout is 1 seconds:
+Packet sent with a source address of 212.21.43.42 
+!!!!!!!!!!!!!!!!.!!!!!!!!
+2016-03-31 00:19:07,886 INFO Device 10.10.10.202. Ping Command ping 212.21.43.42 source 212.21.43.43 time 1 repeat 30. Output Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.43.42, timeout is 1 seconds:
+Packet sent with a source address of 212.21.43.43 
+!.!!!!!!!!.!!!!!.!!!!..!!!!.!!
+Success rate is 80 percent (24/30), round-trip min/avg/max = 156/168/209 ms
+2016-03-31 00:19:07,887 WARNING parsing Latency Message got failed.Error info : invalid literal for int() with base 10: '52/57/62'
+2016-03-31 00:19:07,887 INFO Ping result success rate for A ENd Device : Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.43.43, timeout is 1 seconds:
+Packet sent with a source address of 212.21.43.42 
+!!!!!!!!!!!!!!!!.!!!!!!!! , For Z End Device : 80 
+2016-03-31 00:19:07,996 INFO Send mail content. Subject Sev1 Circuit ID :,LON(PCG)LV000562,FLAG_CIRCUIT .message Team
+
+Please find the details about the devices
+
+
+ AEnd Device :EMC_CORE_EGY_ASR1K1_1 Interface :GigabitEthernet0/0/0.174
+ ZEnd Device :EMC_CORE_LND_7606_1 Interface :GigabitEthernet3/10
+ Circuit Provider :NOOR-PCCW
+ CircuitID :LON(PCG)LV000562   OrderID :LON(PCG)LV000562
+ SLAStatus :Down
+
+
+ AEnd Device :EMC_CORE_EGY_ASR1K1_2 Interface :GigabitEthernet0/0/0.173
+ ZEnd Device :EMC_LND_ASR1K1_1 Interface :GigabitEthernet0/0/3.173
+ Circuit Provider :NOOR-FLAG
+ CircuitID :FLAG_CIRCUIT   OrderID :FLAG_CIRCUIT
+ SLAStatus :
+
+
+
+ Ping result from Device 212.21.43.42 to Device 212.21.43.43 
+      Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.43.43, timeout is 1 seconds:
+Packet sent with a source address of 212.21.43.42 
+!!!!!!!!!!!!!!!!.!!!!!!!!
+
+ Ping result from Device 212.21.43.43 to Device 212.21.43.42 
+       Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.43.42, timeout is 1 seconds:
+Packet sent with a source address of 212.21.43.43 
+!.!!!!!!!!.!!!!!.!!!!..!!!!.!!
+Success rate is 80 percent (24/30), round-trip min/avg/max = 156/168/209 ms
+
+

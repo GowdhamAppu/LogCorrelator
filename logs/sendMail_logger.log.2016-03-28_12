@@ -1,0 +1,8 @@
+2016-03-28 13:27:28,001 INFO Node -- Send mail content. Subject Node Down, Device-Type :Core-Router, City:Raisting .message Team 
+
+
+ Please find details about down node 
+
+     Device Name :EMC_CORE_IP   IP-Address :10.10.10.104  Device-Type : Core City : Raisting
+
+2016-03-28 13:27:28,021 INFO Node-- Mail has been sent to ['pvijay@emc-corp.net', 'Gowdhaman.Mohan@emcconnected.com']

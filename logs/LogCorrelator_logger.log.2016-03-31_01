@@ -1,0 +1,35 @@
+2016-03-31 01:34:57,970 INFO Got Alert from OrionServer 3/31/2016 1:34 AM: Core-KPI-Alert - EMC-CORE-NAI-LND-WIOCC-DS3-LINK1-45Mbps is down.
+2016-03-31 01:34:57,984 INFO Check CallGOCStatus is enabled or not.
+2016-03-31 01:34:57,985 INFO CallGOCStatus got enabled.
+2016-03-31 01:34:57,986 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201603 where (date between '2016-03-31' AND '2016-03-31') AND (time between '01:19:47' AND '01:34:57')
+2016-03-31 01:34:57,987 INFO Records fetched successfully
+2016-03-31 01:34:57,987 INFO Record: (49270L, '1', datetime.date(2016, 3, 31), datetime.timedelta(0, 5696), 'ORION', '%OrionAlertEngine', None, '3/31/2016 1:34 AM: Core-KPI-Alert - EMC-CORE-NAI-LND-WIOCC-DS3-LINK1-45Mbps is down.')
+2016-03-31 01:34:57,987 INFO INFO RECORD BEFORE PARSE MESSAGE : 3/31/2016 1:34 AM: Core-KPI-Alert - EMC-CORE-NAI-LND-WIOCC-DS3-LINK1-45Mbps is down.
+2016-03-31 01:34:57,987 INFO Parsed pattern Tag EMC-CORE-NAI-LND-WIOCC-DS3-LINK1-45Mbps
+2016-03-31 01:34:57,990 INFO Fetched record [(u'EMC-CORE-NAI-LND-WIOCC-DS3-LINK1-45Mbps', u'CA-MU-C031-0007', u'CA-MU-C031-0007', u'LND-NAI', u'EMC_CORE_NAI_ASR1K1', u'Serial0/1/1', u'EMC_LND_7206_2', u'Serial2/0', u'WIOCC', u'CA-MU-C031-0007', u'10.10.10.230', u'10.10.10.206', u'162/167/172')]
+2016-03-31 01:34:57,991 INFO Check InternalCircuitID (CA-MU-C031-0007) is present in CoreCircuitStates table or not.
+2016-03-31 01:34:57,992 INFO InternalCircuitID is not present in the CoreCircuitStates table.so going to perform pingtest on both end of the devices.
+2016-03-31 01:35:08,008 INFO Device 10.10.10.230 .Command (sh run interface Serial0/1/1) output Building configuration...
+
+Current configuration : 360 bytes
+!
+interface Serial0/1/1
+ description TO_EMC_LND_7206_2_Serial2/0_CID:CA-MU-C031-0007 10.10.10.206
+ ip address 212.21.38.40 255.255.255.254
+ ip router isis 
+ ip pim sparse-mode
+ load-interval 30
+ mpls ip
+ mpls mtu 4450
+ dsu bandwidth 44210
+ framing c-bit
+ cablelength 10
+ clock source internal
+ clns mtu 1497
+ isis metric 31
+ service-policy output GI0/0/0
+end
+ 
+2016-03-31 01:35:08,031 INFO Conection timed out error Connection to device timed-out: cisco_ios 10.10.10.206:22
+2016-03-31 01:35:08,159 INFO Record(['CA-MU-C031-0007', 'LINK', 'DOWN', 'NO', '0']) inserted into CoreCircuitStates table 
+2016-03-31 01:35:08,162 INFO Update Timer value in CoreCircuitStates table for particular InternalCircuitID ['CA-MU-C031-0007', 1459388108.0]

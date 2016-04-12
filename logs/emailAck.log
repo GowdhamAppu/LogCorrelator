@@ -1,0 +1,33 @@
+nohup: ignoring input
+From MailID :- "Vijay, Paul" <paul.vijay@emcconnected.com>
+FWD:999-LA-MIAMI-101-FB-COGENT-(CID:LA:1-102792277-MIA:1-102776930) 
+hashvalue c20b97f7b77d6e49b5be2e28fc077cf4
+c20b97f7b77d6e49b5be2e28fc077cf
+c20b97f7b77d6e49b5be2e28fc077cf4
+0
+Traceback (most recent call last):
+  File "/opt/CoreMonitoringApp/EmailAcknowledge.py", line 245, in <module>
+    read('paul.vijay@emc-corp.net','WAnoharan!123',db)
+  File "/opt/CoreMonitoringApp/EmailAcknowledge.py", line 114, in read
+    imap = imaplib.IMAP4_SSL("outlook.office365.com", 993)
+  File "/usr/lib64/python2.6/imaplib.py", line 1150, in __init__
+    IMAP4.__init__(self, host, port)
+  File "/usr/lib64/python2.6/imaplib.py", line 201, in __init__
+    typ, dat = self.capability()
+  File "/usr/lib64/python2.6/imaplib.py", line 366, in capability
+    typ, dat = self._simple_command(name)
+  File "/usr/lib64/python2.6/imaplib.py", line 1072, in _simple_command
+    return self._command_complete(name, self._command(name, *args))
+  File "/usr/lib64/python2.6/imaplib.py", line 900, in _command_complete
+    typ, data = self._get_tagged_response(tag)
+  File "/usr/lib64/python2.6/imaplib.py", line 1001, in _get_tagged_response
+    self._get_response()
+  File "/usr/lib64/python2.6/imaplib.py", line 918, in _get_response
+    resp = self._get_line()
+  File "/usr/lib64/python2.6/imaplib.py", line 1011, in _get_line
+    line = self.readline()
+  File "/usr/lib64/python2.6/imaplib.py", line 1182, in readline
+    char = self.sslobj.read(1)
+  File "/usr/lib64/python2.6/ssl.py", line 136, in read
+    return self._sslobj.read(len)
+socket.error: [Errno 104] Connection reset by peer

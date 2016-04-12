@@ -141,6 +141,13 @@ class RouterDetails:
                 if lv:
                     circuitDetails.append(str(lv).strip())
                     break  
+                
+            while 1:     
+                phNumber=raw_input('Enter The phoneNumber :') 
+                if phNumber:
+                    circuitDetails.append(str(phNumber).strip())
+                    break                  
+                
            
             self.db.insertValuesIntoCoreDetailsTable(circuitDetails)
             print "Record got Inserted in CoreCircuitDetails Table"
@@ -215,6 +222,10 @@ class RouterDetails:
             if lv:
                 updateValues.append(' LatencyValue =\''+str(lv).strip()+'\'')
                 
+            phNumber=raw_input('Enter The Phone Number :') 
+            if phNumber:
+                updateValues.append(' phoneNumber =\''+str(phNumber).strip()+'\'')                
+                
             update=",".join(updateValues)  
             SqlUpdateQuery="update CoreCircuitDetails set %s where InternalCircuitID = \'%s\'" %(update,value)
             #print SqlUpdateQuery    
@@ -231,9 +242,12 @@ class RouterDetails:
                 CDetails = self.db.selectTable('CoreCircuitDetails')
                 table = []
                 for perCore in CDetails:
-                    table.append([perCore[0],perCore[1],perCore[2],perCore[3],perCore[4],perCore[5],perCore[6],perCore[7],perCore[8],perCore[9],perCore[10],perCore[11],perCore[12]])
+                    if "NO" in str(perCore[13]).strip():
+                        table.append([perCore[0],perCore[1],perCore[2],perCore[3],perCore[4],perCore[5],perCore[6],perCore[7],perCore[8],perCore[9],perCore[10],perCore[11],perCore[12],"  "])
+                    else:
+                        table.append([perCore[0],perCore[1],perCore[2],perCore[3],perCore[4],perCore[5],perCore[6],perCore[7],perCore[8],perCore[9],perCore[10],perCore[11],perCore[12],perCore[13]])
                 if table:
-                    print tabulate(table,headers=["PatternTag","CircuitID","OrderID","POP","Circuit A End","Circuit A End Intf","Circuit Z End","Circuit Z End Intf","Circuit Provider","Internal CircuitID","IPAddress1","IPAddress2","Latency(min/avg/max)"],tablefmt="orgtbl")
+                    print tabulate(table,headers=["PatternTag","CircuitID","OrderID","POP","Circuit A End","Circuit A End Intf","Circuit Z End","Circuit Z End Intf","Circuit Provider","Internal CircuitID","IPAddress1","IPAddress2","Latency(min/avg/max)","Phone Number"],tablefmt="orgtbl")
                 else:
                     print  colored('No data found','red')
         except Exception as e:
@@ -254,6 +268,9 @@ class RouterDetails:
 if __name__ == '__main__':
     rObject = RouterDetails()
     rObject.main(sys.argv[1:])
+
+
+
 
 
 

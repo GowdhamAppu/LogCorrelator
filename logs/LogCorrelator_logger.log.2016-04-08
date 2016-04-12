@@ -1,0 +1,155 @@
+2016-04-08 20:06:23,057 INFO Got Alert from OrionServer 4/8/2016 8:06 PM: Core-KPI-Alert - EMC_CORE_NAI_ASR1K1_1 - Interface Serial0/1/1 · TO_EMC_LND_7206_2_Serial2/0_CID:CA-MU-C031-0007 EMC_LND_7206_2 has recieved errors of 3725
+2016-04-08 20:06:23,060 INFO Check CallGOCStatus is enabled or not.
+2016-04-08 20:06:23,060 INFO CallGOCStatus got enabled.
+2016-04-08 20:06:23,062 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-08' AND '2016-04-08') AND (time between '12:01:33' AND '20:06:23')
+2016-04-08 20:06:23,062 INFO Records fetched successfully
+2016-04-08 20:06:23,063 INFO Record: (2440L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 43293), 'ORION', '%OrionAlertEngine', None, '4/8/2016 12:01 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 10.0200004577637.')
+2016-04-08 20:06:23,063 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/8/2016 12:01 PM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 10.0200004577637.
+2016-04-08 20:06:23,063 INFO Parsed pattern Tag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-08 20:06:23,068 INFO There is no record found in CoreCircuitDetails table for patternTag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-08 20:06:23,068 INFO Record: (2453L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 72383), 'ORION', '%OrionAlertEngine', None, '4/8/2016 8:06 PM: Core-KPI-Alert - EMC_CORE_NAI_ASR1K1_1 - Interface Serial0/1/1 \xb7 TO_EMC_LND_7206_2_Serial2/0_CID:CA-MU-C031-0007 EMC_LND_7206_2 has recieved errors of 3725')
+2016-04-08 23:23:22,725 INFO Got Alert from OrionServer 4/8/2016 11:23 PM: Core-KPI-Alert - EMC_LND_ASR1K1_1 - The neighbor 195.66.224.213 on Node EMC_LND_ASR1K1_1 went down.
+2016-04-08 23:23:22,727 INFO Check CallGOCStatus is enabled or not.
+2016-04-08 23:23:22,727 INFO CallGOCStatus got enabled.
+2016-04-08 23:23:22,729 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-08' AND '2016-04-08') AND (time between '20:06:23' AND '23:23:22')
+2016-04-08 23:23:22,729 INFO Records fetched successfully
+2016-04-08 23:23:22,730 INFO Record: (2453L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 72383), 'ORION', '%OrionAlertEngine', None, '4/8/2016 8:06 PM: Core-KPI-Alert - EMC_CORE_NAI_ASR1K1_1 - Interface Serial0/1/1 \xb7 TO_EMC_LND_7206_2_Serial2/0_CID:CA-MU-C031-0007 EMC_LND_7206_2 has recieved errors of 3725')
+2016-04-08 23:23:22,730 INFO Record: (2458L, '1', datetime.date(2016, 4, 8), datetime.timedelta(0, 84202), 'ORION', '%OrionAlertEngine', None, '4/8/2016 11:23 PM: Core-KPI-Alert - EMC_LND_ASR1K1_1 - The neighbor 195.66.224.213 on Node EMC_LND_ASR1K1_1 went down.')
+2016-04-09 04:40:58,573 INFO Got Alert from OrionServer 4/9/2016 4:40 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 10.2379999160767.
+2016-04-09 04:40:58,576 INFO Check CallGOCStatus is enabled or not.
+2016-04-09 04:40:58,576 INFO CallGOCStatus got enabled.
+2016-04-09 04:40:58,577 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-08' AND '2016-04-09') AND (time between '23:23:22' AND '04:40:58')
+2016-04-09 04:40:58,578 INFO Records fetched successfully
+2016-04-09 08:42:13,651 INFO Got Alert from OrionServer 4/9/2016 8:42 AM: Core-KPI-Alert - EMC_CORE_NAI_ASR1K1_1 - Interface Serial0/1/1 · TO_EMC_LND_7206_2_Serial2/0_CID:CA-MU-C031-0007 EMC_LND_7206_2 has recieved errors of 3324
+2016-04-09 08:42:13,653 INFO Check CallGOCStatus is enabled or not.
+2016-04-09 08:42:13,654 INFO CallGOCStatus got enabled.
+2016-04-09 08:42:13,655 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-09' AND '2016-04-09') AND (time between '04:40:58' AND '08:42:13')
+2016-04-09 08:42:13,656 INFO Records fetched successfully
+2016-04-09 08:42:13,656 INFO Record: (2480L, '1', datetime.date(2016, 4, 9), datetime.timedelta(0, 16858), 'ORION', '%OrionAlertEngine', None, '4/9/2016 4:40 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 10.2379999160767.')
+2016-04-09 08:42:13,656 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/9/2016 4:40 AM: Core-KPI-Alert - MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber - Latency is 10.2379999160767.
+2016-04-09 08:42:13,656 INFO Parsed pattern Tag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-09 08:42:13,659 INFO There is no record found in CoreCircuitDetails table for patternTag MTN-55/KFFN/105491/TWCS-WL-STV-TWTelecom-1000Mbps-Fiber
+2016-04-09 08:42:13,659 INFO Record: (2486L, '1', datetime.date(2016, 4, 9), datetime.timedelta(0, 31333), 'ORION', '%OrionAlertEngine', None, '4/9/2016 8:42 AM: Core-KPI-Alert - EMC_CORE_NAI_ASR1K1_1 - Interface Serial0/1/1 \xb7 TO_EMC_LND_7206_2_Serial2/0_CID:CA-MU-C031-0007 EMC_LND_7206_2 has recieved errors of 3324')
+2016-04-09 10:25:44,943 INFO Got Alert from OrionServer 4/9/2016 10:25 AM: Core-KPI-Alert - EMC-CORE-NAI-LND-WIOCC-ETH-LINK2-45Mbps is down.
+2016-04-09 10:25:44,946 INFO Check CallGOCStatus is enabled or not.
+2016-04-09 10:25:44,946 INFO CallGOCStatus got enabled.
+2016-04-09 10:25:44,947 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-09' AND '2016-04-09') AND (time between '08:42:13' AND '10:25:44')
+2016-04-09 10:25:44,948 INFO Records fetched successfully
+2016-04-09 10:25:44,948 INFO Record: (2486L, '1', datetime.date(2016, 4, 9), datetime.timedelta(0, 31333), 'ORION', '%OrionAlertEngine', None, '4/9/2016 8:42 AM: Core-KPI-Alert - EMC_CORE_NAI_ASR1K1_1 - Interface Serial0/1/1 \xb7 TO_EMC_LND_7206_2_Serial2/0_CID:CA-MU-C031-0007 EMC_LND_7206_2 has recieved errors of 3324')
+2016-04-09 10:26:45,579 INFO Got Alert from OrionServer 4/9/2016 10:26 AM: Core-KPI-Alert - EMC-CORE-NAI-LND-WIOCC-ETH-LINK2-45Mbps is down.
+2016-04-09 10:26:45,582 INFO Check CallGOCStatus is enabled or not.
+2016-04-09 10:26:45,582 INFO CallGOCStatus got enabled.
+2016-04-09 10:26:45,583 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-09' AND '2016-04-09') AND (time between '10:25:44' AND '10:26:45')
+2016-04-09 10:26:45,584 INFO Records fetched successfully
+2016-04-09 10:26:45,584 INFO Record: (2496L, '1', datetime.date(2016, 4, 9), datetime.timedelta(0, 37545), 'ORION', '%OrionAlertEngine', None, '4/9/2016 10:25 AM: Core-KPI-Alert - EMC-CORE-NAI-LND-WIOCC-ETH-LINK2-45Mbps is down.')
+2016-04-09 10:26:45,584 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/9/2016 10:25 AM: Core-KPI-Alert - EMC-CORE-NAI-LND-WIOCC-ETH-LINK2-45Mbps is down.
+2016-04-09 10:26:45,584 INFO Parsed pattern Tag EMC-CORE-NAI-LND-WIOCC-ETH-LINK2-45Mbps
+2016-04-09 10:26:45,589 INFO Fetched record [(u'EMC-CORE-NAI-LND-WIOCC-ETH-LINK2-45Mbps', u'CA-MU-C031-0025', u'CA-MU-C031-0025', u'LND-NAI', u'EMC_CORE_LND_7606_2', u'GigabitEthernet2/22.400', u'EMC_CORE_NAI_ASR1K1_2', u'GigabitEthernet0/0/0.400', u'WIOCC', u'999-LON-NAI-102-CO-WIOCC-(CID:CA-MU-C031-0025)', u'10.10.10.203', u'10.10.10.231', u'160,165,169', u'+254721790006,+254727322735')]
+2016-04-09 10:26:45,589 INFO Check InternalCircuitID (999-LON-NAI-102-CO-WIOCC-(CID:CA-MU-C031-0025)) is present in CoreCircuitStates table or not.
+2016-04-09 10:26:45,591 INFO InternalCircuitID is not present in the CoreCircuitStates table.so going to perform pingtest on both end of the devices.
+2016-04-09 10:26:53,405 INFO Device 10.10.10.203 .Command (sh run interface GigabitEthernet2/22.400) output Building configuration...
+
+Current configuration : 285 bytes
+!
+interface GigabitEthernet2/22.400
+ description To EMC_CORE_NAI_ASR1K2_GI0/0/0 via WIOCC CID: CA-MU-C031-0025
+ encapsulation dot1Q 400
+ ip address 212.21.38.43 255.255.255.254
+ ip router isis 
+ ip pim sparse-mode
+ mpls traffic-eng tunnels
+ mpls ip
+ clns mtu 1497
+ isis metric 95
+end
+ 
+2016-04-09 10:27:03,439 INFO Device 10.10.10.231 .Command (sh run interface GigabitEthernet0/0/0.400) output Building configuration...
+
+Current configuration : 236 bytes
+!
+interface GigabitEthernet0/0/0.400
+ description EMC_CORE_LND_7606_2_GI0/2
+ encapsulation dot1Q 400
+ ip address 212.21.38.42 255.255.255.254
+ ip router isis 
+ ip pim sparse-mode
+ mpls ip
+ cdp enable
+ clns mtu 1497
+ isis metric 95
+end
+ 
+2016-04-09 10:27:35,473 INFO Device 10.10.10.203 .Ping Command (ping 212.21.38.42 source 212.21.38.43 repeat 30 timeout 1) output 
+Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.38.42, timeout is 1 seconds:
+Packet sent with a source address of 212.21.38.43 
+..............................
+Success rate is 0 percent (0/30) 
+2016-04-09 10:28:08,507 INFO Device 10.10.10.231 .Ping Command (ping 212.21.38.43 source 212.21.38.42  time 1 repeat 30) output Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.38.43, timeout is 1 seconds:
+Packet sent with a source address of 212.21.38.42 
+..............................
+Success rate is 0 percent (0/30) 
+2016-04-09 10:28:08,508 INFO Ping result success rate  for A End Device : 0 , For Z End Device : 0
+2016-04-09 10:28:08,746 INFO Record(['999-LON-NAI-102-CO-WIOCC-(CID:CA-MU-C031-0025)', 'LINK', 'DOWN', 'NO', '0']) inserted into CoreCircuitStates table 
+2016-04-09 10:28:08,749 INFO Update Timer value in CoreCircuitStates table for particular InternalCircuitID ['999-LON-NAI-102-CO-WIOCC-(CID:CA-MU-C031-0025)', 1460197688.0]
+2016-04-09 10:28:08,749 INFO Record: (2497L, '1', datetime.date(2016, 4, 9), datetime.timedelta(0, 37605), 'rai-orionnpm-01', '%OrionAlertEngine', None, '4/9/2016 10:26 AM: Core-KPI-Alert - EMC-CORE-NAI-LND-WIOCC-ETH-LINK2-45Mbps is down.')
+2016-04-09 10:28:08,749 INFO Pattern tag EMC-CORE-NAI-LND-WIOCC-ETH-LINK2-45Mbps is already processed then move to next record
+2016-04-09 10:28:46,706 INFO Got Alert from OrionServer 4/9/2016 10:28 AM: Core-KPI-Alert - EMC-CORE-NAI-LND-WIOCC-ETH-LINK2-45Mbps is down.
+2016-04-09 17:59:50,156 INFO Got Alert from OrionServer 4/9/2016 5:59 PM: Core-KPI-Alert - EMC_LND_ASR1K1_1 - The neighbor 9.64.174.69 on Node EMC_LND_ASR1K1_1 went down.
+2016-04-09 17:59:50,158 INFO Check CallGOCStatus is enabled or not.
+2016-04-09 17:59:50,158 INFO CallGOCStatus got enabled.
+2016-04-09 17:59:50,159 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201604 where (date between '2016-04-09' AND '2016-04-09') AND (time between '10:28:08' AND '17:59:50')
+2016-04-09 17:59:50,160 INFO Records fetched successfully
+2016-04-09 17:59:50,160 INFO Record: (2498L, '1', datetime.date(2016, 4, 9), datetime.timedelta(0, 37726), 'rai-orionnpm-01', '%OrionAlertEngine', None, '4/9/2016 10:28 AM: Core-KPI-Alert - EMC-CORE-NAI-LND-WIOCC-ETH-LINK2-45Mbps is down.')
+2016-04-09 17:59:50,161 INFO INFO RECORD BEFORE PARSE MESSAGE : 4/9/2016 10:28 AM: Core-KPI-Alert - EMC-CORE-NAI-LND-WIOCC-ETH-LINK2-45Mbps is down.
+2016-04-09 17:59:50,161 INFO Parsed pattern Tag EMC-CORE-NAI-LND-WIOCC-ETH-LINK2-45Mbps
+2016-04-09 17:59:50,164 INFO Fetched record [(u'EMC-CORE-NAI-LND-WIOCC-ETH-LINK2-45Mbps', u'CA-MU-C031-0025', u'CA-MU-C031-0025', u'LND-NAI', u'EMC_CORE_LND_7606_2', u'GigabitEthernet2/22.400', u'EMC_CORE_NAI_ASR1K1_2', u'GigabitEthernet0/0/0.400', u'WIOCC', u'999-LON-NAI-102-CO-WIOCC-(CID:CA-MU-C031-0025)', u'10.10.10.203', u'10.10.10.231', u'160,165,169', u'+254721790006,+254727322735')]
+2016-04-09 17:59:50,164 INFO Check InternalCircuitID (999-LON-NAI-102-CO-WIOCC-(CID:CA-MU-C031-0025)) is present in CoreCircuitStates table or not.
+2016-04-09 17:59:50,165 INFO InternalCircuitID is not present in the CoreCircuitStates table.so going to perform pingtest on both end of the devices.
+2016-04-09 17:59:57,964 INFO Device 10.10.10.203 .Command (sh run interface GigabitEthernet2/22.400) output Building configuration...
+
+Current configuration : 285 bytes
+!
+interface GigabitEthernet2/22.400
+ description To EMC_CORE_NAI_ASR1K2_GI0/0/0 via WIOCC CID: CA-MU-C031-0025
+ encapsulation dot1Q 400
+ ip address 212.21.38.43 255.255.255.254
+ ip router isis 
+ ip pim sparse-mode
+ mpls traffic-eng tunnels
+ mpls ip
+ clns mtu 1497
+ isis metric 95
+end
+ 
+2016-04-09 18:00:07,996 INFO Device 10.10.10.231 .Command (sh run interface GigabitEthernet0/0/0.400) output Building configuration...
+
+Current configuration : 236 bytes
+!
+interface GigabitEthernet0/0/0.400
+ description EMC_CORE_LND_7606_2_GI0/2
+ encapsulation dot1Q 400
+ ip address 212.21.38.42 255.255.255.254
+ ip router isis 
+ ip pim sparse-mode
+ mpls ip
+ cdp enable
+ clns mtu 1497
+ isis metric 95
+end
+ 
+2016-04-09 18:00:15,003 INFO Device 10.10.10.203 .Ping Command (ping 212.21.38.42 source 212.21.38.43 repeat 30 timeout 1) output 
+Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.38.42, timeout is 1 seconds:
+Packet sent with a source address of 212.21.38.43 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Success rate is 100 percent (30/30), round-trip min/avg/max = 172/175/216 ms 
+2016-04-09 18:00:23,010 INFO Device 10.10.10.231 .Ping Command (ping 212.21.38.43 source 212.21.38.42  time 1 repeat 30) output Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.38.43, timeout is 1 seconds:
+Packet sent with a source address of 212.21.38.42 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Success rate is 100 percent (30/30), round-trip min/avg/max = 173/173/174 ms 
+2016-04-09 18:00:23,011 INFO Ping result success rate  for A End Device : 100 , For Z End Device : 100
+2016-04-09 18:00:23,138 INFO The devices are pingable from bothends.so skipping send mail operation
+2016-04-09 18:00:23,138 INFO Record: (2520L, '1', datetime.date(2016, 4, 9), datetime.timedelta(0, 64790), 'rai-orionnpm-01', '%OrionAlertEngine', None, '4/9/2016 5:59 PM: Core-KPI-Alert - EMC_LND_ASR1K1_1 - The neighbor 9.64.174.69 on Node EMC_LND_ASR1K1_1 went down.')

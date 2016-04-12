@@ -1,0 +1,18 @@
+2016-03-31 08:01:57,337 INFO Got Alert from OrionServer 3/31/2016 8:01 AM: Core-KPI-Alert - EMC_RAI_3825_1_SERV has 100 % packet loss.
+2016-03-31 08:01:57,351 INFO Check CallGOCStatus is enabled or not.
+2016-03-31 08:01:57,351 INFO CallGOCStatus got enabled.
+2016-03-31 08:01:57,352 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201603 where (date between '2016-03-31' AND '2016-03-31') AND (time between '07:03:31' AND '08:01:57')
+2016-03-31 08:01:57,353 INFO Records fetched successfully
+2016-03-31 08:01:57,354 INFO Record: (49345L, '1', datetime.date(2016, 3, 31), datetime.timedelta(0, 28916), 'ORION', '%OrionAlertEngine', None, '3/31/2016 8:01 AM: Core-KPI-Alert - EMC_RAI_3825_1_SERV has 100 % packet loss.')
+2016-03-31 08:01:57,355 INFO parsed message EMC_RAI_3825_1_SERV
+2016-03-31 08:01:59,933 INFO Orion Result: {u'results': [{u'Caption': u'EMC_RAI_3825_1_SERV', u'Type': u'Core-Router', u'IPAddress': u'10.10.10.104', u'City': u'Raisting'}]}
+2016-03-31 08:01:59,933 INFO IPaddress : 10.10.10.104 , City : Raisting 
+2016-03-31 08:01:59,933 INFO Going to perform ping test
+2016-03-31 08:02:09,943 INFO Node ping result : PING 10.10.10.104 (10.10.10.104) 56(84) bytes of data.
+
+--- 10.10.10.104 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 10000ms
+
+2016-03-31 08:02:09,944 INFO packet loss : 100
+2016-03-31 08:02:09,959 INFO Record updated
+2016-03-31 08:02:58,074 INFO Got Alert from OrionServer 3/31/2016 8:02 AM: Core-KPI-Alert - EMC_RAI_3825_1_SERV has rebooted. Thursday, March 31, 2016 7:59 AM

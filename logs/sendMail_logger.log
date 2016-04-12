@@ -1,0 +1,51 @@
+2016-04-11 14:10:13,002 INFO Going to perform ping from both ends
+2016-04-11 14:10:22,721 INFO Device 10.10.10.150. Command sh run interface GigabitEthernet0/3.100. Output Building configuration...
+
+Current configuration : 360 bytes
+!
+interface GigabitEthernet0/3.100
+ description TO EMC_CORE_MIAMI_ASR_2 Gi0/0/0 via COGENT CID: LA:1-102792277 MIA:1-102776930  support@cogentco.com  +1-202-295-4385
+ bandwidth 200000
+ encapsulation dot1Q 100
+ ip address 74.113.255.237 255.255.255.254
+ ip router isis 
+ ip pim sparse-mode
+ mpls traffic-eng tunnels
+ mpls ip
+ clns mtu 1497
+ isis metric 31
+end
+
+2016-04-11 14:10:31,879 INFO Device 10.10.10.226. Command sh run interface GigabitEthernet0/0/0. Output Building configuration...
+
+Current configuration : 388 bytes
+!
+interface GigabitEthernet0/0/0
+ description TO EMC_CORE_LA_2960_1 Gi0/21 via COGENT CID: MIA:1-102776930 LA:1-102792277   xconn NAP ID:10.GE.082312.0010.10
+ mtu 1998
+ bandwidth 200000
+ ip address 74.113.255.236 255.255.255.254
+ ip router isis 
+ ip pim sparse-mode
+ load-interval 30
+ no negotiation auto
+ mpls ip
+ mpls traffic-eng tunnels
+ cdp enable
+ clns mtu 1497
+ isis metric 31
+end
+
+2016-04-11 14:10:36,883 INFO Device 10.10.10.150.Ping  Command ping 74.113.255.236 source 74.113.255.237 repeat 30 timeout 1. Output 
+Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 74.113.255.236, timeout is 1 seconds:
+Packet sent with a source address of 74.113.255.237 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Success rate is 100 percent (30/30), round-trip min/avg/max = 60/63/64 ms
+2016-04-11 14:10:40,888 INFO Device 10.10.10.226. Ping Command ping 74.113.255.237 source 74.113.255.236 time 1 repeat 30. Output Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 74.113.255.237, timeout is 1 seconds:
+Packet sent with a source address of 74.113.255.236 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Success rate is 100 percent (30/30), round-trip min/avg/max = 63/63/64 ms
+2016-04-11 14:10:40,888 INFO Ping result success rate for A ENd Device : 100 , For Z End Device : 100 
+2016-04-11 14:10:40,921 INFO Ping Result got passed.so going to delete InternalCircuitID state details from CoreCircuitState table

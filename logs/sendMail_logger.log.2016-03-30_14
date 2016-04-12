@@ -1,0 +1,35 @@
+2016-03-31 01:36:08,002 INFO Going to perform ping from both ends
+2016-03-31 01:36:18,019 INFO Device 10.10.10.230. Command sh run interface Serial0/1/1. Output Building configuration...
+
+Current configuration : 360 bytes
+!
+interface Serial0/1/1
+ description TO_EMC_LND_7206_2_Serial2/0_CID:CA-MU-C031-0007 10.10.10.206
+ ip address 212.21.38.40 255.255.255.254
+ ip router isis 
+ ip pim sparse-mode
+ load-interval 30
+ mpls ip
+ mpls mtu 4450
+ dsu bandwidth 44210
+ framing c-bit
+ cablelength 10
+ clock source internal
+ clns mtu 1497
+ isis metric 31
+ service-policy output GI0/0/0
+end
+
+2016-03-31 01:36:18,042 WARNING Device timed out error Connection to device timed-out: cisco_ios 10.10.10.206:22
+2016-03-31 01:36:18,162 INFO Send mail content. Subject Sev2 Circuit ID :CA-MU-C031-0007 .message Team
+
+Please find the details about the devices
+
+
+ AEnd Device :EMC_CORE_NAI_ASR1K1  Interface : Serial0/1/1
+ ZEnd Device :EMC_LND_7206_2  Interface :Serial2/0
+ Circuit Provider :WIOCC
+ CircuitID :CA-MU-C031-0007  OrderID  :CA-MU-C031-0007
+ SLASTatus :Down
+
+ Connection to device got timed-out

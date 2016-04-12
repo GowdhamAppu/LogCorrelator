@@ -1,0 +1,14 @@
+2016-03-29 20:09:38,002 INFO Going to perform ping from both ends
+2016-03-29 20:09:38,103 WARNING Device timed out error Connection to device timed-out: cisco_ios 10.10.10.209:22
+2016-03-29 20:09:38,107 INFO Send mail content. Subject Sev2 Circuit ID :LON(PCG)LV000562 .message Team
+
+Please find the details about the devices
+
+
+ AEnd Device :EMC_CORE_EGY_ASR1K1_1  Interface : GigabitEthernet0/0/0.174
+ ZEnd Device :EMC_CORE_LND_7606_1  Interface :GigabitEthernet3/10
+ Circuit Provider :NOOR-PCCW
+ CircuitID :LON(PCG)LV000562  OrderID  :LON(PCG)LV000562
+ SLASTatus :Down
+
+ Connection to device got timed-out

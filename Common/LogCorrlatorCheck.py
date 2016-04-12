@@ -9,6 +9,11 @@
 """
  Importing required packages for this Apps
 """
+import os.path
+import sys
+file_path = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), os.path.pardir))
+if file_path not in sys.path:
+    sys.path.insert(0, file_path)
 import sys
 import re
 from termcolor import colored
@@ -62,4 +67,5 @@ if __name__ == '__main__':
           #time.sleep(2)
           LogCorrelator.killProcess('ps ax | grep \"python -W ignore /opt/CoreMonitoringApp/LogCorrelator.py\" | grep -v grep')
         
+
 

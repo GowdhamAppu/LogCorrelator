@@ -1,0 +1,37 @@
+2016-03-31 11:53:20,786 INFO Got Alert from OrionServer 3/31/2016 11:53 AM: Core-KPI-Alert - EMC_CORE_TAN_2911_1 has 100 % packet loss.
+2016-03-31 11:53:20,787 INFO Got Alert from OrionServer 3/31/2016 11:53 AM: Core-KPI-Alert - EMC_CORE_TAN_3560X_2 has 100 % packet loss.
+2016-03-31 11:53:20,800 INFO Check CallGOCStatus is enabled or not.
+2016-03-31 11:53:20,800 INFO CallGOCStatus got enabled.
+2016-03-31 11:53:20,801 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201603 where (date between '2016-03-31' AND '2016-03-31') AND (time between '09:06:35' AND '11:53:20')
+2016-03-31 11:53:20,805 INFO Records fetched successfully
+2016-03-31 11:53:20,806 INFO Record: (49639L, '1', datetime.date(2016, 3, 31), datetime.timedelta(0, 42799), 'ORION', '%OrionAlertEngine', None, '3/31/2016 11:53 AM: Core-KPI-Alert - EMC_CORE_TAN_2911_1 has 100 % packet loss.')
+2016-03-31 11:53:20,807 INFO parsed message EMC_CORE_TAN_2911_1
+2016-03-31 11:53:22,336 INFO Orion Result: {u'results': [{u'Caption': u'EMC_CORE_TAN_2911_1', u'Type': None, u'IPAddress': u'10.10.10.211', u'City': u'Tananger'}]}
+2016-03-31 11:53:22,336 INFO IPaddress : 10.10.10.211 , City : Tananger 
+2016-03-31 11:53:22,337 INFO Syslog correlator Exception ERROR: 'NoneType' object has no attribute 'strip'
+
+2016-03-31 12:13:34,641 INFO Got Alert from OrionServer 3/31/2016 12:13 PM: Core-KPI-Alert - EMC_CORE_TAN_2911_2 has 100 % packet loss.
+2016-03-31 12:13:34,641 INFO Got Alert from OrionServer 3/31/2016 12:13 PM: Core-KPI-Alert - EMC_CORE_TAN_3560X_1 has 100 % packet loss.
+2016-03-31 12:13:34,641 INFO Got Alert from OrionServer 3/31/2016 12:13 PM: Core-KPI-Alert - EMC_SERV_TAN_2911_1 has 100 % packet loss.
+2016-03-31 12:13:34,642 INFO Got Alert from OrionServer 3/31/2016 12:13 PM: Core-KPI-Alert - EMC_SERV_TAN_2911_2 has 100 % packet loss.
+2016-03-31 12:13:34,655 INFO Check CallGOCStatus is enabled or not.
+2016-03-31 12:13:34,655 INFO CallGOCStatus got enabled.
+2016-03-31 12:13:34,656 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201603 where (date between '2016-03-31' AND '2016-03-31') AND (time between '09:06:35' AND '12:13:34')
+2016-03-31 12:13:34,660 INFO Records fetched successfully
+2016-03-31 12:13:34,660 INFO Record: (49639L, '1', datetime.date(2016, 3, 31), datetime.timedelta(0, 42799), 'ORION', '%OrionAlertEngine', None, '3/31/2016 11:53 AM: Core-KPI-Alert - EMC_CORE_TAN_2911_1 has 100 % packet loss.')
+2016-03-31 12:13:34,660 INFO parsed message EMC_CORE_TAN_2911_1
+2016-03-31 12:13:35,973 INFO Orion Result: {u'results': [{u'Caption': u'EMC_CORE_TAN_2911_1', u'Type': None, u'IPAddress': u'10.10.10.211', u'City': u'Tananger'}]}
+2016-03-31 12:13:35,973 INFO IPaddress : 10.10.10.211 , City : Tananger 
+2016-03-31 12:13:35,973 INFO Syslog correlator Exception ERROR: 'NoneType' object has no attribute 'strip'
+
+2016-03-31 12:22:40,920 INFO Got Alert from OrionServer 3/31/2016 12:22 PM: Core-KPI-Alert - EMC_SERV_TAN_2960_Stack has 100 % packet loss.
+2016-03-31 12:22:40,933 INFO Check CallGOCStatus is enabled or not.
+2016-03-31 12:22:40,933 INFO CallGOCStatus got enabled.
+2016-03-31 12:22:40,934 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201603 where (date between '2016-03-31' AND '2016-03-31') AND (time between '09:06:35' AND '12:22:40')
+2016-03-31 12:22:40,938 INFO Records fetched successfully
+2016-03-31 12:22:40,939 INFO Record: (49639L, '1', datetime.date(2016, 3, 31), datetime.timedelta(0, 42799), 'ORION', '%OrionAlertEngine', None, '3/31/2016 11:53 AM: Core-KPI-Alert - EMC_CORE_TAN_2911_1 has 100 % packet loss.')
+2016-03-31 12:22:40,939 INFO parsed message EMC_CORE_TAN_2911_1
+2016-03-31 12:22:42,182 INFO Orion Result: {u'results': [{u'Caption': u'EMC_CORE_TAN_2911_1', u'Type': None, u'IPAddress': u'10.10.10.211', u'City': u'Tananger'}]}
+2016-03-31 12:22:42,182 INFO IPaddress : 10.10.10.211 , City : Tananger 
+2016-03-31 12:22:42,182 INFO Syslog correlator Exception ERROR: 'NoneType' object has no attribute 'strip'
+

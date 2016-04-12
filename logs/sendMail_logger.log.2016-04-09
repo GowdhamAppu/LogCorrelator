@@ -1,0 +1,684 @@
+2016-04-10 12:12:52,011 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=9 Packet filtered
+From 212.21.35.59 icmp_seq=10 Packet filtered
+From 212.21.35.59 icmp_seq=11 Packet filtered
+From 212.21.35.59 icmp_seq=12 Packet filtered
+From 212.21.35.59 icmp_seq=13 Packet filtered
+From 212.21.35.59 icmp_seq=29 Packet filtered
+From 212.21.35.59 icmp_seq=48 Packet filtered
+From 212.21.35.59 icmp_seq=98 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +8 errors, 100% packet loss, time 109005ms
+
+2016-04-10 12:12:52,012 INFO Node -- Send mail content. Subject Sev2 Node Down, Device-Type :EMC CORE, City:Tananger .message Team 
+
+
+ Please investigate this node down incident 
+
+     Device Name :EMC_CORE_TAN_3560X_2   IP-Address :172.16.66.6  Device-Type : Core City : Tananger   State : Packet Loss
+     Ping Result 
+               PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=9 Packet filtered
+From 212.21.35.59 icmp_seq=10 Packet filtered
+From 212.21.35.59 icmp_seq=11 Packet filtered
+From 212.21.35.59 icmp_seq=12 Packet filtered
+From 212.21.35.59 icmp_seq=13 Packet filtered
+From 212.21.35.59 icmp_seq=29 Packet filtered
+From 212.21.35.59 icmp_seq=48 Packet filtered
+From 212.21.35.59 icmp_seq=98 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +8 errors, 100% packet loss, time 109005ms
+
+2016-04-10 12:12:52,027 INFO Node-- Mail has been sent to ['pvijay@emc-corp.net', 'Gowdhaman.Mohan@emcconnected.com']
+2016-04-10 12:30:41,009 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=1 Packet filtered
+From 212.21.35.59 icmp_seq=2 Packet filtered
+From 212.21.35.59 icmp_seq=22 Packet filtered
+From 212.21.35.59 icmp_seq=38 Packet filtered
+From 212.21.35.59 icmp_seq=39 Packet filtered
+From 212.21.35.59 icmp_seq=55 Packet filtered
+From 212.21.35.59 icmp_seq=67 Packet filtered
+From 212.21.35.59 icmp_seq=85 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +8 errors, 100% packet loss, time 109004ms
+
+2016-04-10 12:30:41,010 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 12:40:30,017 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=9 Packet filtered
+From 212.21.35.59 icmp_seq=30 Packet filtered
+From 212.21.35.59 icmp_seq=78 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +3 errors, 100% packet loss, time 109010ms
+
+2016-04-10 12:40:30,018 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 12:50:19,017 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=11 Packet filtered
+From 212.21.35.59 icmp_seq=48 Packet filtered
+From 212.21.35.59 icmp_seq=49 Packet filtered
+From 212.21.35.59 icmp_seq=73 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109012ms
+
+2016-04-10 12:50:19,018 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 13:00:08,009 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=38 Packet filtered
+From 212.21.35.59 icmp_seq=53 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +2 errors, 100% packet loss, time 109003ms
+
+2016-04-10 13:00:08,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 13:09:57,008 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=10 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +1 errors, 100% packet loss, time 109002ms
+
+2016-04-10 13:09:57,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 13:19:46,018 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=2 Packet filtered
+From 212.21.35.59 icmp_seq=27 Packet filtered
+From 212.21.35.59 icmp_seq=60 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +3 errors, 100% packet loss, time 109011ms
+
+2016-04-10 13:19:46,019 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 13:29:35,009 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=1 Packet filtered
+From 212.21.35.59 icmp_seq=2 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +2 errors, 100% packet loss, time 109002ms
+
+2016-04-10 13:29:35,010 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 13:39:24,008 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=39 Packet filtered
+From 212.21.35.59 icmp_seq=63 Packet filtered
+From 212.21.35.59 icmp_seq=64 Packet filtered
+From 212.21.35.59 icmp_seq=76 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109002ms
+
+2016-04-10 13:39:24,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 13:49:13,010 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=31 Packet filtered
+From 212.21.35.59 icmp_seq=52 Packet filtered
+From 212.21.35.59 icmp_seq=79 Packet filtered
+From 212.21.35.59 icmp_seq=97 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109004ms
+
+2016-04-10 13:49:13,011 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 13:59:02,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=11 Packet filtered
+From 212.21.35.59 icmp_seq=27 Packet filtered
+From 212.21.35.59 icmp_seq=44 Packet filtered
+From 212.21.35.59 icmp_seq=45 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109001ms
+
+2016-04-10 13:59:02,007 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 14:08:51,008 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=8 Packet filtered
+From 212.21.35.59 icmp_seq=38 Packet filtered
+From 212.21.35.59 icmp_seq=49 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +3 errors, 100% packet loss, time 109003ms
+
+2016-04-10 14:08:51,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 14:18:40,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=7 Packet filtered
+From 212.21.35.59 icmp_seq=47 Packet filtered
+From 212.21.35.59 icmp_seq=61 Packet filtered
+From 212.21.35.59 icmp_seq=76 Packet filtered
+From 212.21.35.59 icmp_seq=92 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +5 errors, 100% packet loss, time 109001ms
+
+2016-04-10 14:18:40,007 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 14:28:29,008 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=29 Packet filtered
+From 212.21.35.59 icmp_seq=84 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +2 errors, 100% packet loss, time 109001ms
+
+2016-04-10 14:28:29,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 14:38:18,016 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=61 Packet filtered
+From 212.21.35.59 icmp_seq=81 Packet filtered
+From 212.21.35.59 icmp_seq=95 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +3 errors, 100% packet loss, time 109010ms
+
+2016-04-10 14:38:18,017 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 14:48:07,006 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=20 Packet filtered
+From 212.21.35.59 icmp_seq=57 Packet filtered
+From 212.21.35.59 icmp_seq=58 Packet filtered
+From 212.21.35.59 icmp_seq=90 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109000ms
+
+2016-04-10 14:48:07,006 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 14:57:56,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=80 Packet filtered
+From 212.21.35.59 icmp_seq=99 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +2 errors, 100% packet loss, time 109000ms
+
+2016-04-10 14:57:56,007 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 15:07:45,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=11 Packet filtered
+From 212.21.35.59 icmp_seq=31 Packet filtered
+From 212.21.35.59 icmp_seq=89 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +3 errors, 100% packet loss, time 109001ms
+
+2016-04-10 15:07:45,007 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 15:17:34,015 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=27 Packet filtered
+From 212.21.35.59 icmp_seq=82 Packet filtered
+From 212.21.35.59 icmp_seq=93 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +3 errors, 100% packet loss, time 109009ms
+
+2016-04-10 15:17:34,016 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 15:27:23,005 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=83 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +1 errors, 100% packet loss, time 108999ms
+
+2016-04-10 15:27:23,006 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 15:37:12,005 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=26 Packet filtered
+From 212.21.35.59 icmp_seq=66 Packet filtered
+From 212.21.35.59 icmp_seq=82 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +3 errors, 100% packet loss, time 109000ms
+
+2016-04-10 15:37:12,006 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 15:47:01,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=18 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +1 errors, 100% packet loss, time 109001ms
+
+2016-04-10 15:47:01,008 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 15:56:50,006 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=4 Packet filtered
+From 212.21.35.59 icmp_seq=16 Packet filtered
+From 212.21.35.59 icmp_seq=69 Packet filtered
+From 212.21.35.59 icmp_seq=80 Packet filtered
+From 212.21.35.59 icmp_seq=100 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +5 errors, 100% packet loss, time 109000ms
+
+2016-04-10 15:56:50,007 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 16:06:39,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=13 Packet filtered
+From 212.21.35.59 icmp_seq=43 Packet filtered
+From 212.21.35.59 icmp_seq=44 Packet filtered
+From 212.21.35.59 icmp_seq=68 Packet filtered
+From 212.21.35.59 icmp_seq=84 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +5 errors, 100% packet loss, time 109001ms
+
+2016-04-10 16:06:39,008 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 16:16:28,005 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=50 Packet filtered
+From 212.21.35.59 icmp_seq=63 Packet filtered
+From 212.21.35.59 icmp_seq=100 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +3 errors, 100% packet loss, time 108999ms
+
+2016-04-10 16:16:28,006 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 16:26:17,008 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=66 Packet filtered
+From 212.21.35.59 icmp_seq=86 Packet filtered
+From 212.21.35.59 icmp_seq=97 Packet filtered
+From 212.21.35.59 icmp_seq=98 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109001ms
+
+2016-04-10 16:26:17,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 16:36:06,006 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=49 Packet filtered
+From 212.21.35.59 icmp_seq=91 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +2 errors, 100% packet loss, time 109000ms
+
+2016-04-10 16:36:06,007 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 16:45:55,016 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=9 Packet filtered
+From 212.21.35.59 icmp_seq=34 Packet filtered
+From 212.21.35.59 icmp_seq=53 Packet filtered
+From 212.21.35.59 icmp_seq=61 Packet filtered
+From 212.21.35.59 icmp_seq=75 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +5 errors, 100% packet loss, time 109009ms
+
+2016-04-10 16:45:55,017 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 16:55:44,005 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=11 Packet filtered
+From 212.21.35.59 icmp_seq=28 Packet filtered
+From 212.21.35.59 icmp_seq=45 Packet filtered
+From 212.21.35.59 icmp_seq=57 Packet filtered
+From 212.21.35.59 icmp_seq=91 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +5 errors, 100% packet loss, time 108999ms
+
+2016-04-10 16:55:44,005 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 17:05:33,005 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=64 Packet filtered
+From 212.21.35.59 icmp_seq=78 Packet filtered
+From 212.21.35.59 icmp_seq=88 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +3 errors, 100% packet loss, time 108999ms
+
+2016-04-10 17:05:33,006 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 17:15:22,016 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=63 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +1 errors, 100% packet loss, time 109010ms
+
+2016-04-10 17:15:22,017 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 17:25:11,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=3 Packet filtered
+From 212.21.35.59 icmp_seq=31 Packet filtered
+From 212.21.35.59 icmp_seq=32 Packet filtered
+From 212.21.35.59 icmp_seq=56 Packet filtered
+From 212.21.35.59 icmp_seq=68 Packet filtered
+From 212.21.35.59 icmp_seq=89 Packet filtered
+From 212.21.35.59 icmp_seq=99 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +7 errors, 100% packet loss, time 109001ms
+
+2016-04-10 17:25:11,008 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 17:35:00,008 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=9 Packet filtered
+From 212.21.35.59 icmp_seq=22 Packet filtered
+From 212.21.35.59 icmp_seq=56 Packet filtered
+From 212.21.35.59 icmp_seq=84 Packet filtered
+From 212.21.35.59 icmp_seq=100 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +5 errors, 100% packet loss, time 109001ms
+
+2016-04-10 17:35:00,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 17:44:49,010 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=9 Packet filtered
+From 212.21.35.59 icmp_seq=22 Packet filtered
+From 212.21.35.59 icmp_seq=33 Packet filtered
+From 212.21.35.59 icmp_seq=60 Packet filtered
+From 212.21.35.59 icmp_seq=73 Packet filtered
+From 212.21.35.59 icmp_seq=89 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +6 errors, 100% packet loss, time 109004ms
+
+2016-04-10 17:44:49,011 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 17:54:38,006 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=52 Packet filtered
+From 212.21.35.59 icmp_seq=67 Packet filtered
+From 212.21.35.59 icmp_seq=79 Packet filtered
+From 212.21.35.59 icmp_seq=96 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109000ms
+
+2016-04-10 17:54:38,007 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 18:04:27,009 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=29 Packet filtered
+From 212.21.35.59 icmp_seq=46 Packet filtered
+From 212.21.35.59 icmp_seq=85 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +3 errors, 100% packet loss, time 109003ms
+
+2016-04-10 18:04:27,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 18:14:16,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=4 Packet filtered
+From 212.21.35.59 icmp_seq=34 Packet filtered
+From 212.21.35.59 icmp_seq=48 Packet filtered
+From 212.21.35.59 icmp_seq=81 Packet filtered
+From 212.21.35.59 icmp_seq=95 Packet filtered
+From 212.21.35.59 icmp_seq=96 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +6 errors, 100% packet loss, time 109000ms
+
+2016-04-10 18:14:16,008 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 18:24:05,012 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=10 Packet filtered
+From 212.21.35.59 icmp_seq=64 Packet filtered
+From 212.21.35.59 icmp_seq=94 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +3 errors, 100% packet loss, time 109006ms
+
+2016-04-10 18:24:05,013 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 18:33:54,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=3 Packet filtered
+From 212.21.35.59 icmp_seq=4 Packet filtered
+From 212.21.35.59 icmp_seq=20 Packet filtered
+From 212.21.35.59 icmp_seq=33 Packet filtered
+From 212.21.35.59 icmp_seq=49 Packet filtered
+From 212.21.35.59 icmp_seq=100 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +6 errors, 100% packet loss, time 109001ms
+
+2016-04-10 18:33:54,008 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 18:43:43,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=23 Packet filtered
+From 212.21.35.59 icmp_seq=38 Packet filtered
+From 212.21.35.59 icmp_seq=55 Packet filtered
+From 212.21.35.59 icmp_seq=99 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109000ms
+
+2016-04-10 18:43:43,007 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 18:53:32,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=15 Packet filtered
+From 212.21.35.59 icmp_seq=32 Packet filtered
+From 212.21.35.59 icmp_seq=62 Packet filtered
+From 212.21.35.59 icmp_seq=77 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109000ms
+
+2016-04-10 18:53:32,007 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 19:03:21,020 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=14 Packet filtered
+From 212.21.35.59 icmp_seq=79 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +2 errors, 100% packet loss, time 109014ms
+
+2016-04-10 19:03:21,021 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 19:13:10,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=17 Packet filtered
+From 212.21.35.59 icmp_seq=32 Packet filtered
+From 212.21.35.59 icmp_seq=44 Packet filtered
+From 212.21.35.59 icmp_seq=67 Packet filtered
+From 212.21.35.59 icmp_seq=81 Packet filtered
+From 212.21.35.59 icmp_seq=98 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +6 errors, 100% packet loss, time 109000ms
+
+2016-04-10 19:13:10,008 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 19:22:59,012 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=9 Packet filtered
+From 212.21.35.59 icmp_seq=50 Packet filtered
+From 212.21.35.59 icmp_seq=63 Packet filtered
+From 212.21.35.59 icmp_seq=78 Packet filtered
+From 212.21.35.59 icmp_seq=95 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +5 errors, 100% packet loss, time 109006ms
+
+2016-04-10 19:22:59,013 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 19:32:48,008 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=3 Packet filtered
+From 212.21.35.59 icmp_seq=34 Packet filtered
+From 212.21.35.59 icmp_seq=44 Packet filtered
+From 212.21.35.59 icmp_seq=54 Packet filtered
+From 212.21.35.59 icmp_seq=80 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +5 errors, 100% packet loss, time 109002ms
+
+2016-04-10 19:32:48,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 19:42:37,011 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=28 Packet filtered
+From 212.21.35.59 icmp_seq=42 Packet filtered
+From 212.21.35.59 icmp_seq=68 Packet filtered
+From 212.21.35.59 icmp_seq=85 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109005ms
+
+2016-04-10 19:42:37,011 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 19:52:26,008 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=65 Packet filtered
+From 212.21.35.59 icmp_seq=82 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +2 errors, 100% packet loss, time 109002ms
+
+2016-04-10 19:52:26,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 20:02:15,005 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=11 Packet filtered
+From 212.21.35.59 icmp_seq=36 Packet filtered
+From 212.21.35.59 icmp_seq=91 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +3 errors, 100% packet loss, time 108999ms
+
+2016-04-10 20:02:15,005 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 20:12:04,010 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=4 Packet filtered
+From 212.21.35.59 icmp_seq=42 Packet filtered
+From 212.21.35.59 icmp_seq=63 Packet filtered
+From 212.21.35.59 icmp_seq=64 Packet filtered
+From 212.21.35.59 icmp_seq=78 Packet filtered
+From 212.21.35.59 icmp_seq=94 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +6 errors, 100% packet loss, time 109003ms
+
+2016-04-10 20:12:04,011 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 20:21:53,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=4 Packet filtered
+From 212.21.35.59 icmp_seq=43 Packet filtered
+From 212.21.35.59 icmp_seq=70 Packet filtered
+From 212.21.35.59 icmp_seq=92 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109000ms
+
+2016-04-10 20:21:53,008 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 20:31:42,009 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=18 Packet filtered
+From 212.21.35.59 icmp_seq=29 Packet filtered
+From 212.21.35.59 icmp_seq=71 Packet filtered
+From 212.21.35.59 icmp_seq=83 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109002ms
+
+2016-04-10 20:31:42,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 20:41:31,006 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=10 Packet filtered
+From 212.21.35.59 icmp_seq=51 Packet filtered
+From 212.21.35.59 icmp_seq=86 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +3 errors, 100% packet loss, time 109000ms
+
+2016-04-10 20:41:31,006 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 20:51:20,008 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=5 Packet filtered
+From 212.21.35.59 icmp_seq=52 Packet filtered
+From 212.21.35.59 icmp_seq=74 Packet filtered
+From 212.21.35.59 icmp_seq=86 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109002ms
+
+2016-04-10 20:51:20,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 21:01:09,006 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=63 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +1 errors, 100% packet loss, time 109000ms
+
+2016-04-10 21:01:09,007 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 21:10:58,006 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=10 Packet filtered
+From 212.21.35.59 icmp_seq=25 Packet filtered
+From 212.21.35.59 icmp_seq=35 Packet filtered
+From 212.21.35.59 icmp_seq=74 Packet filtered
+From 212.21.35.59 icmp_seq=96 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +5 errors, 100% packet loss, time 109000ms
+
+2016-04-10 21:10:58,007 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 21:20:47,008 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=11 Packet filtered
+From 212.21.35.59 icmp_seq=24 Packet filtered
+From 212.21.35.59 icmp_seq=46 Packet filtered
+From 212.21.35.59 icmp_seq=74 Packet filtered
+From 212.21.35.59 icmp_seq=83 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +5 errors, 100% packet loss, time 109003ms
+
+2016-04-10 21:20:47,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 21:30:36,008 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=5 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +1 errors, 100% packet loss, time 109002ms
+
+2016-04-10 21:30:36,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 21:40:25,008 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=6 Packet filtered
+From 212.21.35.59 icmp_seq=19 Packet filtered
+From 212.21.35.59 icmp_seq=53 Packet filtered
+From 212.21.35.59 icmp_seq=63 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109001ms
+
+2016-04-10 21:40:25,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 21:50:14,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=23 Packet filtered
+From 212.21.35.59 icmp_seq=48 Packet filtered
+From 212.21.35.59 icmp_seq=74 Packet filtered
+From 212.21.35.59 icmp_seq=94 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109000ms
+
+2016-04-10 21:50:14,008 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 22:00:03,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=19 Packet filtered
+From 212.21.35.59 icmp_seq=69 Packet filtered
+From 212.21.35.59 icmp_seq=70 Packet filtered
+From 212.21.35.59 icmp_seq=71 Packet filtered
+From 212.21.35.59 icmp_seq=100 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +5 errors, 100% packet loss, time 109000ms
+
+2016-04-10 22:00:03,007 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 22:09:52,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=17 Packet filtered
+From 212.21.35.59 icmp_seq=53 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +2 errors, 100% packet loss, time 109001ms
+
+2016-04-10 22:09:52,008 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 22:19:41,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=13 Packet filtered
+From 212.21.35.59 icmp_seq=24 Packet filtered
+From 212.21.35.59 icmp_seq=34 Packet filtered
+From 212.21.35.59 icmp_seq=81 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109001ms
+
+2016-04-10 22:19:41,008 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 22:29:30,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=9 Packet filtered
+From 212.21.35.59 icmp_seq=23 Packet filtered
+From 212.21.35.59 icmp_seq=83 Packet filtered
+From 212.21.35.59 icmp_seq=84 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109001ms
+
+2016-04-10 22:29:30,008 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 22:39:19,008 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=50 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +1 errors, 100% packet loss, time 109002ms
+
+2016-04-10 22:39:19,009 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 22:49:08,006 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=25 Packet filtered
+From 212.21.35.59 icmp_seq=66 Packet filtered
+From 212.21.35.59 icmp_seq=77 Packet filtered
+From 212.21.35.59 icmp_seq=99 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109000ms
+
+2016-04-10 22:49:08,006 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 22:58:57,006 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=12 Packet filtered
+From 212.21.35.59 icmp_seq=25 Packet filtered
+From 212.21.35.59 icmp_seq=40 Packet filtered
+From 212.21.35.59 icmp_seq=85 Packet filtered
+From 212.21.35.59 icmp_seq=98 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +5 errors, 100% packet loss, time 109000ms
+
+2016-04-10 22:58:57,007 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 23:08:46,009 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=10 Packet filtered
+From 212.21.35.59 icmp_seq=22 Packet filtered
+From 212.21.35.59 icmp_seq=31 Packet filtered
+From 212.21.35.59 icmp_seq=45 Packet filtered
+From 212.21.35.59 icmp_seq=95 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +5 errors, 100% packet loss, time 109000ms
+
+2016-04-10 23:08:46,010 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined
+2016-04-10 23:18:35,007 INFO Node ping result : PING 172.16.66.6 (172.16.66.6) 56(84) bytes of data.
+From 212.21.35.59 icmp_seq=8 Packet filtered
+From 212.21.35.59 icmp_seq=35 Packet filtered
+From 212.21.35.59 icmp_seq=47 Packet filtered
+From 212.21.35.59 icmp_seq=90 Packet filtered
+
+--- 172.16.66.6 ping statistics ---
+100 packets transmitted, 0 received, +4 errors, 100% packet loss, time 109001ms
+
+2016-04-10 23:18:35,008 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'reult' is not defined

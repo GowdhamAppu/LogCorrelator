@@ -1,0 +1,839 @@
+2016-03-22 09:23:53,251 INFO CIrcuit IDs : ['City:Florida  Nodes:', 'EMC_CORE_TAN_3560X_1', 'EMC_CORE_TAN_3560X_2 ']
+2016-03-22 09:23:53,252 INFO Acknowledge string present in the Body message: Acknowledge 
+
+ list:EMC_CORE_TAN_3560X_1; 
+
+ hello
+
+2016-03-22 09:23:53,257 INFO Node record got updated.values are ['Florida', 1, 'EMC_CORE_TAN_3560X_2', 'NO']
+2016-03-22 09:27:17,307 INFO CIrcuit IDs : ['City:Florida  Nodes:', 'EMC_CORE_TAN_3560X_1', 'EMC_CORE_TAN_3560X_2 ']
+2016-03-22 09:27:17,307 INFO Acknowledge string present in the Body message: Acknowledge 
+
+ list:EMC_CORE_TAN_3560X_1; 
+
+ hello
+
+2016-03-22 09:27:17,322 INFO Node record got updated.values are ['Florida', 1, 'EMC_CORE_TAN_3560X_2', 'NO']
+2016-03-22 09:28:47,971 INFO CIrcuit IDs : ['City:Florida  Nodes:', 'EMC_CORE_TAN_3560X_1', 'EMC_CORE_TAN_3560X_2 ']
+2016-03-22 09:28:47,971 INFO Acknowledge string present in the Body message: Acknowledge 
+
+ list:EMC_CORE_TAN_3560X_2; 
+
+ hello
+
+2016-03-22 09:28:47,986 INFO Node Florida info got deleted.
+2016-03-23 17:15:15,723 INFO CIrcuit IDs : ['Nodes down', 'Device-Type : Core-router', 'City:Raisting ']
+2016-03-23 17:15:15,723 INFO Acknowledge string present in the Body message: Acknowledge 
+
+ list:EMC_CORE_IP; 
+
+ hello
+
+2016-03-23 17:15:15,724 INFO Exception occured while deleting records .Error info no such group
+2016-03-23 17:18:17,554 INFO CIrcuit IDs : ['Nodes down', 'Device-Type : Core-router', 'City:Raisting ']
+2016-03-23 17:18:17,555 INFO Acknowledge string present in the Body message: Acknowledge 
+
+ list:EMC_CORE_IP; 
+
+ hello
+
+2016-03-23 17:18:17,570 INFO Node record got updated.values are ['Raisting', 1, 'EMC_RAI_3825_1_SERV', 'NO', '10.10.10.104']
+2016-03-23 17:38:20,923 INFO CIrcuit IDs : ['Nodes down', 'Device-Type : Core-router', 'City:Raisting ']
+2016-03-23 17:38:20,924 INFO Acknowledge string present in the Body message: Acknowledge 
+
+ list:EMC_CORE_IP; 
+
+ hello
+
+2016-03-23 17:38:20,941 INFO Node record got updated.values are ['Raisting', 1, 'EMC_RAI_3825_1_SERV', 'NO', '10.10.10.104']
+2016-03-28 13:20:52,319 INFO CIrcuit IDs : ['Nodes down', 'Device-Type : Core-router', 'City:Raisting ']
+2016-03-28 13:20:52,319 INFO Acknowledge string present in the Body message: Acknowledge 
+
+ list:EMC_CORE_IP; 
+
+ hello
+
+2016-03-28 13:20:52,975 INFO CIrcuit IDs : ['v1 Circuit ID:EMC_TAN_CORE ']
+2016-03-28 13:20:52,975 INFO Acknowledge string present in the Body message: Acknowledge
+
+2016-03-28 13:20:52,976 INFO Going to delete CircuitID record from CoreCircuitState table which has been resolved .
+2016-03-28 13:20:52,987 INFO Record Deleted Successfully 
+2016-03-28 13:22:32,961 INFO CIrcuit IDs : ['v1 Circuit ID:EMC_TAN_CORE ']
+2016-03-28 13:22:32,962 INFO Acknowledge string present in the Body message: Acknowledge
+
+2016-03-28 13:22:32,962 INFO Going to delete CircuitID record from CoreCircuitState table which has been resolved .
+2016-03-28 13:22:32,983 INFO Record Deleted Successfully 
+2016-03-28 13:26:02,531 INFO CIrcuit IDs : ['Nodes down', 'Device-Type : Core-router', 'City:Raisting ']
+2016-03-28 13:26:02,531 INFO Acknowledge string present in the Body message: Acknowledge 
+
+ list:EMC_CORE_IP; 
+
+ hello
+
+2016-03-28 13:26:02,546 INFO Node Raisting info got deleted.
+2016-03-28 13:49:15,268 INFO CIrcuit IDs : ['Circuit ID :999-LAX-USA-KPI-101-FB (CID: 009-01445) ']
+2016-03-28 13:49:15,268 INFO Acknowledge string present in the Body message: --_002_CY1PR0301MB21053C05881FA29AEF228583EA860CY1PR0301MB2105_
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="Generator" content="Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-US" link="#0563C1" vlink="#954F72">
+<div class="WordSection1">
+<p class="MsoNormal">Acknowledge<o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal" style="background:white"><b><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#002464"><img width="346" height="66" id="Picture_x0020_2" src="cid:image001.jpg@01D18913.FA754B70" alt="MADStudios:Projects:MTN:EMC_REBRAND:Deliverables:11-eSig:source:images:BU-Corporate@2x.png"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="background:white"><b><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#002464">Paul Vijay Manoharan&nbsp;</span></i></b><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#1BA2DE">&#8226;</span></i><b><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#1F497D">&nbsp;</span></i></b><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#002060">
+ Core Engineer, UAE</span></i><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#500050"><o:p></o:p></span></i></p>
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif"><a href="mailto:Paul.vijay@emcconnected.com"><span style="color:#0563C1">Paul.vijay@emcconnected.com</span></a><span style="color:#1679D0">&nbsp;</span><span style="color:#18376A">&shy;</span><span style="color:#1C90D6">&#8226;</span><span style="color:#18376A">&nbsp;</span><a href="http://www.emcconnected.com/"><span style="color:#0B4CB4">www.emcconnected.com</span></a><o:p></o:p></span></p>
+<p class="MsoNormal" style="background:white"><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#128ED9">&#43;971.2.2346143 ext. 3200&nbsp;</span></i><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#002464">direct</span></i><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#1F497D">&nbsp;</span></i><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#1BA2DE">&#8226;</span></i><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#1F497D">&nbsp;</span></i><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#128ED9">&#43;971.52.640.78.22&nbsp;</span></i><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#002464">mobile</span></i><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#500050"><o:p></o:p></span></i></p>
+<p class="MsoNormal"><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#011851">P6-039, Sharjah Airport International Free Zone (SAIF Zone)</span><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#1C90D6">&#8226;</span><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#011851">Sharjah,
+ UAE, PO Box 120419</span><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#1C90D6"><o:p></o:p></span></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_002_CY1PR0301MB21053C05881FA29AEF228583EA860CY1PR0301MB2105_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=4819;
+	creation-date="Mon, 28 Mar 2016 13:05:17 GMT";
+	modification-date="Mon, 28 Mar 2016 13:05:17 GMT"
+Content-ID: <image001.jpg@01D18913.FA754B70>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCABCAVoDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2aiii
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigBryJEjPIyqijJZjgCsSbxlo0MhT7SXx3RCR+dcz
+431mS51A6fG5EEGN4B+83v8ASsTT9FvtUilks4d6RfeOQPwHqa9OjgocnPVdrniYnM6iqulQje3z
+O9/4TjRv+esv/fs0f8Jxo3/PWX/v2a83WCV0d1icon3mCkhfqatpol9JpbaisObVerZGfrj0rd4C
+gt3+JyRzXFy+GK+5ne/8Jxo3/PWX/v2a3oZVnhSWM5R1DDPoa8Vr2LS/+QVaf9cV/lXJjMNCik49
+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
+
+--_002_CY1PR0301MB21053C05881FA29AEF228583EA860CY1PR0301MB2105_--
+
+2016-03-28 13:53:05,791 INFO CIrcuit IDs : ['Circuit ID :999-LAX-USA-KPI-101-FB (CID: 009-01445) ']
+2016-03-28 13:53:05,791 INFO Acknowledge string present in the Body message: --_002_CY1PR0301MB21053C05881FA29AEF228583EA860CY1PR0301MB2105_
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="Generator" content="Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-US" link="#0563C1" vlink="#954F72">
+<div class="WordSection1">
+<p class="MsoNormal">Acknowledge<o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal" style="background:white"><b><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#002464"><img width="346" height="66" id="Picture_x0020_2" src="cid:image001.jpg@01D18913.FA754B70" alt="MADStudios:Projects:MTN:EMC_REBRAND:Deliverables:11-eSig:source:images:BU-Corporate@2x.png"><o:p></o:p></span></b></p>
+<p class="MsoNormal" style="background:white"><b><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#002464">Paul Vijay Manoharan&nbsp;</span></i></b><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#1BA2DE">&#8226;</span></i><b><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#1F497D">&nbsp;</span></i></b><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#002060">
+ Core Engineer, UAE</span></i><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#500050"><o:p></o:p></span></i></p>
+<p class="MsoNormal" style="text-autospace:none"><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif"><a href="mailto:Paul.vijay@emcconnected.com"><span style="color:#0563C1">Paul.vijay@emcconnected.com</span></a><span style="color:#1679D0">&nbsp;</span><span style="color:#18376A">&shy;</span><span style="color:#1C90D6">&#8226;</span><span style="color:#18376A">&nbsp;</span><a href="http://www.emcconnected.com/"><span style="color:#0B4CB4">www.emcconnected.com</span></a><o:p></o:p></span></p>
+<p class="MsoNormal" style="background:white"><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#128ED9">&#43;971.2.2346143 ext. 3200&nbsp;</span></i><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#002464">direct</span></i><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#1F497D">&nbsp;</span></i><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#1BA2DE">&#8226;</span></i><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#1F497D">&nbsp;</span></i><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#128ED9">&#43;971.52.640.78.22&nbsp;</span></i><i><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#002464">mobile</span></i><i><span style="font-size:9.5pt;font-family:&quot;Arial&quot;,sans-serif;color:#500050"><o:p></o:p></span></i></p>
+<p class="MsoNormal"><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#011851">P6-039, Sharjah Airport International Free Zone (SAIF Zone)</span><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#1C90D6">&#8226;</span><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#011851">Sharjah,
+ UAE, PO Box 120419</span><span style="font-size:10.0pt;font-family:&quot;Verdana&quot;,sans-serif;color:#1C90D6"><o:p></o:p></span></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_002_CY1PR0301MB21053C05881FA29AEF228583EA860CY1PR0301MB2105_
+Content-Type: image/jpeg; name="image001.jpg"
+Content-Description: image001.jpg
+Content-Disposition: inline; filename="image001.jpg"; size=4819;
+	creation-date="Mon, 28 Mar 2016 13:05:17 GMT";
+	modification-date="Mon, 28 Mar 2016 13:05:17 GMT"
+Content-ID: <image001.jpg@01D18913.FA754B70>
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDAAoHBwkHBgoJCAkLCwoMDxkQDw4ODx4WFxIZJCAmJSMg
+IyIoLTkwKCo2KyIjMkQyNjs9QEBAJjBGS0U+Sjk/QD3/2wBDAQsLCw8NDx0QEB09KSMpPT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT3/wAARCABCAVoDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD2aiii
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigBryJEjPIyqijJZjgCsSbxlo0MhT7SXx3RCR+dcz
+431mS51A6fG5EEGN4B+83v8ASsTT9FvtUilks4d6RfeOQPwHqa9OjgocnPVdrniYnM6iqulQje3z
+O9/4TjRv+esv/fs0f8Jxo3/PWX/v2a83WCV0d1icon3mCkhfqatpol9JpbaisObVerZGfrj0rd4C
+gt3+JyRzXFy+GK+5ne/8Jxo3/PWX/v2a3oZVnhSWM5R1DDPoa8Vr2LS/+QVaf9cV/lXJjMNCik49
+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
+
+--_002_CY1PR0301MB21053C05881FA29AEF228583EA860CY1PR0301MB2105_--
+
+2016-03-28 13:53:05,792 INFO Going to delete CircuitID record from CoreCircuitState table which has been resolved .
+2016-03-28 13:53:05,805 INFO Record Deleted Successfully 
+2016-03-30 13:18:04,800 INFO Acknowledge string present in the Body message: <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="Generator" content="Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-IN" link="#0563C1" vlink="#954F72">
+<div class="WordSection1">
+<p class="MsoNormal">Circuit ID : EMC_CORE_IP<o:p></o:p></p>
+<p class="MsoNormal">Status : Acknowledge<o:p></o:p></p>
+<p class="MsoNormal">MD5hash : <span style="color:#212121;background:white">5f4dcc3b5aa765d61d8327deb882cf99</span><o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class="MsoNormal">Thanks &amp; Regards,<o:p></o:p></p>
+<p class="MsoNormal">Gowdhaman Mohan<o:p></o:p></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+2016-03-30 13:18:04,800 WARNING Unable to parse subject
+2016-03-30 13:18:04,800 WARNING Unable to parse subject
+2016-03-30 13:18:04,801 WARNING Unable to parse subject
+2016-03-30 13:18:04,801 WARNING Unable to parse subject
+2016-03-30 13:18:04,801 WARNING Unable to parse subject
+2016-03-30 13:18:04,801 WARNING Unable to parse subject
+2016-03-30 13:18:04,801 WARNING Unable to parse subject
+2016-03-30 13:18:04,801 WARNING Unable to parse subject
+2016-03-30 13:18:04,801 WARNING Unable to parse subject
+2016-03-30 13:18:04,801 WARNING Unable to parse subject
+2016-03-30 13:18:04,801 WARNING Unable to parse subject
+2016-03-30 13:18:04,801 WARNING Unable to parse subject
+2016-03-30 13:18:04,802 WARNING Unable to parse subject
+2016-03-30 13:18:04,802 WARNING Unable to parse subject
+2016-03-30 13:18:04,802 WARNING Unable to parse subject
+2016-03-30 13:18:04,802 WARNING Unable to parse subject
+2016-03-30 13:18:04,802 WARNING Unable to parse subject
+2016-03-30 13:18:04,802 WARNING Unable to parse subject
+2016-03-30 13:18:04,802 WARNING Unable to parse subject
+2016-03-30 13:18:04,802 WARNING Unable to parse subject
+2016-03-30 13:18:04,802 WARNING Unable to parse subject
+2016-03-30 13:18:04,803 WARNING Unable to parse subject
+2016-03-30 13:18:04,803 WARNING Unable to parse subject
+2016-03-30 13:18:04,803 WARNING Unable to parse subject
+2016-03-30 13:18:04,803 WARNING Unable to parse subject
+2016-03-30 13:18:04,803 WARNING Unable to parse subject
+2016-03-30 13:18:04,803 WARNING Unable to parse subject
+2016-03-30 13:18:04,803 WARNING Unable to parse subject
+2016-03-30 13:18:04,803 WARNING Unable to parse subject
+2016-03-30 13:18:04,803 WARNING Unable to parse subject
+2016-03-30 13:18:04,803 WARNING Unable to parse subject
+2016-03-30 13:18:04,804 WARNING Unable to parse subject
+2016-03-30 13:18:04,804 WARNING Unable to parse subject
+2016-03-30 13:18:04,804 WARNING Unable to parse subject
+2016-03-30 13:18:04,804 WARNING Unable to parse subject
+2016-03-30 13:18:04,804 WARNING Unable to parse subject
+2016-03-30 13:18:04,804 WARNING Unable to parse subject
+2016-03-30 13:18:04,804 WARNING Unable to parse subject
+2016-03-30 13:18:04,804 WARNING Unable to parse subject
+2016-03-30 13:18:04,804 WARNING Unable to parse subject
+2016-03-30 13:18:04,805 WARNING Unable to parse subject
+2016-03-30 13:18:04,805 WARNING Unable to parse subject
+2016-03-30 13:18:04,805 WARNING Unable to parse subject
+2016-03-30 13:18:04,805 WARNING Unable to parse subject
+2016-03-30 13:18:04,805 WARNING Unable to parse subject
+2016-03-30 13:18:04,805 WARNING Unable to parse subject
+2016-03-30 13:18:04,805 WARNING Unable to parse subject
+2016-03-30 13:18:04,805 WARNING Unable to parse subject
+2016-03-30 13:18:04,805 WARNING Unable to parse subject
+2016-03-30 13:18:04,806 INFO Going to delete CircuitID record from CoreCircuitState table which has been resolved .
+2016-03-30 13:18:04,905 INFO Record Deleted Successfully 
+2016-03-30 13:18:04,905 WARNING Unable to parse subject
+2016-03-30 13:18:04,905 WARNING Unable to parse subject
+2016-03-30 13:18:04,905 WARNING Unable to parse subject
+2016-03-30 13:18:04,905 WARNING Unable to parse subject
+2016-03-30 13:18:04,905 WARNING Unable to parse subject
+2016-03-30 13:18:04,905 WARNING Unable to parse subject
+2016-03-30 13:18:04,906 WARNING Unable to parse subject
+2016-03-30 13:18:04,906 WARNING Unable to parse subject
+2016-03-30 13:18:04,906 WARNING Unable to parse subject
+2016-03-30 13:18:04,906 WARNING Unable to parse subject
+2016-03-30 13:18:04,906 WARNING Unable to parse subject
+2016-03-31 07:32:25,873 INFO Acknowledge string present in the Body message: <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="Generator" content="Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+p.xmsonormal, li.xmsonormal, div.xmsonormal
+	{mso-style-name:x_msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-IN" link="#0563C1" vlink="#954F72">
+<div class="WordSection1">
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Nodes Down: EMC_CORE_IP<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Status : Acknowledge<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">MD5hash :</span><span class="apple-converted-space"><span style="font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;</span></span><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121;background:white">5f4dcc3b5aa765d61d8327deb882cf99</span><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121"><o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Thanks &amp; Regards,<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Gowdhaman Mohan<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+2016-03-31 07:34:05,445 INFO Acknowledge string present in the Body message: <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="Generator" content="Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+p.xmsonormal, li.xmsonormal, div.xmsonormal
+	{mso-style-name:x_msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-IN" link="#0563C1" vlink="#954F72">
+<div class="WordSection1">
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Nodes Down: EMC_CORE_IP<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Status : Acknowledge<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">MD5hash :</span><span class="apple-converted-space"><span style="font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;</span></span><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121;background:white">5f4dcc3b5aa765d61d8327deb882cf99</span><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121"><o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Thanks &amp; Regards,<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Gowdhaman Mohan<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+2016-03-31 07:34:05,460 INFO Node record got updated.values are ['Raisting', 1, 'EMC_CORE_IP', 'NO', '10.10.10.104']
+2016-03-31 07:43:46,605 INFO Acknowledge string present in the Body message: <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="Generator" content="Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+p.xmsonormal, li.xmsonormal, div.xmsonormal
+	{mso-style-name:x_msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-IN" link="#0563C1" vlink="#954F72">
+<div class="WordSection1">
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Nodes Down: EMC_CORE_IP<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Status : Acknowledge<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">MD5hash :</span><span class="apple-converted-space"><span style="font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;</span></span><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121;background:white">5f4dcc3b5aa765d61d8327deb882cf99</span><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121"><o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Thanks &amp; Regards,<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Gowdhaman Mohan<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+2016-03-31 07:43:46,621 INFO Node record got updated.values are ['Raisting', 1, 'EMC_CORE_IP', 'NO', '10.10.10.104']
+2016-03-31 07:46:00,000 INFO Acknowledge string present in the Body message: <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="Generator" content="Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:#954F72;
+	text-decoration:underline;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+p.xmsonormal, li.xmsonormal, div.xmsonormal
+	{mso-style-name:x_msonormal;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-IN" link="#0563C1" vlink="#954F72">
+<div class="WordSection1">
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white"><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Nodes Down: EMC_CORE_IP<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Status : Acknowledge<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">MD5hash :</span><span class="apple-converted-space"><span style="font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;</span></span><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121;background:white">5f4dcc3b5aa765d61d8327deb882cf99</span><span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121"><o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Thanks &amp; Regards,<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">Gowdhaman Mohan<o:p></o:p></span></p>
+<p class="xmsonormal" style="margin:0cm;margin-bottom:.0001pt;background:white;orphans: auto;text-align:start;widows: 1;-webkit-text-stroke-width: 0px;word-spacing:0px">
+<span style="font-size:11.0pt;font-family:&quot;Calibri&quot;,sans-serif;color:#212121">&nbsp;<o:p></o:p></span></p>
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+2016-03-31 07:46:00,020 INFO Node Raisting info got deleted.

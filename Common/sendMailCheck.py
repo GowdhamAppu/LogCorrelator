@@ -9,6 +9,12 @@
 """
  Importing required packages for this Apps
 """
+
+import os.path
+import sys
+file_path = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), os.path.pardir))
+if file_path not in sys.path:
+    sys.path.insert(0, file_path) 
 import sys
 import re
 from termcolor import colored
@@ -59,5 +65,8 @@ if __name__ == '__main__':
           ret,out=sendmail.check('ps aux | grep \"python -W ignore /opt/CoreMonitoringApp/sendMail.py\"',0)
     else:	  
           sendmail.killProcess('ps ax | grep \"python -W ignore /opt/CoreMonitoringApp/sendMail.py\" | grep -v grep')
+	  sendmail.killProcess('ps ax | grep \"python -W ignore /opt/CoreMonitoringApp/sendMail_NodeDown.py\" | grep -v grep')
         
+
+
 

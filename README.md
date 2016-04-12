@@ -1,3 +1,0 @@
-# LogCorrelator
-CoreMonitoring Apps
-

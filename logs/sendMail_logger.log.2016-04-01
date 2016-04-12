@@ -1,0 +1,81 @@
+2016-04-02 13:33:42,002 INFO Going to perform ping from both ends
+2016-04-02 13:33:49,800 INFO Device 10.10.10.203. Command sh run interface GigabitEthernet2/22.400. Output Building configuration...
+
+Current configuration : 285 bytes
+!
+interface GigabitEthernet2/22.400
+ description To EMC_CORE_NAI_ASR1K2_GI0/0/0 via WIOCC CID: CA-MU-C031-0025
+ encapsulation dot1Q 400
+ ip address 212.21.38.43 255.255.255.254
+ ip router isis 
+ ip pim sparse-mode
+ mpls traffic-eng tunnels
+ mpls ip
+ clns mtu 1497
+ isis metric 95
+end
+
+2016-04-02 13:33:59,837 INFO Device 10.10.10.231. Command sh run interface GigabitEthernet0/0/0.400. Output Building configuration...
+
+Current configuration : 236 bytes
+!
+interface GigabitEthernet0/0/0.400
+ description EMC_CORE_LND_7606_2_GI0/2
+ encapsulation dot1Q 400
+ ip address 212.21.38.42 255.255.255.254
+ ip router isis 
+ ip pim sparse-mode
+ mpls ip
+ cdp enable
+ clns mtu 1497
+ isis metric 95
+end
+
+2016-04-02 13:34:31,858 INFO Device 10.10.10.203.Ping  Command ping 212.21.38.42 source 212.21.38.43 repeat 30 timeout 1. Output 
+Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.38.42, timeout is 1 seconds:
+Packet sent with a source address of 212.21.38.43 
+..............................
+Success rate is 0 percent (0/30)
+2016-04-02 13:35:04,885 INFO Device 10.10.10.231. Ping Command ping 212.21.38.43 source 212.21.38.42 time 1 repeat 30. Output Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.38.43, timeout is 1 seconds:
+Packet sent with a source address of 212.21.38.42 
+..............................
+Success rate is 0 percent (0/30)
+2016-04-02 13:35:04,886 INFO Ping result success rate for A ENd Device : 0 , For Z End Device : 0 
+2016-04-02 13:35:04,987 INFO Send mail content. Subject Sev1 Circuit ID :,999-LON-TZA-DAR-201-FB(Wiocc-CID:CA-MU-C031-0023),CA-MU-C031-0007 .message Team
+
+Please find the details about the devices
+
+
+ AEnd Device :EMC_CORE_LND_7606_2 Interface :GigabitEthernet2/22.400
+ ZEnd Device :EMC_CORE_NAI_ASR1K1_2 Interface :GigabitEthernet0/0/0.400
+ Circuit Provider :WIOCC
+ CircuitID :CA-MU-C031-0025   OrderID :CA-MU-C031-0025
+ SLAStatus :Down
+
+
+ AEnd Device :EMC_CORE_NAI_ASR1K1 Interface :Serial0/1/1
+ ZEnd Device :EMC_LND_7206_2 Interface :Serial2/0
+ Circuit Provider :WIOCC
+ CircuitID :CA-MU-C031-0007   OrderID :CA-MU-C031-0007
+ SLAStatus :Down
+
+
+
+ Ping result from Device 212.21.38.43 to Device 212.21.38.42 
+      
+Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.38.42, timeout is 1 seconds:
+Packet sent with a source address of 212.21.38.43 
+..............................
+Success rate is 0 percent (0/30)
+
+ Ping result from Device 212.21.38.42 to Device 212.21.38.43 
+       Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.38.43, timeout is 1 seconds:
+Packet sent with a source address of 212.21.38.42 
+..............................
+Success rate is 0 percent (0/30)
+
+

@@ -1,0 +1,27 @@
+2016-03-31 06:53:24,816 INFO Got Alert from OrionServer 3/31/2016 6:53 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 83.947998046875.
+2016-03-31 06:53:24,830 INFO Check CallGOCStatus is enabled or not.
+2016-03-31 06:53:24,830 INFO CallGOCStatus got enabled.
+2016-03-31 06:53:24,831 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201603 where (date between '2016-03-31' AND '2016-03-31') AND (time between '01:35:08' AND '06:53:24')
+2016-03-31 06:53:24,833 INFO Records fetched successfully
+2016-03-31 06:53:24,833 INFO Record: (49311L, '1', datetime.date(2016, 3, 31), datetime.timedelta(0, 24803), 'ORION', '%OrionAlertEngine', None, '3/31/2016 6:53 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 83.947998046875.')
+2016-03-31 06:53:24,833 INFO INFO RECORD BEFORE PARSE MESSAGE : 3/31/2016 6:53 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 83.947998046875.
+2016-03-31 06:53:24,833 INFO Parsed pattern Tag LA-MIA-200Mbps_COGENT CID:1-102792365
+2016-03-31 06:53:24,838 INFO There is no record found in CoreCircuitDetails table for patternTag LA-MIA-200Mbps_COGENT CID:1-102792365
+2016-03-31 06:58:28,879 INFO Got Alert from OrionServer 3/31/2016 6:58 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 83.6159973144531.
+2016-03-31 06:58:28,892 INFO Check CallGOCStatus is enabled or not.
+2016-03-31 06:58:28,892 INFO CallGOCStatus got enabled.
+2016-03-31 06:58:28,893 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201603 where (date between '2016-03-31' AND '2016-03-31') AND (time between '06:53:24' AND '06:58:28')
+2016-03-31 06:58:28,894 INFO Records fetched successfully
+2016-03-31 06:58:28,894 INFO Record: (49312L, '1', datetime.date(2016, 3, 31), datetime.timedelta(0, 25107), 'rai-orionnpm-01', '%OrionAlertEngine', None, '3/31/2016 6:58 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 83.6159973144531.')
+2016-03-31 06:58:28,894 INFO INFO RECORD BEFORE PARSE MESSAGE : 3/31/2016 6:58 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 83.6159973144531.
+2016-03-31 06:58:28,894 INFO Parsed pattern Tag LA-MIA-200Mbps_COGENT CID:1-102792365
+2016-03-31 06:58:28,899 INFO There is no record found in CoreCircuitDetails table for patternTag LA-MIA-200Mbps_COGENT CID:1-102792365
+2016-03-31 07:03:31,283 INFO Got Alert from OrionServer 3/31/2016 7:03 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 83.2180023193359.
+2016-03-31 07:03:31,296 INFO Check CallGOCStatus is enabled or not.
+2016-03-31 07:03:31,296 INFO CallGOCStatus got enabled.
+2016-03-31 07:03:31,297 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201603 where (date between '2016-03-31' AND '2016-03-31') AND (time between '06:58:28' AND '07:03:31')
+2016-03-31 07:03:31,298 INFO Records fetched successfully
+2016-03-31 07:03:31,298 INFO Record: (49315L, '1', datetime.date(2016, 3, 31), datetime.timedelta(0, 25410), 'ORION', '%OrionAlertEngine', None, '3/31/2016 7:03 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 83.2180023193359.')
+2016-03-31 07:03:31,298 INFO INFO RECORD BEFORE PARSE MESSAGE : 3/31/2016 7:03 AM: Core-KPI-Alert - LA-MIA-200Mbps_COGENT CID:1-102792365 - Latency is 83.2180023193359.
+2016-03-31 07:03:31,298 INFO Parsed pattern Tag LA-MIA-200Mbps_COGENT CID:1-102792365
+2016-03-31 07:03:31,302 INFO There is no record found in CoreCircuitDetails table for patternTag LA-MIA-200Mbps_COGENT CID:1-102792365

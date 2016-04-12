@@ -1,0 +1,46 @@
+2016-04-09 10:29:08,003 INFO Going to perform ping from both ends
+2016-04-09 10:29:15,800 INFO Device 10.10.10.203. Command sh run interface GigabitEthernet2/22.400. Output Building configuration...
+
+Current configuration : 285 bytes
+!
+interface GigabitEthernet2/22.400
+ description To EMC_CORE_NAI_ASR1K2_GI0/0/0 via WIOCC CID: CA-MU-C031-0025
+ encapsulation dot1Q 400
+ ip address 212.21.38.43 255.255.255.254
+ ip router isis 
+ ip pim sparse-mode
+ mpls traffic-eng tunnels
+ mpls ip
+ clns mtu 1497
+ isis metric 95
+end
+
+2016-04-09 10:29:25,831 INFO Device 10.10.10.231. Command sh run interface GigabitEthernet0/0/0.400. Output Building configuration...
+
+Current configuration : 236 bytes
+!
+interface GigabitEthernet0/0/0.400
+ description EMC_CORE_LND_7606_2_GI0/2
+ encapsulation dot1Q 400
+ ip address 212.21.38.42 255.255.255.254
+ ip router isis 
+ ip pim sparse-mode
+ mpls ip
+ cdp enable
+ clns mtu 1497
+ isis metric 95
+end
+
+2016-04-09 10:29:32,836 INFO Device 10.10.10.203.Ping  Command ping 212.21.38.42 source 212.21.38.43 repeat 30 timeout 1. Output 
+Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.38.42, timeout is 1 seconds:
+Packet sent with a source address of 212.21.38.43 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Success rate is 100 percent (30/30), round-trip min/avg/max = 172/173/176 ms
+2016-04-09 10:29:40,844 INFO Device 10.10.10.231. Ping Command ping 212.21.38.43 source 212.21.38.42 time 1 repeat 30. Output Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.38.43, timeout is 1 seconds:
+Packet sent with a source address of 212.21.38.42 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Success rate is 100 percent (30/30), round-trip min/avg/max = 173/173/180 ms
+2016-04-09 10:29:40,845 INFO Ping result success rate for A ENd Device : 100 , For Z End Device : 100 
+2016-04-09 10:29:40,974 INFO Ping Result got passed.so going to delete InternalCircuitID state details from CoreCircuitState table

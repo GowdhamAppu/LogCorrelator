@@ -1,0 +1,10 @@
+2016-03-31 09:06:35,858 INFO Got Alert from OrionServer 3/31/2016 9:06 AM: Core-KPI-Alert - EMC_LND_ASR1K1_1 - The neighbor 195.66.224.57 on Node EMC_LND_ASR1K1_1 went down.
+2016-03-31 09:06:35,872 INFO Check CallGOCStatus is enabled or not.
+2016-03-31 09:06:35,872 INFO CallGOCStatus got enabled.
+2016-03-31 09:06:35,873 INFO Sql Statement for to fetch records between times and date SELECT * FROM syslog_201603 where (date between '2016-03-31' AND '2016-03-31') AND (time between '08:02:09' AND '09:06:35')
+2016-03-31 09:06:35,877 INFO Records fetched successfully
+2016-03-31 09:06:35,877 INFO Record: (49349L, '1', datetime.date(2016, 3, 31), datetime.timedelta(0, 28976), 'rai-orionnpm-01', '%OrionAlertEngine', None, '3/31/2016 8:02 AM: Core-KPI-Alert - EMC_RAI_3825_1_SERV has rebooted. Thursday, March 31, 2016 7:59 AM')
+2016-03-31 09:06:35,878 WARNING The Node  EMC_RAI_3825_1_SERV got rebooted.
+2016-03-31 09:06:35,891 INFO Mail sent to ['pvijay@emc-corp.net', 'Gowdhaman.Mohan@emcconnected.com']
+2016-03-31 09:06:35,891 INFO parsed message EMC_RAI_3825_1_SERV
+2016-03-31 09:06:35,891 INFO Record: (49505L, '1', datetime.date(2016, 3, 31), datetime.timedelta(0, 32794), 'ORION', '%OrionAlertEngine', None, '3/31/2016 9:06 AM: Core-KPI-Alert - EMC_LND_ASR1K1_1 - The neighbor 195.66.224.57 on Node EMC_LND_ASR1K1_1 went down.')

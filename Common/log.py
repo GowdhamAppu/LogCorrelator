@@ -8,7 +8,11 @@
 """
  Importing required packages for this Apps
 """
-
+import os.path
+import sys
+file_path = os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__)), os.path.pardir))
+if file_path not in sys.path:
+    sys.path.insert(0, file_path)
 import logging
 import logging.handlers
 """
@@ -25,7 +29,7 @@ class log:
          return
       self.logger.propagate = False
       #handler = logging.FileHandler(fileName)
-      handler = logging.handlers.TimedRotatingFileHandler(fileName,"H",1,5)
+      handler = logging.handlers.TimedRotatingFileHandler("/opt/CoreMonitoringApp/logs/"+fileName,"d",1,15)
       formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
       handler.setFormatter(formatter)
       self.logger.addHandler(handler)

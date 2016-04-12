@@ -14,7 +14,7 @@ from email.mime.text import MIMEText
 from pycall import CallFile, Call, Application
 from datetime import datetime
 import time
-from DBCode import DBCode
+from Common.DBCode import DBCode
 from netmiko import ConnectHandler
 from multiprocessing import Process, Queue, Value, Array
 import Queue as CheckQueue
@@ -24,8 +24,8 @@ import subprocess
 import smtplib
 from decimal import Decimal
 import re
-from common import common
-from log import log
+from Common.common import common
+from Common.log import log
 """
  This method used to send mail to given mailID with proper info.
 """
@@ -88,18 +88,27 @@ def checkAfterTimeout(db):
                                                                 diff=Decimal(str(seconds)) - Decimal(str(rec1[4]))
                                                                 if int(diff) >= 60:
                                                                                 setFlag=[]
+                                                                                SqlQuery=""
                                                                                 row=db.selectCoreRouterDetails(rec1[0])
                                                                                 for rec in row:
                                                                                                 log.info('Going to perform ping from both ends')
                                                                                                 result,AEndIntf,BEndIntf,pingA,pingB,slaState=pingTest(str(rec[10]),str(rec[11]),str(rec[5]),str(rec[7]),str(rec[12]),str(rec1[1]))
                                                                                                 if result == 0:
-                                                                                                                setFlag.append(rec1[0])
+                                                                                                                #setFlag.append(rec1[0])
                 
-                                                                                                                setFlag.append('YES')
+                                                                                                                #setFlag.append('YES')
                 
-                                                                                                                setFlag.append('0')
-                                                                                                                
-                                                                                                                setGOCFlag(db,setFlag,str(rec[4]),str(rec[5]),str(rec[6]),str(rec[7]),str(rec[8]),str(rec1[2]),str(rec1[0]),AEndIntf,BEndIntf,pingA,pingB,str(rec[1]),str(rec[2]),slaState)
+                                                                                                                #setFlag.append('0')
+                                                                                                                if slaState.strip() == "0":
+                                                                                                                    SqlQuery="update CoreCircuitStates set GOCFlag = LTRIM(\'YES\'), Time = LTRIM(\'0\') where InternalCircuitID = LTRIM(\'"+str(rec1[0])+"\')"
+                                                                                                                else:
+                                                                                                                    SqlQuery="update CoreCircuitStates set GOCFlag = LTRIM(\'YES\'), Time = LTRIM(\'0\') , SLAState = LTRIM(\'"+str(slaState)+"\') where InternalCircuitID = LTRIM(\'"+str(rec1[0])+"\')"
+                                                                                                                phNumber=""
+                                                                                                                if "NO" in str(rec[13]).strip():
+                                                                                                                    phNumber=""
+                                                                                                                else:
+                                                                                                                    phNumber=str(rec[13]).strip()
+                                                                                                                setGOCFlag(db,SqlQuery,str(rec[4]),str(rec[5]),str(rec[6]),str(rec[7]),str(rec[8]),str(rec1[2]),str(rec1[0]),AEndIntf,BEndIntf,pingA,pingB,str(rec[1]),str(rec[2]),slaState,phNumber)
                                                                                                 else:
                                                                                                                 log.info("Ping Result got passed.so going to delete InternalCircuitID state details from CoreCircuitState table")
                                                                                                                 try:
@@ -128,7 +137,7 @@ def checkAfterTimeout(db):
 """
 If ping test fail then it set GOCFlag as yes and send mail to given mail ID with proper info.
 """
-def setGOCFlag(db,values,val1,val2,val3,val4,val5,val6,val7,AEndIntf,BEndIntf,pingA,pingB,val8,val9,slaStates):
+def setGOCFlag(db,values,val1,val2,val3,val4,val5,val6,val7,AEndIntf,BEndIntf,pingA,pingB,val8,val9,slaStates,phNumber):
             try: 
                 db.updateTable(values)
                 msg=""
@@ -158,14 +167,20 @@ def setGOCFlag(db,values,val1,val2,val3,val4,val5,val6,val7,AEndIntf,BEndIntf,pi
                                                                                                 slaState=slaStates
                                                                                 break
            
-                                                message=message+"\n AEnd Device :"+str(val[4])+" Interface :"+str(val[5])+"\n ZEnd Device :"+str(val[6])+" Interface :"+str(val[7])+"\n Circuit Provider :"+str(val[8])+"\n CircuitID :"+str(val[1])+"   OrderID :"+str(val[2])+"\n SLAStatus :"+slaState+"\n\n"
+                                                phNumber1=""
+                                                if "NO" in str(val[13]).strip():
+                                                    phNumber1=""
+                                                else:
+                                                    phNumber1=str(val[13]).strip()
+                                                message=message+"\n AEnd Device :"+str(val[4])+" Interface :"+str(val[5])+"\n ZEnd Device :"+str(val[6])+" Interface :"+str(val[7])+"\n Circuit Provider :"+str(val[8])+"\n CircuitID :"+str(val[1])+"   OrderID :"+str(val[2])+"\n SLAStatus :"+slaState+"\n Phone Number :"+phNumber1+"\n\n"
                 else:
-                                message="\n AEnd Device :" +val1+"  Interface : "+val2+"\n ZEnd Device :"+val3+"  Interface :"+val4+"\n Circuit Provider :"+val5+"\n CircuitID :"+val8+"  OrderID  :"+val9+"\n SLASTatus :"+msg
+                                message="\n AEnd Device :" +val1+"  Interface : "+val2+"\n ZEnd Device :"+val3+"  Interface :"+val4+"\n Circuit Provider :"+val5+"\n CircuitID :"+val8+"  OrderID  :"+val9+"\n SLASTatus :"+msg+"\n Phone Number :"+phNumber
+                                
                 if pingA.strip() == "Fail":
                         message+="\n\n Access to the routers got failed due to Authentication failed."
                 else:
                     try:
-                        if int(AEndIntf) == 0 and int(BEndIntf) == 0 and int(pingA) == 0 and int(pingB) == 0:
+                        if int(AEndIntf) == 0 and int(BEndIntf) == 0 and pingA == "0" and int(pingB) == 0:
                             message+="\n\n Connection to device got timed-out"
                     except Exception as e:     
                             message+="\n\n Ping result from Device " +AEndIntf+" to Device "+BEndIntf+" \n      "+pingA+"\n\n Ping result from Device "+BEndIntf+" to Device "+AEndIntf+" \n       "+pingB+"\n\n"
@@ -181,7 +196,7 @@ def pingTest(device1,device2,aIntf,bIntf,latencyValue,latency):
                                                                 #password="WAnoharan!123"
                                                                 delayFactor,loop = common.getSendCommandDelayFactor() 
                                                                 timeout=getTimeout()
-                                                                slaState=""
+                                                                slaState="0"
                                                                 AEnddevice = ConnectHandler(device_type="cisco_ios", ip=device1, username=username, password=password)
                                                                 command='sh run interface '+aIntf
                                                                 AEnddevice.clear_buffer()
@@ -292,10 +307,10 @@ def pingTest(device1,device2,aIntf,bIntf,latencyValue,latency):
                                                     subject="Authentication failed on routers"+device1+","+device2
                                                     message="Error while login to Routers.Authentication failed"
                                                     sendMail(subject,message,'exception')       
-                                                    return 0,0,0,"Fail",0                        
+                                                    return 0,0,0,"Fail",0,""                        
                                                 elif "timed-out" in str(e):
                                                     log.warning("Device timed out error %s",str(e))
-                                                    return 0,0,0,0,0,""
+                                                    return 0,0,0,"0",0,""
                                                 else:
                                                     log.warning("Error occured while doing pingtest %s",str(e))
                                                     
@@ -308,6 +323,11 @@ if __name__=="__main__":
 
 
                                                 
+
+
+
+
+
 
 
 

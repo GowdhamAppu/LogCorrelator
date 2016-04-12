@@ -1,0 +1,213 @@
+2016-04-04 12:35:45,001 WARNING Node Down-- Exception occured(CheckDatabse Module). Error info : global name 'nodePingReboot' is not defined
+2016-04-04 12:52:42,017 INFO Node ping result : PING 172.29.254.45 (172.29.254.45) 56(84) bytes of data.
+
+--- 172.29.254.45 ping statistics ---
+100 packets transmitted, 0 received, 100% packet loss, time 109007ms
+
+2016-04-04 12:52:42,018 INFO Node -- Send mail content. Subject Sev2 Node Down, Device-Type :EMC CORE, City:Raisting .message Team 
+
+
+ Please find details about down node 
+
+     Device Name :CSR-DEMO   IP-Address :172.29.254.45  Device-Type : Core City : Raisting   State : Packet Loss
+     Ping Result 
+               PING 172.29.254.45 (172.29.254.45) 56(84) bytes of data.
+
+--- 172.29.254.45 ping statistics ---
+100 packets transmitted, 0 received, 100% packet loss, time 109007ms
+
+2016-04-04 12:52:42,041 INFO Node-- Mail has been sent to ['pvijay@emc-corp.net', 'Gowdhaman.Mohan@emcconnected.com']
+2016-04-05 10:47:45,001 INFO Going to perform ping from both ends
+2016-04-05 10:47:52,505 INFO Device 10.10.10.71. Command sh run interface GigabitEthernet3/24. Output Building configuration...
+
+Current configuration : 321 bytes
+!
+interface GigabitEthernet3/24
+ description TO EMC_CORE_LND_7606_2 via T-SYSTEM 0EV/3 Diessen 1
+ mtu 9216
+ ip address 212.21.51.100 255.255.255.254
+ ip router isis 
+ ip pim sparse-mode
+ logging event link-status
+ load-interval 30
+ speed nonegotiate
+ mpls traffic-eng tunnels
+ mpls ip
+ clns mtu 1497
+ isis metric 31
+end
+
+2016-04-05 10:48:00,305 INFO Device 10.10.10.203. Command sh run interface GigabitEthernet1/2/1. Output Building configuration...
+
+Current configuration : 336 bytes
+!
+interface GigabitEthernet1/2/1
+ description TO EMC_CORE_RAI_7606_2 via T-SYSTEM 0EV/3 Diessen 1
+ mtu 9216
+ ip address 212.21.51.101 255.255.255.254
+ ip router isis 
+ ip pim sparse-mode
+ logging event link-status
+ load-interval 30
+ no negotiation auto
+ mpls traffic-eng tunnels
+ mpls ip
+ cdp enable
+ clns mtu 1497
+ isis metric 31
+end
+
+2016-04-05 10:48:03,309 INFO Device 10.10.10.71.Ping  Command ping 212.21.51.101 source 212.21.51.100 repeat 30 timeout 1. Output 
+Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.51.101, timeout is 1 seconds:
+Packet sent with a source address of 212.21.51.100 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Success rate is 100 percent (30/30), round-trip min/avg/max = 20/22/24 ms
+2016-04-05 10:48:06,313 INFO Device 10.10.10.203. Ping Command ping 212.21.51.100 source 212.21.51.101 time 1 repeat 30. Output 
+Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.51.100, timeout is 1 seconds:
+Packet sent with a source address of 212.21.51.101 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Success rate is 100 percent (30/30), round-trip min/avg/max = 20/22/24 ms
+2016-04-05 10:48:06,313 INFO Ping result success rate for A ENd Device : 100 , For Z End Device : 100 
+2016-04-05 10:48:06,504 INFO Send mail content. Subject Sev2 Circuit ID :EMC-CID-RAI-LND-DIESSEN-3 .message Team
+
+Please find the details about the devices
+
+
+ AEnd Device :EMC_CORE_RAI_7606_2  Interface : GigabitEthernet3/24
+ ZEnd Device :EMC_CORE_LND_7606_2  Interface :GigabitEthernet1/2/1
+ Circuit Provider :Deutsche Telekom
+ CircuitID :0EV/3 Diessen 56 SCF1 . London T7 / 7LB/2 / Port 15.3  OrderID  :DU1400739
+ SLASTatus :Latency-Below threshold
+ Phone Number :
+
+ Ping result from Device 212.21.51.100 to Device 212.21.51.101 
+      
+Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.51.101, timeout is 1 seconds:
+Packet sent with a source address of 212.21.51.100 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Success rate is 100 percent (30/30), round-trip min/avg/max = 20/22/24 ms
+
+ Ping result from Device 212.21.51.101 to Device 212.21.51.100 
+       
+Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 212.21.51.100, timeout is 1 seconds:
+Packet sent with a source address of 212.21.51.101 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Success rate is 100 percent (30/30), round-trip min/avg/max = 20/22/24 ms
+
+
+2016-04-05 13:31:33,005 INFO Node ping result : PING 172.29.254.45 (172.29.254.45) 56(84) bytes of data.
+
+--- 172.29.254.45 ping statistics ---
+100 packets transmitted, 0 received, 100% packet loss, time 108999ms
+
+2016-04-05 13:31:33,006 INFO Node -- Send mail content. Subject Sev2 Node Down, Device-Type :EMC CORE, City:Raisting .message Team 
+
+
+ Please investigate this node down incident 
+
+     Device Name :CSR-DEMO   IP-Address :172.29.254.45  Device-Type : Core City : Raisting   State : Packet Loss
+     Ping Result 
+               PING 172.29.254.45 (172.29.254.45) 56(84) bytes of data.
+
+--- 172.29.254.45 ping statistics ---
+100 packets transmitted, 0 received, 100% packet loss, time 108999ms
+
+2016-04-05 13:31:33,028 INFO Node-- Mail has been sent to ['pvijay@emc-corp.net', 'Gowdhaman.Mohan@emcconnected.com']
+2016-04-05 15:53:22,008 INFO Node ping result : PING 172.29.254.45 (172.29.254.45) 56(84) bytes of data.
+
+--- 172.29.254.45 ping statistics ---
+100 packets transmitted, 0 received, 100% packet loss, time 109001ms
+
+2016-04-05 15:53:22,009 INFO Node -- Send mail content. Subject Sev2 Node Down, Device-Type :EMC CORE, City:Raisting .message Team 
+
+
+ Please investigate this node down incident 
+
+     Device Name :CSR-DEMO   IP-Address :172.29.254.45  Device-Type : Core City : Raisting   State : Packet Loss
+     Ping Result 
+               PING 172.29.254.45 (172.29.254.45) 56(84) bytes of data.
+
+--- 172.29.254.45 ping statistics ---
+100 packets transmitted, 0 received, 100% packet loss, time 109001ms
+
+2016-04-05 15:53:22,025 INFO Node-- Mail has been sent to ['pvijay@emc-corp.net', 'Gowdhaman.Mohan@emcconnected.com']
+2016-04-05 15:59:52,002 INFO Going to perform ping from both ends
+2016-04-05 16:00:01,723 INFO Device 10.10.10.150. Command sh run interface GigabitEthernet0/3.101. Output Building configuration...
+
+Current configuration : 359 bytes
+!
+interface GigabitEthernet0/3.101
+ description TO KPL HPT 100Mbps
+ bandwidth 200000
+ encapsulation dot1Q 101
+ ip address 74.113.255.229 255.255.255.252
+ ip mtu 1968
+ ip router isis 
+ ip flow monitor FLOW_MONITOR-HPT-KPL output
+ ip pim sparse-mode
+ mpls mtu 1982
+ mpls traffic-eng tunnels
+ mpls ip
+ clns mtu 1497
+ isis metric 124
+ isis hello-interval 30
+end
+
+2016-04-05 16:00:12,248 INFO Device 10.10.10.175. Command sh run interface GigabitEthernet0/0/2.103. Output Building configuration...
+
+Current configuration : 369 bytes
+!
+interface GigabitEthernet0/0/2.103
+ description TO KPL HPT 100Mbps
+ bandwidth 100000
+ encapsulation dot1Q 103
+ ip address 74.113.255.230 255.255.255.252
+ ip mtu 1968
+ ip router isis 
+ ip flow monitor FLOW_MONITOR-HPT-LA input
+ ip pim sparse-mode
+ shutdown
+ mpls ip
+ mpls mtu 1982
+ mpls traffic-eng tunnels
+ clns mtu 1497
+ isis metric 124
+ isis hello-interval 30
+end
+
+2016-04-05 16:00:45,275 INFO Device 10.10.10.150.Ping  Command ping 74.113.255.230 source 74.113.255.229 repeat 30 timeout 1. Output 
+Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 74.113.255.230, timeout is 1 seconds:
+Packet sent with a source address of 74.113.255.229 
+..............................
+Success rate is 0 percent (0/30)
+2016-04-05 16:00:48,278 INFO Device 10.10.10.175. Ping Command ping 74.113.255.229 source 74.113.255.230 time 1 repeat 30. Output % Invalid source address- IP address not on any of our up interfaces
+2016-04-05 16:00:48,278 INFO Ping result success rate for A ENd Device : 0 , For Z End Device : 0 
+2016-04-05 16:00:48,353 INFO Send mail content. Subject Sev2 Circuit ID :999-LAX-USA-KPI-101-FB (CID: 009-01445) .message Team
+
+Please find the details about the devices
+
+
+ AEnd Device :EMC_CORE_LA_7206_1  Interface : GigabitEthernet0/3.101
+ ZEnd Device :EMC_CORE_KPL_ASR1K1_1  Interface :GigabitEthernet0/0/2.103
+ Circuit Provider :HPT
+ CircuitID :009-01445  OrderID  :74893-SMFO-1
+ SLASTatus :Down
+ Phone Number :808-674-9157
+
+ Ping result from Device 74.113.255.229 to Device 74.113.255.230 
+      
+Type escape sequence to abort.
+Sending 30, 100-byte ICMP Echos to 74.113.255.230, timeout is 1 seconds:
+Packet sent with a source address of 74.113.255.229 
+..............................
+Success rate is 0 percent (0/30)
+
+ Ping result from Device 74.113.255.230 to Device 74.113.255.229 
+       % Invalid source address- IP address not on any of our up interfaces
+
+

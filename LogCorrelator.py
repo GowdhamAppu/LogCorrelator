@@ -15,7 +15,7 @@ from email.mime.text import MIMEText
 from pycall import CallFile, Call, Application
 from datetime import datetime
 import time
-from DBCode import DBCode
+from Common.DBCode import DBCode
 from netmiko import ConnectHandler
 from multiprocessing import Process, Queue, Value, Array
 import Queue as CheckQueue
@@ -23,8 +23,10 @@ import getopt
 import getpass
 import subprocess
 import re
-from common import common
-from log import log
+from Common.common import common
+from Common.log import log
+from Common.Orion import Orion
+import commands as cm
 
 
 def sendAuthFailMail(device1,device2):
@@ -38,20 +40,41 @@ def sendAuthFailMail(device1,device2):
                 msg = MIMEText(messages)
                 msg['Subject'] = subject
                 msg['From'] = from_addr_list
-                msg['To'] = to_addr_list
+                msg['To'] = ",".join(to_addr_list)
                 server = smtplib.SMTP(smtpserver)
                 server.ehlo()
                 send = server.sendmail(from_addr_list,to_addr_list,msg.as_string())
                 server.quit()
             except Exception as e:
                 log.warning("Send Authentication mail got error %s",str(e))
+                
+def sendRebootMail(Nodename,result,city,customer,country):
+            try:
+                subject = "Sev3 Node  "+Nodename+" was Rebooted"
+                log.warning("The Node  %s got rebooted.",str(Nodename))
+                smtpserver="relay.emc-corp.net:25"
+                to_addr_list = common.getEmailList('exception')
+                from_addr_list = "Network-engineering"
+                messages="Team, \n\n    Please investigate this event. \n      The Node "+str(Nodename)+" was Rebooted. \n\n\n     Node name : "+str(Nodename)+"\n     Node Type : "+str(customer)+"\n     Node City : "+str(city)+"\n     Node Country :"+str(country)+"\n\n\nPing Test result \n               "+str(result)+"\n\n\n\n\n Thanks,\n Network-engineering\n network-eng@emcconnected.com "
+                msg = MIMEText(messages)
+                msg['Subject'] = subject
+                msg['From'] = from_addr_list
+                msg['To'] = ",".join(to_addr_list)
+                server = smtplib.SMTP(smtpserver)
+                server.ehlo()
+                send = server.sendmail(from_addr_list,to_addr_list,msg.as_string())
+                log.info("Mail sent to %s",str(to_addr_list))
+                server.quit()
+            except Exception as e:
+                log.warning("Send Reboot mail got error %s",str(e))  
+                
 """
  To sendmail if any error in Orion Machine
 """
 def sendMail(messagelog):
             try:
-                subject  = "Syslog correlator Exception!!"
-                message = "Team" + "\n" + "\n" + "Please investigate this Exception\n\n" + "\n" + messagelog
+                subject  = "EMC CoreMonitoringApp correlator Exception!!"
+                message = "Team" + "\n" + "\n" + "Please investigate this Exception in CoreMonitoringApp\n\n" + "\n" + messagelog
                 log.info("Syslog correlator Exception %s",str(messagelog))
                 smtpserver= "relay.emc-corp.net:25"
                 to_addr_list = common.getEmailList('exception')
@@ -59,7 +82,7 @@ def sendMail(messagelog):
                 msg = MIMEText(message)
                 msg['Subject'] = subject
                 msg['From'] = from_addr_list
-                msg['To'] = to_addr_list
+                msg['To'] = ",".join(to_addr_list)
                 server = smtplib.SMTP(smtpserver)
                 server.ehlo()
                 send = server.sendmail(from_addr_list, to_addr_list, msg.as_string())
@@ -110,7 +133,7 @@ def OrionAlerts():
                                                                 flag    = row[1]
                                                 
                                                                 #IF MESSAGE AND HOST HAVE THE CORRECT STRINGS
-                                                                if "orion" in host:
+                                                                if "orion" in str(host).lower():
                                                                                                 if "Core-KPI-Alert" in message:
                                                                                                 #IF IS A NEW MESSAGE (CHECKING FLAG COLUMN)
                                                                                                                                 if flag == "0":
@@ -174,19 +197,64 @@ def parseMessage(message,db):
                                 msg=""
                                 lossPercentage=""
                                 latencyValue="NO"
-                                if "down" in message:
+                                if "rebooted" in message:
+                                        try:
+                                                                match=re.match(r'.*-\s+(.*)\s+has.*rebooted.*',message,re.M|re.I)
+                                                                if match:
+                                                                                                nodeName=match.group(1)
+                                                                                                log.info("parsed message %s",str(nodeName) )
+                                                                                                IPAddress,city,customer,country=getNodeIPAddress(str(nodeName).strip())
+                                                                                                if IPAddress == '0':
+                                                                                                        log.info("IPAddress is missing in Orion Server for Node %s",str(nodeName))
+                                                                                                        sendRebootMail(nodeName,"Missing IPAddress for this node in Orion server")
+                                                                                                        return 1                                                                 
+                                                                                                result=nodePingReboot(str(IPAddress).strip())
+                                                                                                if result == '0':
+                                                                                                    log.info("Ping got execption please check the log for more details.")
+                                                                                                    return 1
+                                                                                                sendRebootMail(nodeName,str(result),city,customer,country)
+                                                                                                return 1    
+                                        except Exception as e :
+                                            log.warning("Exception occured while parsing message which has reboot string. Error msg : %s ",str(e))
+                                            return 1
+                                elif "down" in message:
                                                                 match=re.match(r'.*-\s+(.*)\s+is.*',message,re.M|re.I)
                                                                 if match:
                                                                                                 patternTag=match.group(1)
                                                                                                 msg="down"
                                 elif "loss" in message:
+                                        try:
                                                                 match=re.match(r'.*-\s+(.*)\s+has\s*(.*)\s+packet.*',message,re.M|re.I)
                                                                 if match:
-                                                                                                patternTag=match.group(1)
-                                                                                                lossPercentage=match.group(2)
-                                                                                                msg="loss"
-                                                                                                if lossPercentage < losspercent():
-                                                                                                                                return
+                                                                                                match1=re.match(r'.*-\s+(.*)\s+has\s*(.*)\s*%\s*packet.*',message,re.M|re.I)
+                                                                                                if match1:
+                                                                                                    Nodename=match1.group(1)
+                                                                                                    log.info("parsed message %s",str(Nodename) )
+                                                                                                    IPAddress,city,customer,country=getNodeIPAddress(Nodename.strip())
+                                                                                                    if IPAddress == '0':
+                                                                                                        log.info("IPAddress is missing in Orion server for node %s",str(Nodename))
+                                                                                                        return 1
+                                                                                                    log.info("IPaddress : %s , City : %s ",str(IPAddress),str(city)) 
+                                                                                                    try:
+                                                                                                        nodeReturn = nodePingTest(IPAddress,Nodename.strip(),city.strip(),customer.strip(),db)
+                                                                                                    except Exception as e:
+                                                                                                        if IPAddress is None:
+                                                                                                            log.info("IPAddress filed not defined for Node %s",str(Nodename))
+                                                                                                        if  city is None:
+                                                                                                            log.info("City filed not defined for Node %s",str(Nodename))
+                                                                                                        if customer is None:
+                                                                                                            log.info("Customer filed not defined for Node %s",str(Nodename))
+                                                                                                        log.info("One of the value missing in Orion Server.So skipping operations for the Node")    
+                                                                                                    return 1
+                                                                                                else:    
+                                                                                                    patternTag=match.group(1)
+                                                                                                    lossPercentage=match.group(2)
+                                                                                                    msg="loss"
+                                                                                                    if lossPercentage < losspercent():
+                                                                                                                                    return 1
+                                        except Exception as e:
+                                            log.warning("Exception occured while parsing message which has packet loss string .Error info : %s",str(e))
+                                            return 1
                                 elif "Latency" in message:
                                                                 match=re.match(r'.*-\s+(.*)\s*-.*is\s*(\d+).*',message,re.M|re.I)
                                                                 if match:
@@ -198,13 +266,105 @@ def parseMessage(message,db):
                                         if patternTag:
                                             pass
                                     except Exception as e:
-                                            log.info("Unable to parse the Message : %s .Reason could be message string doesnt match with regular experssion pattern. Error message : %s",str(message),str(e))
-                                            return
-                                    selectRecord(patternTag.strip(),db,msg,lossPercentage)    
+                                            log.info("Unable to parse the Message : %s .Reason could be message string doesnt match with regular experssion pattern.",str(message))
+                                            return 1
+                                    selectRecord(patternTag.strip(),db,msg,lossPercentage)   
+                                    return 1
                                 except Exception as e:
                                     log.warning("Exception occured : %s",str(e))
-                                    return                   
+                                    return  1                 
+
+def getNodeIPAddress(nodeName):
+    try:
+        swis = Orion('svcorionnet@emc-corp.net',base64.b64decode("JFYoMHIhME4zdA=="),nodeName.strip())    
+        out=swis.query().json()
+        log.info("Orion Result: %s",str(out))
+        list=out['results']  
+        ip=""
+        city=""
+        customer=""
+        country=""
+        if list:
+            for d in list:
+                ip=d['IPAddress']
+                city=d['City']
+                customer=d['Customer']
+                country=d['Country']
+            return ip,city,customer,country
+        else:
+            log.warning("There is no config present in the Solarwids for Node %s",str(nodeName))
+            return '0','0','0','0'
+    except Exception as e:
+        log.warning("Exception while fetcing node info from Orion.Error info %s",str(e))
+        return '0','0','0','0'
+            
+    
+def  nodePingReboot(ipaddress):
+    try:
+        status,result=cm.getstatusoutput("ping -c30 "+str(ipaddress))
+        match=re.match(r'.*(--.*)',str(result),re.DOTALL)
+        res=""
+        if match:
+            res=match.group(1)
+        return str(res)
+    except Exception as e:
+        log.warning("Ping test for Node Reboot got exception . Error msg : %s",str(e))
+        return "0"
+        
+def nodePingTest(ipaddress,nodeName,city,customer,dbs):
+    try:
+        log.info("Going to perform ping test")
+        loss=common.getNodeLossValue()
+        nodeNameDict=common.getNodeName()
+        status,result=cm.getstatusoutput("ping -c2 "+str(ipaddress))
+        log.info("Node ping result : %s",str(result))
+        if status == 0:
+            log.info("Ping to device got passed")
+        else:
+            match=re.match(r'.*received\s*,\s*(\d+).*packet.*',result,re.DOTALL)
+            if match:        
+                        lossValue=int(match.group(1))
+                        log.info("packet loss : %s",str(lossValue))
+                        if int(lossValue) >= int(loss):
+                            check=dbs.checkInNodeStateTable(str(city).strip())
+                            if int(check) == 1:
+                                record=dbs.selectNodeState(str(city).strip())
+                                for rec in record:
+                                    nodeNames=str(rec[2])
+                                    ipadd=str(rec[4])
+                                    if nodeName in nodeNames:
+                                        log.info("Mail already sent for the Node %s. DB nodeNames : %s",str(nodeName),str(nodeNames))
+                                    else:
+                                        nodeNames+=","+str(nodeName)
+                                        ipadd+=","+str(ipaddress)
+                                        Count=len(nodeNames.split(","))
+                                        values=[]
+                                        values.append(str(city).strip())
+                                        values.append(str(Count).strip())
+                                        values.append(nodeNames.strip())
+                                        values.append('YES')
+                                        values.append(str(ipadd).strip())
+                                        dbs.updateNodeStateTable(values)
+                                        log.info("Record updated") 
+                            else:
+                                value=[]
+                                value.append(str(city).strip())
+                                value.append('1')
+                                value.append(str(nodeName).strip())
+                                value.append('YES')
+                                value.append(str(ipaddress).strip())
+                                value.append(str(customer).strip())
+                                dbs.insertValuesintonodeStateTable(value)
+                                log.info("Record inserted into NodeState table. values are %s",str(value))
                                 
+                        else:
+                            log.info("Loss value is less than %s . So consider node (%s) is up",str(loss),str(nodeName))
+                                
+    except Exception as e:
+        log.warning("Got exception in module(nodePingTest).Error msg : %s",str(e))
+        return 1
+
+
 """
  Fetch device details from CoreRouter table and check devices are up or not.
 """
@@ -244,7 +404,7 @@ def selectRecord(value,db,msg,lossPercentage):
                                                                                                                                 else:
                                                                                                                                                                 value.append('Latency')
                                                                                                                                                                 if devicelatency == 0 or deviceSecLatency == 0:
-                                                                                                                                                                    value.append('Latency Less')
+                                                                                                                                                                    value.append('Latency ISSUE')
                                                                                                                                                                 else:
                                                                                                                                                                     value.append('No Latency')
                                                                                                                                                                 value.append('NO')
@@ -393,7 +553,33 @@ def PyCall():
                                 callpbxapp = Application('Playback', 'CORE-ORION-ALERTgsm')
                                 cf = CallFile(callpbx, callpbxapp)
                                 cf.spool()
-                                
+
+def fetchPatternTag(message):
+		    if "rebooted" in message:
+			return 0,"YES"
+		    elif "down" in message:
+			match=re.match(r'.*-\s+(.*)\s+is.*',message,re.M|re.I)
+			if match:
+			    patternTag=match.group(1)
+			    return 1,str(patternTag).strip()
+		    elif "loss" in message:
+			    match=re.match(r'.*-\s+(.*)\s+has\s*(.*)\s+packet.*',message,re.M|re.I)
+			    if match:
+				    match1=re.match(r'.*-\s+(.*)\s+has\s*(.*)\s*%\s*packet.*',message,re.M|re.I)
+				    if match1:
+						Nodename=match1.group(1)
+						return 2,str(Nodename).strip()
+				    else:    
+						patternTag=match.group(1)	
+						return 1,str(patternTag).strip()
+		    elif "Latency" in message:
+			    match=re.match(r'.*-\s+(.*)\s*-.*is\s*(\d+).*',message,re.M|re.I)
+			    if match:
+				patternTag=match.group(1)
+				return 1,str(patternTag).strip()  
+		    return -1,"NO"    
+			    
+	
 def fetchRecord(dbs):
                                                 last_status_date,last_status_time,current_date,current_time=getDateandTime()
                                                 from datetime import date
@@ -432,6 +618,7 @@ def fetchRecord(dbs):
                                                     log.warning("Exception occured while fetching records %s",str(e))
                                                 
                                                 patternTagProcessed=[]
+						nodeProcessed=[]
                                                 for row in cur.fetchall() :
                                                                 #print "row" 
                                                                 host    = row[4]
@@ -439,18 +626,35 @@ def fetchRecord(dbs):
                                                                 flag    = row[1]
                                                                 #print "Before",row                                                
                                                                 #IF MESSAGE AND HOST HAVE THE CORRECT STRINGS
-                                                                if "orion" in host:
+                                                                
+                                                                if "orion" in str(host).lower():
                                                                                 if "Core-KPI-Alert" in message:  
                                                                                                # print row
-                                                                                                match=re.match(r'.*-\s+(.*)\s+is.*',message,re.M|re.I)
-                                                                                                if match:
-                                                                                                            patTag=match.group(1)
-                                                                                                            if patTag.strip() in patternTagProcessed:
+                                                                                                log.info("Record: %s",str(row))
+												value,patTag=fetchPatternTag(str(message).strip())
+												if value == 0:
+													    preturn= parseMessage(message,dbs)
+												elif value == 1:
+													    if patTag.strip() in patternTagProcessed:
                                                                                                                     log.info("Pattern tag %s is already processed then move to next record",str(patTag))
                                                                                                                     continue 
-                                                                                                            else:          
-                                                                                                                parseMessage(message,dbs)
+                                                                                                            else:       
+                                                                                                                log.info("INFO RECORD BEFORE PARSE MESSAGE : %s",str(message))
+                                                                                                                preturn=parseMessage(message,dbs)
                                                                                                                 patternTagProcessed.append(patTag)
+														
+												elif value == 2:
+													    if patTag.strip() in nodeProcessed:
+                                                                                                                    log.info("Node  %s is already processed then move to next record",str(patTag))
+                                                                                                                    continue 
+                                                                                                            else:       
+                                                                                                                log.info("INFO RECORD BEFORE PARSE MESSAGE : %s",str(message))
+                                                                                                                preturn=parseMessage(message,dbs)
+                                                                                                                nodeProcessed.append(patTag)
+														
+												else:
+													log.info("Unable to parse the message. The reason could be message doesn't match with expected pattern. Message : %s",str(message))
+                                                                                                
                                                                 
 def getDateandTime():
                                                 import datetime
@@ -678,6 +882,15 @@ if __name__ == '__main__':
 
                                                                                                                             
                                                                                                     
+
+
+
+
+
+
+
+
+
 
 
 
